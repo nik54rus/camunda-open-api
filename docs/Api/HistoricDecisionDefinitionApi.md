@@ -1,4 +1,4 @@
-# Swagger\Client\HistoricDecisionDefinitionApi
+# Camunda\Client\HistoricDecisionDefinitionApi
 
 All URIs are relative to *http://{host}:{port}/{contextPath}*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 [**getCleanableHistoricDecisionInstanceReportCount**](HistoricDecisionDefinitionApi.md#getcleanablehistoricdecisioninstancereportcount) | **GET** /history/decision-definition/cleanable-decision-instance-report/count | Get Cleanable Decision Instance Report Count
 
 # **getCleanableHistoricDecisionInstanceReport**
-> \Swagger\Client\Model\CleanableHistoricDecisionInstanceReportResultDto[] getCleanableHistoricDecisionInstanceReport($decision_definition_id_in, $decision_definition_key_in, $tenant_id_in, $without_tenant_id, $compact, $sort_by, $sort_order, $first_result, $max_results)
+> \Camunda\Client\Model\CleanableHistoricDecisionInstanceReportResultDto[] getCleanableHistoricDecisionInstanceReport($decision_definition_id_in, $decision_definition_key_in, $tenant_id_in, $without_tenant_id, $compact, $sort_by, $sort_order, $first_result, $max_results)
 
 Get Cleanable Decision Instance Report
 
@@ -19,12 +19,12 @@ Retrieves a report about a decision definition and finished decision instances r
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricDecisionDefinitionApi(
+$apiInstance = new Camunda\Client\Api\HistoricDecisionDefinitionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -65,7 +65,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\CleanableHistoricDecisionInstanceReportResultDto[]**](../Model/CleanableHistoricDecisionInstanceReportResultDto.md)
+[**\Camunda\Client\Model\CleanableHistoricDecisionInstanceReportResultDto[]**](../Model/CleanableHistoricDecisionInstanceReportResultDto.md)
 
 ### Authorization
 
@@ -79,7 +79,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCleanableHistoricDecisionInstanceReportCount**
-> \Swagger\Client\Model\CountResultDto getCleanableHistoricDecisionInstanceReportCount($decision_definition_id_in, $decision_definition_key_in, $tenant_id_in, $without_tenant_id, $compact)
+> \Camunda\Client\Model\CountResultDto getCleanableHistoricDecisionInstanceReportCount($decision_definition_id_in, $decision_definition_key_in, $tenant_id_in, $without_tenant_id, $compact)
 
 Get Cleanable Decision Instance Report Count
 
@@ -90,12 +90,12 @@ Queries for the number of report results about a decision definition and finishe
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricDecisionDefinitionApi(
+$apiInstance = new Camunda\Client\Api\HistoricDecisionDefinitionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -128,7 +128,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\CountResultDto**](../Model/CountResultDto.md)
+[**\Camunda\Client\Model\CountResultDto**](../Model/CountResultDto.md)
 
 ### Authorization
 

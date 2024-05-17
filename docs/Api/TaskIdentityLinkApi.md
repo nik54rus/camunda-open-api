@@ -1,4 +1,4 @@
-# Swagger\Client\TaskIdentityLinkApi
+# Camunda\Client\TaskIdentityLinkApi
 
 All URIs are relative to *http://{host}:{port}/{contextPath}*
 
@@ -20,19 +20,19 @@ Adds an identity link to a task by id. Can be used to link any user or group to 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\TaskIdentityLinkApi(
+$apiInstance = new Camunda\Client\Api\TaskIdentityLinkApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = "id_example"; // string | The id of the task to add a link to.
-$body = new \Swagger\Client\Model\IdentityLinkDto(); // \Swagger\Client\Model\IdentityLinkDto | 
+$body = new \Camunda\Client\Model\IdentityLinkDto(); // \Camunda\Client\Model\IdentityLinkDto | 
 
 try {
     $apiInstance->addIdentityLink($id, $body);
@@ -47,7 +47,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The id of the task to add a link to. |
- **body** | [**\Swagger\Client\Model\IdentityLinkDto**](../Model/IdentityLinkDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\IdentityLinkDto**](../Model/IdentityLinkDto.md)|  | [optional]
 
 ### Return type
 
@@ -76,19 +76,19 @@ Removes an identity link from a task by id
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\TaskIdentityLinkApi(
+$apiInstance = new Camunda\Client\Api\TaskIdentityLinkApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = "id_example"; // string | The id of the task to remove a link from.
-$body = new \Swagger\Client\Model\IdentityLinkDto(); // \Swagger\Client\Model\IdentityLinkDto | 
+$body = new \Camunda\Client\Model\IdentityLinkDto(); // \Camunda\Client\Model\IdentityLinkDto | 
 
 try {
     $apiInstance->deleteIdentityLink($id, $body);
@@ -103,7 +103,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The id of the task to remove a link from. |
- **body** | [**\Swagger\Client\Model\IdentityLinkDto**](../Model/IdentityLinkDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\IdentityLinkDto**](../Model/IdentityLinkDto.md)|  | [optional]
 
 ### Return type
 
@@ -121,7 +121,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getIdentityLinks**
-> \Swagger\Client\Model\IdentityLinkDto[] getIdentityLinks($id, $type)
+> \Camunda\Client\Model\IdentityLinkDto[] getIdentityLinks($id, $type)
 
 Get List
 
@@ -132,12 +132,12 @@ Gets the identity links for a task by id, which are the users and groups that ar
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\TaskIdentityLinkApi(
+$apiInstance = new Camunda\Client\Api\TaskIdentityLinkApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -164,7 +164,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\IdentityLinkDto[]**](../Model/IdentityLinkDto.md)
+[**\Camunda\Client\Model\IdentityLinkDto[]**](../Model/IdentityLinkDto.md)
 
 ### Authorization
 

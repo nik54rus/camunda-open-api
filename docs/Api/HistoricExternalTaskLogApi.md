@@ -1,4 +1,4 @@
-# Swagger\Client\HistoricExternalTaskLogApi
+# Camunda\Client\HistoricExternalTaskLogApi
 
 All URIs are relative to *http://{host}:{port}/{contextPath}*
 
@@ -23,12 +23,12 @@ Retrieves the corresponding error details of the passed historic external task l
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricExternalTaskLogApi(
+$apiInstance = new Camunda\Client\Api\HistoricExternalTaskLogApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -66,7 +66,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getHistoricExternalTaskLog**
-> \Swagger\Client\Model\HistoricExternalTaskLogDto getHistoricExternalTaskLog($id)
+> \Camunda\Client\Model\HistoricExternalTaskLogDto getHistoricExternalTaskLog($id)
 
 Get External Task Log
 
@@ -77,12 +77,12 @@ Retrieves a historic external task log by id.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricExternalTaskLogApi(
+$apiInstance = new Camunda\Client\Api\HistoricExternalTaskLogApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -107,7 +107,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\HistoricExternalTaskLogDto**](../Model/HistoricExternalTaskLogDto.md)
+[**\Camunda\Client\Model\HistoricExternalTaskLogDto**](../Model/HistoricExternalTaskLogDto.md)
 
 ### Authorization
 
@@ -121,7 +121,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getHistoricExternalTaskLogs**
-> \Swagger\Client\Model\HistoricExternalTaskLogDto[] getHistoricExternalTaskLogs($log_id, $external_task_id, $topic_name, $worker_id, $error_message, $activity_id_in, $activity_instance_id_in, $execution_id_in, $process_instance_id, $process_definition_id, $process_definition_key, $tenant_id_in, $without_tenant_id, $priority_lower_than_or_equals, $priority_higher_than_or_equals, $creation_log, $failure_log, $success_log, $deletion_log, $sort_by, $sort_order, $first_result, $max_results)
+> \Camunda\Client\Model\HistoricExternalTaskLogDto[] getHistoricExternalTaskLogs($log_id, $external_task_id, $topic_name, $worker_id, $error_message, $activity_id_in, $activity_instance_id_in, $execution_id_in, $process_instance_id, $process_definition_id, $process_definition_key, $tenant_id_in, $without_tenant_id, $priority_lower_than_or_equals, $priority_higher_than_or_equals, $creation_log, $failure_log, $success_log, $deletion_log, $sort_by, $sort_order, $first_result, $max_results)
 
 Get External Task Logs
 
@@ -132,12 +132,12 @@ Queries for historic external task logs that fulfill the given parameters. The s
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricExternalTaskLogApi(
+$apiInstance = new Camunda\Client\Api\HistoricExternalTaskLogApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -206,7 +206,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\HistoricExternalTaskLogDto[]**](../Model/HistoricExternalTaskLogDto.md)
+[**\Camunda\Client\Model\HistoricExternalTaskLogDto[]**](../Model/HistoricExternalTaskLogDto.md)
 
 ### Authorization
 
@@ -220,7 +220,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getHistoricExternalTaskLogsCount**
-> \Swagger\Client\Model\CountResultDto getHistoricExternalTaskLogsCount($log_id, $external_task_id, $topic_name, $worker_id, $error_message, $activity_id_in, $activity_instance_id_in, $execution_id_in, $process_instance_id, $process_definition_id, $process_definition_key, $tenant_id_in, $without_tenant_id, $priority_lower_than_or_equals, $priority_higher_than_or_equals, $creation_log, $failure_log, $success_log, $deletion_log)
+> \Camunda\Client\Model\CountResultDto getHistoricExternalTaskLogsCount($log_id, $external_task_id, $topic_name, $worker_id, $error_message, $activity_id_in, $activity_instance_id_in, $execution_id_in, $process_instance_id, $process_definition_id, $process_definition_key, $tenant_id_in, $without_tenant_id, $priority_lower_than_or_equals, $priority_higher_than_or_equals, $creation_log, $failure_log, $success_log, $deletion_log)
 
 Get External Task Log Count
 
@@ -231,12 +231,12 @@ Queries for the number of historic external task logs that fulfill the given par
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricExternalTaskLogApi(
+$apiInstance = new Camunda\Client\Api\HistoricExternalTaskLogApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -297,7 +297,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\CountResultDto**](../Model/CountResultDto.md)
+[**\Camunda\Client\Model\CountResultDto**](../Model/CountResultDto.md)
 
 ### Authorization
 
@@ -311,7 +311,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **queryHistoricExternalTaskLogs**
-> \Swagger\Client\Model\HistoricExternalTaskLogDto[] queryHistoricExternalTaskLogs($body)
+> \Camunda\Client\Model\HistoricExternalTaskLogDto[] queryHistoricExternalTaskLogs($body)
 
 Get External Task Logs (POST)
 
@@ -322,18 +322,18 @@ Queries for historic external task logs that fulfill the given parameters. This 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricExternalTaskLogApi(
+$apiInstance = new Camunda\Client\Api\HistoricExternalTaskLogApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\HistoricExternalTaskLogQueryDto(); // \Swagger\Client\Model\HistoricExternalTaskLogQueryDto | 
+$body = new \Camunda\Client\Model\HistoricExternalTaskLogQueryDto(); // \Camunda\Client\Model\HistoricExternalTaskLogQueryDto | 
 
 try {
     $result = $apiInstance->queryHistoricExternalTaskLogs($body);
@@ -348,11 +348,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\HistoricExternalTaskLogQueryDto**](../Model/HistoricExternalTaskLogQueryDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\HistoricExternalTaskLogQueryDto**](../Model/HistoricExternalTaskLogQueryDto.md)|  | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\HistoricExternalTaskLogDto[]**](../Model/HistoricExternalTaskLogDto.md)
+[**\Camunda\Client\Model\HistoricExternalTaskLogDto[]**](../Model/HistoricExternalTaskLogDto.md)
 
 ### Authorization
 
@@ -366,7 +366,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **queryHistoricExternalTaskLogsCount**
-> \Swagger\Client\Model\CountResultDto queryHistoricExternalTaskLogsCount($body)
+> \Camunda\Client\Model\CountResultDto queryHistoricExternalTaskLogsCount($body)
 
 Get External Task Log Count (POST)
 
@@ -377,18 +377,18 @@ Queries for the number of historic external task logs that fulfill the given par
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricExternalTaskLogApi(
+$apiInstance = new Camunda\Client\Api\HistoricExternalTaskLogApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\HistoricExternalTaskLogQueryDto(); // \Swagger\Client\Model\HistoricExternalTaskLogQueryDto | 
+$body = new \Camunda\Client\Model\HistoricExternalTaskLogQueryDto(); // \Camunda\Client\Model\HistoricExternalTaskLogQueryDto | 
 
 try {
     $result = $apiInstance->queryHistoricExternalTaskLogsCount($body);
@@ -403,11 +403,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\HistoricExternalTaskLogQueryDto**](../Model/HistoricExternalTaskLogQueryDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\HistoricExternalTaskLogQueryDto**](../Model/HistoricExternalTaskLogQueryDto.md)|  | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\CountResultDto**](../Model/CountResultDto.md)
+[**\Camunda\Client\Model\CountResultDto**](../Model/CountResultDto.md)
 
 ### Authorization
 

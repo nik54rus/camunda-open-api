@@ -1,4 +1,4 @@
-# Swagger\Client\HistoricActivityInstanceApi
+# Camunda\Client\HistoricActivityInstanceApi
 
 All URIs are relative to *http://{host}:{port}/{contextPath}*
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 [**queryHistoricActivityInstancesCount**](HistoricActivityInstanceApi.md#queryhistoricactivityinstancescount) | **POST** /history/activity-instance/count | Get List Count (POST)
 
 # **getHistoricActivityInstance**
-> \Swagger\Client\Model\HistoricActivityInstanceDto getHistoricActivityInstance($id)
+> \Camunda\Client\Model\HistoricActivityInstanceDto getHistoricActivityInstance($id)
 
 Get
 
@@ -22,12 +22,12 @@ Retrieves a historic activity instance by id, according to the `HistoricActivity
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricActivityInstanceApi(
+$apiInstance = new Camunda\Client\Api\HistoricActivityInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -52,7 +52,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\HistoricActivityInstanceDto**](../Model/HistoricActivityInstanceDto.md)
+[**\Camunda\Client\Model\HistoricActivityInstanceDto**](../Model/HistoricActivityInstanceDto.md)
 
 ### Authorization
 
@@ -66,7 +66,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getHistoricActivityInstances**
-> \Swagger\Client\Model\HistoricActivityInstanceDto[] getHistoricActivityInstances($sort_by, $sort_order, $first_result, $max_results, $activity_instance_id, $process_instance_id, $process_definition_id, $execution_id, $activity_id, $activity_name, $activity_type, $task_assignee, $finished, $unfinished, $canceled, $complete_scope, $started_before, $started_after, $finished_before, $finished_after, $tenant_id_in, $without_tenant_id)
+> \Camunda\Client\Model\HistoricActivityInstanceDto[] getHistoricActivityInstances($sort_by, $sort_order, $first_result, $max_results, $activity_instance_id, $process_instance_id, $process_definition_id, $execution_id, $activity_id, $activity_name, $activity_type, $task_assignee, $finished, $unfinished, $canceled, $complete_scope, $started_before, $started_after, $finished_before, $finished_after, $tenant_id_in, $without_tenant_id)
 
 Get List
 
@@ -77,12 +77,12 @@ Queries for historic activity instances that fulfill the given parameters. The s
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricActivityInstanceApi(
+$apiInstance = new Camunda\Client\Api\HistoricActivityInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -149,7 +149,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\HistoricActivityInstanceDto[]**](../Model/HistoricActivityInstanceDto.md)
+[**\Camunda\Client\Model\HistoricActivityInstanceDto[]**](../Model/HistoricActivityInstanceDto.md)
 
 ### Authorization
 
@@ -163,7 +163,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getHistoricActivityInstancesCount**
-> \Swagger\Client\Model\CountResultDto getHistoricActivityInstancesCount($activity_instance_id, $process_instance_id, $process_definition_id, $execution_id, $activity_id, $activity_name, $activity_type, $task_assignee, $finished, $unfinished, $canceled, $complete_scope, $started_before, $started_after, $finished_before, $finished_after, $tenant_id_in, $without_tenant_id)
+> \Camunda\Client\Model\CountResultDto getHistoricActivityInstancesCount($activity_instance_id, $process_instance_id, $process_definition_id, $execution_id, $activity_id, $activity_name, $activity_type, $task_assignee, $finished, $unfinished, $canceled, $complete_scope, $started_before, $started_after, $finished_before, $finished_after, $tenant_id_in, $without_tenant_id)
 
 Get List Count
 
@@ -174,12 +174,12 @@ Queries for the number of historic activity instances that fulfill the given par
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricActivityInstanceApi(
+$apiInstance = new Camunda\Client\Api\HistoricActivityInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -238,7 +238,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\CountResultDto**](../Model/CountResultDto.md)
+[**\Camunda\Client\Model\CountResultDto**](../Model/CountResultDto.md)
 
 ### Authorization
 
@@ -252,7 +252,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **queryHistoricActivityInstances**
-> \Swagger\Client\Model\HistoricActivityInstanceDto[] queryHistoricActivityInstances($body, $first_result, $max_results)
+> \Camunda\Client\Model\HistoricActivityInstanceDto[] queryHistoricActivityInstances($body, $first_result, $max_results)
 
 Get List (POST)
 
@@ -263,18 +263,18 @@ Queries for historic activity instances that fulfill the given parameters. The s
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricActivityInstanceApi(
+$apiInstance = new Camunda\Client\Api\HistoricActivityInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\HistoricActivityInstanceQueryDto(); // \Swagger\Client\Model\HistoricActivityInstanceQueryDto | 
+$body = new \Camunda\Client\Model\HistoricActivityInstanceQueryDto(); // \Camunda\Client\Model\HistoricActivityInstanceQueryDto | 
 $first_result = 56; // int | Pagination of results. Specifies the index of the first result to return.
 $max_results = 56; // int | Pagination of results. Specifies the maximum number of results to return. Will return less results if there are no more results left.
 
@@ -291,13 +291,13 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\HistoricActivityInstanceQueryDto**](../Model/HistoricActivityInstanceQueryDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\HistoricActivityInstanceQueryDto**](../Model/HistoricActivityInstanceQueryDto.md)|  | [optional]
  **first_result** | **int**| Pagination of results. Specifies the index of the first result to return. | [optional]
  **max_results** | **int**| Pagination of results. Specifies the maximum number of results to return. Will return less results if there are no more results left. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\HistoricActivityInstanceDto[]**](../Model/HistoricActivityInstanceDto.md)
+[**\Camunda\Client\Model\HistoricActivityInstanceDto[]**](../Model/HistoricActivityInstanceDto.md)
 
 ### Authorization
 
@@ -311,7 +311,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **queryHistoricActivityInstancesCount**
-> \Swagger\Client\Model\CountResultDto queryHistoricActivityInstancesCount($body)
+> \Camunda\Client\Model\CountResultDto queryHistoricActivityInstancesCount($body)
 
 Get List Count (POST)
 
@@ -322,18 +322,18 @@ Queries for the number of historic activity instances that fulfill the given par
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricActivityInstanceApi(
+$apiInstance = new Camunda\Client\Api\HistoricActivityInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\HistoricActivityInstanceQueryDto(); // \Swagger\Client\Model\HistoricActivityInstanceQueryDto | 
+$body = new \Camunda\Client\Model\HistoricActivityInstanceQueryDto(); // \Camunda\Client\Model\HistoricActivityInstanceQueryDto | 
 
 try {
     $result = $apiInstance->queryHistoricActivityInstancesCount($body);
@@ -348,11 +348,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\HistoricActivityInstanceQueryDto**](../Model/HistoricActivityInstanceQueryDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\HistoricActivityInstanceQueryDto**](../Model/HistoricActivityInstanceQueryDto.md)|  | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\CountResultDto**](../Model/CountResultDto.md)
+[**\Camunda\Client\Model\CountResultDto**](../Model/CountResultDto.md)
 
 ### Authorization
 

@@ -1,4 +1,4 @@
-# Swagger\Client\EngineApi
+# Camunda\Client\EngineApi
 
 All URIs are relative to *http://{host}:{port}/{contextPath}*
 
@@ -7,7 +7,7 @@ Method | HTTP request | Description
 [**getProcessEngineNames**](EngineApi.md#getprocessenginenames) | **GET** /engine | Get List
 
 # **getProcessEngineNames**
-> \Swagger\Client\Model\ProcessEngineDto[] getProcessEngineNames()
+> \Camunda\Client\Model\ProcessEngineDto[] getProcessEngineNames()
 
 Get List
 
@@ -18,12 +18,12 @@ Retrieves the names of all process engines available on your platform. **Note**:
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\EngineApi(
+$apiInstance = new Camunda\Client\Api\EngineApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -44,7 +44,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\ProcessEngineDto[]**](../Model/ProcessEngineDto.md)
+[**\Camunda\Client\Model\ProcessEngineDto[]**](../Model/ProcessEngineDto.md)
 
 ### Authorization
 

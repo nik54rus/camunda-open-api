@@ -1,4 +1,4 @@
-# Swagger\Client\ExecutionApi
+# Camunda\Client\ExecutionApi
 
 All URIs are relative to *http://{host}:{port}/{contextPath}*
 
@@ -22,7 +22,7 @@ Method | HTTP request | Description
 [**triggerEvent**](ExecutionApi.md#triggerevent) | **POST** /execution/{id}/messageSubscriptions/{messageName}/trigger | Trigger Message Event Subscription
 
 # **createIncident**
-> \Swagger\Client\Model\IncidentDto createIncident($id, $body)
+> \Camunda\Client\Model\IncidentDto createIncident($id, $body)
 
 Create Incident
 
@@ -33,19 +33,19 @@ Creates a custom incident with given properties.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\ExecutionApi(
+$apiInstance = new Camunda\Client\Api\ExecutionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = "id_example"; // string | The id of the execution to create a new incident for.
-$body = new \Swagger\Client\Model\CreateIncidentDto(); // \Swagger\Client\Model\CreateIncidentDto | 
+$body = new \Camunda\Client\Model\CreateIncidentDto(); // \Camunda\Client\Model\CreateIncidentDto | 
 
 try {
     $result = $apiInstance->createIncident($id, $body);
@@ -61,11 +61,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The id of the execution to create a new incident for. |
- **body** | [**\Swagger\Client\Model\CreateIncidentDto**](../Model/CreateIncidentDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\CreateIncidentDto**](../Model/CreateIncidentDto.md)|  | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\IncidentDto**](../Model/IncidentDto.md)
+[**\Camunda\Client\Model\IncidentDto**](../Model/IncidentDto.md)
 
 ### Authorization
 
@@ -90,12 +90,12 @@ Deletes a variable in the context of a given execution by id. Deletion does not 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\ExecutionApi(
+$apiInstance = new Camunda\Client\Api\ExecutionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -135,7 +135,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getExecution**
-> \Swagger\Client\Model\ExecutionDto getExecution($id)
+> \Camunda\Client\Model\ExecutionDto getExecution($id)
 
 Get Execution
 
@@ -146,12 +146,12 @@ Retrieves an execution by id, according to the `Execution` interface in the engi
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\ExecutionApi(
+$apiInstance = new Camunda\Client\Api\ExecutionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -176,7 +176,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ExecutionDto**](../Model/ExecutionDto.md)
+[**\Camunda\Client\Model\ExecutionDto**](../Model/ExecutionDto.md)
 
 ### Authorization
 
@@ -190,7 +190,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getExecutions**
-> \Swagger\Client\Model\ExecutionDto[] getExecutions($business_key, $process_definition_id, $process_definition_key, $process_instance_id, $activity_id, $signal_event_subscription_name, $message_event_subscription_name, $active, $suspended, $incident_id, $incident_type, $incident_message, $incident_message_like, $tenant_id_in, $variables, $process_variables, $variable_names_ignore_case, $variable_values_ignore_case, $sort_by, $sort_order, $first_result, $max_results)
+> \Camunda\Client\Model\ExecutionDto[] getExecutions($business_key, $process_definition_id, $process_definition_key, $process_instance_id, $activity_id, $signal_event_subscription_name, $message_event_subscription_name, $active, $suspended, $incident_id, $incident_type, $incident_message, $incident_message_like, $tenant_id_in, $variables, $process_variables, $variable_names_ignore_case, $variable_values_ignore_case, $sort_by, $sort_order, $first_result, $max_results)
 
 Get Executions
 
@@ -201,12 +201,12 @@ Queries for the executions that fulfill given parameters. Parameters may be stat
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\ExecutionApi(
+$apiInstance = new Camunda\Client\Api\ExecutionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -273,7 +273,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ExecutionDto[]**](../Model/ExecutionDto.md)
+[**\Camunda\Client\Model\ExecutionDto[]**](../Model/ExecutionDto.md)
 
 ### Authorization
 
@@ -287,7 +287,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getExecutionsCount**
-> \Swagger\Client\Model\CountResultDto getExecutionsCount($business_key, $process_definition_id, $process_definition_key, $process_instance_id, $activity_id, $signal_event_subscription_name, $message_event_subscription_name, $active, $suspended, $incident_id, $incident_type, $incident_message, $incident_message_like, $tenant_id_in, $variables, $process_variables, $variable_names_ignore_case, $variable_values_ignore_case)
+> \Camunda\Client\Model\CountResultDto getExecutionsCount($business_key, $process_definition_id, $process_definition_key, $process_instance_id, $activity_id, $signal_event_subscription_name, $message_event_subscription_name, $active, $suspended, $incident_id, $incident_type, $incident_message, $incident_message_like, $tenant_id_in, $variables, $process_variables, $variable_names_ignore_case, $variable_values_ignore_case)
 
 Get Execution Count
 
@@ -298,12 +298,12 @@ Queries for the number of executions that fulfill given parameters. Takes the sa
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\ExecutionApi(
+$apiInstance = new Camunda\Client\Api\ExecutionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -362,7 +362,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\CountResultDto**](../Model/CountResultDto.md)
+[**\Camunda\Client\Model\CountResultDto**](../Model/CountResultDto.md)
 
 ### Authorization
 
@@ -376,7 +376,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getLocalExecutionVariable**
-> \Swagger\Client\Model\VariableValueDto getLocalExecutionVariable($id, $var_name, $deserialize_value)
+> \Camunda\Client\Model\VariableValueDto getLocalExecutionVariable($id, $var_name, $deserialize_value)
 
 Get Local Execution Variable
 
@@ -387,12 +387,12 @@ Retrieves a variable from the context of a given execution by id. Does not trave
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\ExecutionApi(
+$apiInstance = new Camunda\Client\Api\ExecutionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -421,7 +421,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\VariableValueDto**](../Model/VariableValueDto.md)
+[**\Camunda\Client\Model\VariableValueDto**](../Model/VariableValueDto.md)
 
 ### Authorization
 
@@ -446,12 +446,12 @@ Retrieves a binary variable from the context of a given execution by id. Does no
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\ExecutionApi(
+$apiInstance = new Camunda\Client\Api\ExecutionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -492,7 +492,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getLocalExecutionVariables**
-> map[string,\Swagger\Client\Model\VariableValueDto] getLocalExecutionVariables($id, $deserialize_values)
+> map[string,\Camunda\Client\Model\VariableValueDto] getLocalExecutionVariables($id, $deserialize_values)
 
 Get Local Execution Variables
 
@@ -503,12 +503,12 @@ Retrieves all variables of a given execution by id.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\ExecutionApi(
+$apiInstance = new Camunda\Client\Api\ExecutionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -535,7 +535,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**map[string,\Swagger\Client\Model\VariableValueDto]**](../Model/VariableValueDto.md)
+[**map[string,\Camunda\Client\Model\VariableValueDto]**](../Model/VariableValueDto.md)
 
 ### Authorization
 
@@ -549,7 +549,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getMessageEventSubscription**
-> \Swagger\Client\Model\EventSubscriptionDto getMessageEventSubscription($id, $message_name)
+> \Camunda\Client\Model\EventSubscriptionDto getMessageEventSubscription($id, $message_name)
 
 Get Message Event Subscription
 
@@ -560,12 +560,12 @@ Retrieves a message event subscription for a given execution by id and a message
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\ExecutionApi(
+$apiInstance = new Camunda\Client\Api\ExecutionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -592,7 +592,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\EventSubscriptionDto**](../Model/EventSubscriptionDto.md)
+[**\Camunda\Client\Model\EventSubscriptionDto**](../Model/EventSubscriptionDto.md)
 
 ### Authorization
 
@@ -617,19 +617,19 @@ Updates or deletes the variables in the context of an execution by id. The updat
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\ExecutionApi(
+$apiInstance = new Camunda\Client\Api\ExecutionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = "id_example"; // string | The id of the execution to set variables for.
-$body = new \Swagger\Client\Model\PatchVariablesDto(); // \Swagger\Client\Model\PatchVariablesDto | 
+$body = new \Camunda\Client\Model\PatchVariablesDto(); // \Camunda\Client\Model\PatchVariablesDto | 
 
 try {
     $apiInstance->modifyLocalExecutionVariables($id, $body);
@@ -644,7 +644,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The id of the execution to set variables for. |
- **body** | [**\Swagger\Client\Model\PatchVariablesDto**](../Model/PatchVariablesDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\PatchVariablesDto**](../Model/PatchVariablesDto.md)|  | [optional]
 
 ### Return type
 
@@ -673,12 +673,12 @@ Sets a variable in the context of a given execution by id. Update does not propa
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\ExecutionApi(
+$apiInstance = new Camunda\Client\Api\ExecutionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -686,7 +686,7 @@ $apiInstance = new Swagger\Client\Api\ExecutionApi(
 );
 $id = "id_example"; // string | The id of the execution to set the variable for.
 $var_name = "var_name_example"; // string | The name of the variable to set.
-$body = new \Swagger\Client\Model\VariableValueDto(); // \Swagger\Client\Model\VariableValueDto | 
+$body = new \Camunda\Client\Model\VariableValueDto(); // \Camunda\Client\Model\VariableValueDto | 
 
 try {
     $apiInstance->putLocalExecutionVariable($id, $var_name, $body);
@@ -702,7 +702,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The id of the execution to set the variable for. |
  **var_name** | **string**| The name of the variable to set. |
- **body** | [**\Swagger\Client\Model\VariableValueDto**](../Model/VariableValueDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\VariableValueDto**](../Model/VariableValueDto.md)|  | [optional]
 
 ### Return type
 
@@ -720,7 +720,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **queryExecutions**
-> \Swagger\Client\Model\ExecutionDto[] queryExecutions($body, $first_result, $max_results)
+> \Camunda\Client\Model\ExecutionDto[] queryExecutions($body, $first_result, $max_results)
 
 Get Executions (POST)
 
@@ -731,18 +731,18 @@ Queries for executions that fulfill given parameters through a JSON object. This
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\ExecutionApi(
+$apiInstance = new Camunda\Client\Api\ExecutionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\ExecutionQueryDto(); // \Swagger\Client\Model\ExecutionQueryDto | 
+$body = new \Camunda\Client\Model\ExecutionQueryDto(); // \Camunda\Client\Model\ExecutionQueryDto | 
 $first_result = 56; // int | Pagination of results. Specifies the index of the first result to return.
 $max_results = 56; // int | Pagination of results. Specifies the maximum number of results to return. Will return less results if there are no more results left.
 
@@ -759,13 +759,13 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\ExecutionQueryDto**](../Model/ExecutionQueryDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\ExecutionQueryDto**](../Model/ExecutionQueryDto.md)|  | [optional]
  **first_result** | **int**| Pagination of results. Specifies the index of the first result to return. | [optional]
  **max_results** | **int**| Pagination of results. Specifies the maximum number of results to return. Will return less results if there are no more results left. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\ExecutionDto[]**](../Model/ExecutionDto.md)
+[**\Camunda\Client\Model\ExecutionDto[]**](../Model/ExecutionDto.md)
 
 ### Authorization
 
@@ -779,7 +779,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **queryExecutionsCount**
-> \Swagger\Client\Model\CountResultDto queryExecutionsCount($body)
+> \Camunda\Client\Model\CountResultDto queryExecutionsCount($body)
 
 Get Execution Count (POST)
 
@@ -790,18 +790,18 @@ Queries for the number of executions that fulfill given parameters. This method 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\ExecutionApi(
+$apiInstance = new Camunda\Client\Api\ExecutionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\ExecutionQueryDto(); // \Swagger\Client\Model\ExecutionQueryDto | 
+$body = new \Camunda\Client\Model\ExecutionQueryDto(); // \Camunda\Client\Model\ExecutionQueryDto | 
 
 try {
     $result = $apiInstance->queryExecutionsCount($body);
@@ -816,11 +816,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\ExecutionQueryDto**](../Model/ExecutionQueryDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\ExecutionQueryDto**](../Model/ExecutionQueryDto.md)|  | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\CountResultDto**](../Model/CountResultDto.md)
+[**\Camunda\Client\Model\CountResultDto**](../Model/CountResultDto.md)
 
 ### Authorization
 
@@ -845,12 +845,12 @@ Sets the serialized value for a binary variable or the binary value for a file v
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\ExecutionApi(
+$apiInstance = new Camunda\Client\Api\ExecutionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -905,19 +905,19 @@ Signals an execution by id. Can for example be used to explicitly skip user task
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\ExecutionApi(
+$apiInstance = new Camunda\Client\Api\ExecutionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = "id_example"; // string | The id of the execution to signal.
-$body = new \Swagger\Client\Model\ExecutionTriggerDto(); // \Swagger\Client\Model\ExecutionTriggerDto | 
+$body = new \Camunda\Client\Model\ExecutionTriggerDto(); // \Camunda\Client\Model\ExecutionTriggerDto | 
 
 try {
     $apiInstance->signalExecution($id, $body);
@@ -932,7 +932,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The id of the execution to signal. |
- **body** | [**\Swagger\Client\Model\ExecutionTriggerDto**](../Model/ExecutionTriggerDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\ExecutionTriggerDto**](../Model/ExecutionTriggerDto.md)|  | [optional]
 
 ### Return type
 
@@ -961,12 +961,12 @@ Delivers a message to a specific execution by id, to trigger an existing message
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\ExecutionApi(
+$apiInstance = new Camunda\Client\Api\ExecutionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -974,7 +974,7 @@ $apiInstance = new Swagger\Client\Api\ExecutionApi(
 );
 $id = "id_example"; // string | The id of the execution to submit the message to.
 $message_name = "message_name_example"; // string | The name of the message that the addressed subscription corresponds to.
-$body = new \Swagger\Client\Model\ExecutionTriggerDto(); // \Swagger\Client\Model\ExecutionTriggerDto | 
+$body = new \Camunda\Client\Model\ExecutionTriggerDto(); // \Camunda\Client\Model\ExecutionTriggerDto | 
 
 try {
     $apiInstance->triggerEvent($id, $message_name, $body);
@@ -990,7 +990,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The id of the execution to submit the message to. |
  **message_name** | **string**| The name of the message that the addressed subscription corresponds to. |
- **body** | [**\Swagger\Client\Model\ExecutionTriggerDto**](../Model/ExecutionTriggerDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\ExecutionTriggerDto**](../Model/ExecutionTriggerDto.md)|  | [optional]
 
 ### Return type
 

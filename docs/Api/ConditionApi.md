@@ -1,4 +1,4 @@
-# Swagger\Client\ConditionApi
+# Camunda\Client\ConditionApi
 
 All URIs are relative to *http://{host}:{port}/{contextPath}*
 
@@ -7,7 +7,7 @@ Method | HTTP request | Description
 [**evaluateCondition**](ConditionApi.md#evaluatecondition) | **POST** /condition | Evaluate
 
 # **evaluateCondition**
-> \Swagger\Client\Model\ProcessInstanceDto[] evaluateCondition($body)
+> \Camunda\Client\Model\ProcessInstanceDto[] evaluateCondition($body)
 
 Evaluate
 
@@ -18,18 +18,18 @@ Triggers evaluation of conditions for conditional start event(s).  Internally th
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\ConditionApi(
+$apiInstance = new Camunda\Client\Api\ConditionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\EvaluationConditionDto(); // \Swagger\Client\Model\EvaluationConditionDto | 
+$body = new \Camunda\Client\Model\EvaluationConditionDto(); // \Camunda\Client\Model\EvaluationConditionDto | 
 
 try {
     $result = $apiInstance->evaluateCondition($body);
@@ -44,11 +44,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\EvaluationConditionDto**](../Model/EvaluationConditionDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\EvaluationConditionDto**](../Model/EvaluationConditionDto.md)|  | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\ProcessInstanceDto[]**](../Model/ProcessInstanceDto.md)
+[**\Camunda\Client\Model\ProcessInstanceDto[]**](../Model/ProcessInstanceDto.md)
 
 ### Authorization
 

@@ -1,4 +1,4 @@
-# Swagger\Client\HistoricProcessDefinitionApi
+# Camunda\Client\HistoricProcessDefinitionApi
 
 All URIs are relative to *http://{host}:{port}/{contextPath}*
 
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 [**getHistoricActivityStatistics**](HistoricProcessDefinitionApi.md#gethistoricactivitystatistics) | **GET** /history/process-definition/{id}/statistics | Get Historic Activity Statistics
 
 # **getCleanableHistoricProcessInstanceReport**
-> \Swagger\Client\Model\CleanableHistoricProcessInstanceReportResultDto[] getCleanableHistoricProcessInstanceReport($process_definition_id_in, $process_definition_key_in, $tenant_id_in, $without_tenant_id, $compact, $sort_by, $sort_order, $first_result, $max_results)
+> \Camunda\Client\Model\CleanableHistoricProcessInstanceReportResultDto[] getCleanableHistoricProcessInstanceReport($process_definition_id_in, $process_definition_key_in, $tenant_id_in, $without_tenant_id, $compact, $sort_by, $sort_order, $first_result, $max_results)
 
 Get Cleanable Process Instance Report
 
@@ -20,12 +20,12 @@ Retrieves a report about a process definition and finished process instances rel
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricProcessDefinitionApi(
+$apiInstance = new Camunda\Client\Api\HistoricProcessDefinitionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -66,7 +66,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\CleanableHistoricProcessInstanceReportResultDto[]**](../Model/CleanableHistoricProcessInstanceReportResultDto.md)
+[**\Camunda\Client\Model\CleanableHistoricProcessInstanceReportResultDto[]**](../Model/CleanableHistoricProcessInstanceReportResultDto.md)
 
 ### Authorization
 
@@ -80,7 +80,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCleanableHistoricProcessInstanceReportCount**
-> \Swagger\Client\Model\CountResultDto getCleanableHistoricProcessInstanceReportCount($process_definition_id_in, $process_definition_key_in, $tenant_id_in, $without_tenant_id, $compact)
+> \Camunda\Client\Model\CountResultDto getCleanableHistoricProcessInstanceReportCount($process_definition_id_in, $process_definition_key_in, $tenant_id_in, $without_tenant_id, $compact)
 
 Get Cleanable Process Instance Report Count
 
@@ -91,12 +91,12 @@ Queries for the number of report results about a process definition and finished
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricProcessDefinitionApi(
+$apiInstance = new Camunda\Client\Api\HistoricProcessDefinitionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -129,7 +129,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\CountResultDto**](../Model/CountResultDto.md)
+[**\Camunda\Client\Model\CountResultDto**](../Model/CountResultDto.md)
 
 ### Authorization
 
@@ -143,7 +143,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getHistoricActivityStatistics**
-> \Swagger\Client\Model\HistoricActivityStatisticsDto[] getHistoricActivityStatistics($id, $canceled, $finished, $complete_scope, $incidents, $started_before, $started_after, $finished_before, $finished_after, $process_instance_id_in, $sort_by, $sort_order)
+> \Camunda\Client\Model\HistoricActivityStatisticsDto[] getHistoricActivityStatistics($id, $canceled, $finished, $complete_scope, $incidents, $started_before, $started_after, $finished_before, $finished_after, $process_instance_id_in, $sort_by, $sort_order)
 
 Get Historic Activity Statistics
 
@@ -154,12 +154,12 @@ Retrieves historic statistics of a given process definition, grouped by activiti
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricProcessDefinitionApi(
+$apiInstance = new Camunda\Client\Api\HistoricProcessDefinitionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -206,7 +206,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\HistoricActivityStatisticsDto[]**](../Model/HistoricActivityStatisticsDto.md)
+[**\Camunda\Client\Model\HistoricActivityStatisticsDto[]**](../Model/HistoricActivityStatisticsDto.md)
 
 ### Authorization
 

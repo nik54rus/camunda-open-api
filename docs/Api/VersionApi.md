@@ -1,4 +1,4 @@
-# Swagger\Client\VersionApi
+# Camunda\Client\VersionApi
 
 All URIs are relative to *http://{host}:{port}/{contextPath}*
 
@@ -7,7 +7,7 @@ Method | HTTP request | Description
 [**getRestAPIVersion**](VersionApi.md#getrestapiversion) | **GET** /version | Get Rest API version
 
 # **getRestAPIVersion**
-> \Swagger\Client\Model\VersionDto getRestAPIVersion()
+> \Camunda\Client\Model\VersionDto getRestAPIVersion()
 
 Get Rest API version
 
@@ -18,12 +18,12 @@ Retrieves the version of the Rest API.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\VersionApi(
+$apiInstance = new Camunda\Client\Api\VersionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -44,7 +44,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\VersionDto**](../Model/VersionDto.md)
+[**\Camunda\Client\Model\VersionDto**](../Model/VersionDto.md)
 
 ### Authorization
 

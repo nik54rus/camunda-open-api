@@ -1,4 +1,4 @@
-# Swagger\Client\HistoryCleanupApi
+# Camunda\Client\HistoryCleanupApi
 
 All URIs are relative to *http://{host}:{port}/{contextPath}*
 
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 [**getHistoryCleanupConfiguration**](HistoryCleanupApi.md#gethistorycleanupconfiguration) | **GET** /history/cleanup/configuration | Get History Cleanup Configuration
 
 # **cleanupAsync**
-> \Swagger\Client\Model\JobDto cleanupAsync($immediately_due)
+> \Camunda\Client\Model\JobDto cleanupAsync($immediately_due)
 
 Clean up history (POST)
 
@@ -21,12 +21,12 @@ Schedules asynchronous history cleanup (See [History cleanup](https://docs.camun
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoryCleanupApi(
+$apiInstance = new Camunda\Client\Api\HistoryCleanupApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -51,7 +51,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\JobDto**](../Model/JobDto.md)
+[**\Camunda\Client\Model\JobDto**](../Model/JobDto.md)
 
 ### Authorization
 
@@ -65,7 +65,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **findCleanupJob**
-> \Swagger\Client\Model\JobDto findCleanupJob()
+> \Camunda\Client\Model\JobDto findCleanupJob()
 
 Find clean up history job (GET)
 
@@ -76,12 +76,12 @@ Find clean up history job (GET)
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoryCleanupApi(
+$apiInstance = new Camunda\Client\Api\HistoryCleanupApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -102,7 +102,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\JobDto**](../Model/JobDto.md)
+[**\Camunda\Client\Model\JobDto**](../Model/JobDto.md)
 
 ### Authorization
 
@@ -116,7 +116,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **findCleanupJobs**
-> \Swagger\Client\Model\JobDto[] findCleanupJobs()
+> \Camunda\Client\Model\JobDto[] findCleanupJobs()
 
 Find clean up history jobs (GET)
 
@@ -127,12 +127,12 @@ Finds history cleanup jobs (See [History cleanup](https://docs.camunda.org/manua
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoryCleanupApi(
+$apiInstance = new Camunda\Client\Api\HistoryCleanupApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -153,7 +153,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\JobDto[]**](../Model/JobDto.md)
+[**\Camunda\Client\Model\JobDto[]**](../Model/JobDto.md)
 
 ### Authorization
 
@@ -167,7 +167,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getHistoryCleanupConfiguration**
-> \Swagger\Client\Model\HistoryCleanupConfigurationDto getHistoryCleanupConfiguration()
+> \Camunda\Client\Model\HistoryCleanupConfigurationDto getHistoryCleanupConfiguration()
 
 Get History Cleanup Configuration
 
@@ -178,12 +178,12 @@ Retrieves history cleanup batch window configuration (See [History cleanup](http
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoryCleanupApi(
+$apiInstance = new Camunda\Client\Api\HistoryCleanupApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -204,7 +204,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\HistoryCleanupConfigurationDto**](../Model/HistoryCleanupConfigurationDto.md)
+[**\Camunda\Client\Model\HistoryCleanupConfigurationDto**](../Model/HistoryCleanupConfigurationDto.md)
 
 ### Authorization
 

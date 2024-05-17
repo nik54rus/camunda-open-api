@@ -1,4 +1,4 @@
-# Swagger\Client\JobApi
+# Camunda\Client\JobApi
 
 All URIs are relative to *http://{host}:{port}/{contextPath}*
 
@@ -32,12 +32,12 @@ Deletes a job by id.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\JobApi(
+$apiInstance = new Camunda\Client\Api\JobApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -86,12 +86,12 @@ Executes a job by id. **Note:** The execution of the job happens synchronously i
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\JobApi(
+$apiInstance = new Camunda\Client\Api\JobApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -129,7 +129,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getJob**
-> \Swagger\Client\Model\JobDto getJob($id)
+> \Camunda\Client\Model\JobDto getJob($id)
 
 Get Job
 
@@ -140,12 +140,12 @@ Retrieves a job by id, according to the `Job` interface in the engine.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\JobApi(
+$apiInstance = new Camunda\Client\Api\JobApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -170,7 +170,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\JobDto**](../Model/JobDto.md)
+[**\Camunda\Client\Model\JobDto**](../Model/JobDto.md)
 
 ### Authorization
 
@@ -184,7 +184,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getJobs**
-> \Swagger\Client\Model\JobDto[] getJobs($job_id, $job_ids, $job_definition_id, $process_instance_id, $process_instance_ids, $execution_id, $process_definition_id, $process_definition_key, $activity_id, $with_retries_left, $executable, $timers, $messages, $due_dates, $create_times, $with_exception, $exception_message, $failed_activity_id, $no_retries_left, $active, $suspended, $priority_lower_than_or_equals, $priority_higher_than_or_equals, $tenant_id_in, $without_tenant_id, $include_jobs_without_tenant_id, $sort_by, $sort_order, $first_result, $max_results)
+> \Camunda\Client\Model\JobDto[] getJobs($job_id, $job_ids, $job_definition_id, $process_instance_id, $process_instance_ids, $execution_id, $process_definition_id, $process_definition_key, $activity_id, $with_retries_left, $executable, $timers, $messages, $due_dates, $create_times, $with_exception, $exception_message, $failed_activity_id, $no_retries_left, $active, $suspended, $priority_lower_than_or_equals, $priority_higher_than_or_equals, $tenant_id_in, $without_tenant_id, $include_jobs_without_tenant_id, $sort_by, $sort_order, $first_result, $max_results)
 
 Get Jobs
 
@@ -195,12 +195,12 @@ Queries for jobs that fulfill given parameters. The size of the result set can b
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\JobApi(
+$apiInstance = new Camunda\Client\Api\JobApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -283,7 +283,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\JobDto[]**](../Model/JobDto.md)
+[**\Camunda\Client\Model\JobDto[]**](../Model/JobDto.md)
 
 ### Authorization
 
@@ -297,7 +297,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getJobsCount**
-> \Swagger\Client\Model\CountResultDto getJobsCount($job_id, $job_ids, $job_definition_id, $process_instance_id, $process_instance_ids, $execution_id, $process_definition_id, $process_definition_key, $activity_id, $with_retries_left, $executable, $timers, $messages, $due_dates, $create_times, $with_exception, $exception_message, $failed_activity_id, $no_retries_left, $active, $suspended, $priority_lower_than_or_equals, $priority_higher_than_or_equals, $tenant_id_in, $without_tenant_id, $include_jobs_without_tenant_id)
+> \Camunda\Client\Model\CountResultDto getJobsCount($job_id, $job_ids, $job_definition_id, $process_instance_id, $process_instance_ids, $execution_id, $process_definition_id, $process_definition_key, $activity_id, $with_retries_left, $executable, $timers, $messages, $due_dates, $create_times, $with_exception, $exception_message, $failed_activity_id, $no_retries_left, $active, $suspended, $priority_lower_than_or_equals, $priority_higher_than_or_equals, $tenant_id_in, $without_tenant_id, $include_jobs_without_tenant_id)
 
 Get Job Count
 
@@ -308,12 +308,12 @@ Queries for the number of jobs that fulfill given parameters. Takes the same par
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\JobApi(
+$apiInstance = new Camunda\Client\Api\JobApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -388,7 +388,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\CountResultDto**](../Model/CountResultDto.md)
+[**\Camunda\Client\Model\CountResultDto**](../Model/CountResultDto.md)
 
 ### Authorization
 
@@ -413,12 +413,12 @@ Retrieves the exception stacktrace corresponding to the passed job id.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\JobApi(
+$apiInstance = new Camunda\Client\Api\JobApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -456,7 +456,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **queryJobs**
-> \Swagger\Client\Model\JobDto[] queryJobs($body, $first_result, $max_results)
+> \Camunda\Client\Model\JobDto[] queryJobs($body, $first_result, $max_results)
 
 Get Jobs (POST)
 
@@ -467,18 +467,18 @@ Queries for jobs that fulfill given parameters. This method is slightly more pow
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\JobApi(
+$apiInstance = new Camunda\Client\Api\JobApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\JobQueryDto(); // \Swagger\Client\Model\JobQueryDto | 
+$body = new \Camunda\Client\Model\JobQueryDto(); // \Camunda\Client\Model\JobQueryDto | 
 $first_result = 56; // int | Pagination of results. Specifies the index of the first result to return.
 $max_results = 56; // int | Pagination of results. Specifies the maximum number of results to return. Will return less results if there are no more results left.
 
@@ -495,13 +495,13 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\JobQueryDto**](../Model/JobQueryDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\JobQueryDto**](../Model/JobQueryDto.md)|  | [optional]
  **first_result** | **int**| Pagination of results. Specifies the index of the first result to return. | [optional]
  **max_results** | **int**| Pagination of results. Specifies the maximum number of results to return. Will return less results if there are no more results left. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\JobDto[]**](../Model/JobDto.md)
+[**\Camunda\Client\Model\JobDto[]**](../Model/JobDto.md)
 
 ### Authorization
 
@@ -515,7 +515,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **queryJobsCount**
-> \Swagger\Client\Model\CountResultDto queryJobsCount($body)
+> \Camunda\Client\Model\CountResultDto queryJobsCount($body)
 
 Get Job Count (POST)
 
@@ -526,18 +526,18 @@ Queries for jobs that fulfill given parameters. This method takes the same messa
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\JobApi(
+$apiInstance = new Camunda\Client\Api\JobApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\JobQueryDto(); // \Swagger\Client\Model\JobQueryDto | 
+$body = new \Camunda\Client\Model\JobQueryDto(); // \Camunda\Client\Model\JobQueryDto | 
 
 try {
     $result = $apiInstance->queryJobsCount($body);
@@ -552,11 +552,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\JobQueryDto**](../Model/JobQueryDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\JobQueryDto**](../Model/JobQueryDto.md)|  | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\CountResultDto**](../Model/CountResultDto.md)
+[**\Camunda\Client\Model\CountResultDto**](../Model/CountResultDto.md)
 
 ### Authorization
 
@@ -581,12 +581,12 @@ Recalculates the due date of a job by id.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\JobApi(
+$apiInstance = new Camunda\Client\Api\JobApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -637,19 +637,19 @@ Updates the due date of a job by id.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\JobApi(
+$apiInstance = new Camunda\Client\Api\JobApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = "id_example"; // string | The id of the job to be updated.
-$body = new \Swagger\Client\Model\JobDuedateDto(); // \Swagger\Client\Model\JobDuedateDto | 
+$body = new \Camunda\Client\Model\JobDuedateDto(); // \Camunda\Client\Model\JobDuedateDto | 
 
 try {
     $apiInstance->setJobDuedate($id, $body);
@@ -664,7 +664,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The id of the job to be updated. |
- **body** | [**\Swagger\Client\Model\JobDuedateDto**](../Model/JobDuedateDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\JobDuedateDto**](../Model/JobDuedateDto.md)|  | [optional]
 
 ### Return type
 
@@ -693,19 +693,19 @@ Sets the execution priority of a job by id.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\JobApi(
+$apiInstance = new Camunda\Client\Api\JobApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = "id_example"; // string | The id of the job to be updated.
-$body = new \Swagger\Client\Model\PriorityDto(); // \Swagger\Client\Model\PriorityDto | 
+$body = new \Camunda\Client\Model\PriorityDto(); // \Camunda\Client\Model\PriorityDto | 
 
 try {
     $apiInstance->setJobPriority($id, $body);
@@ -720,7 +720,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The id of the job to be updated. |
- **body** | [**\Swagger\Client\Model\PriorityDto**](../Model/PriorityDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\PriorityDto**](../Model/PriorityDto.md)|  | [optional]
 
 ### Return type
 
@@ -749,19 +749,19 @@ Sets the retries of the job to the given number of retries by id.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\JobApi(
+$apiInstance = new Camunda\Client\Api\JobApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = "id_example"; // string | The id of the job to be updated.
-$body = new \Swagger\Client\Model\JobRetriesDto(); // \Swagger\Client\Model\JobRetriesDto | 
+$body = new \Camunda\Client\Model\JobRetriesDto(); // \Camunda\Client\Model\JobRetriesDto | 
 
 try {
     $apiInstance->setJobRetries($id, $body);
@@ -776,7 +776,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The id of the job to be updated. |
- **body** | [**\Swagger\Client\Model\JobRetriesDto**](../Model/JobRetriesDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\JobRetriesDto**](../Model/JobRetriesDto.md)|  | [optional]
 
 ### Return type
 
@@ -794,7 +794,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **setJobRetriesAsyncOperation**
-> \Swagger\Client\Model\BatchDto setJobRetriesAsyncOperation($body)
+> \Camunda\Client\Model\BatchDto setJobRetriesAsyncOperation($body)
 
 Set Job Retries Async (POST)
 
@@ -805,18 +805,18 @@ Create a batch to set retries of jobs asynchronously.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\JobApi(
+$apiInstance = new Camunda\Client\Api\JobApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\SetJobRetriesDto(); // \Swagger\Client\Model\SetJobRetriesDto | 
+$body = new \Camunda\Client\Model\SetJobRetriesDto(); // \Camunda\Client\Model\SetJobRetriesDto | 
 
 try {
     $result = $apiInstance->setJobRetriesAsyncOperation($body);
@@ -831,11 +831,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\SetJobRetriesDto**](../Model/SetJobRetriesDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\SetJobRetriesDto**](../Model/SetJobRetriesDto.md)|  | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\BatchDto**](../Model/BatchDto.md)
+[**\Camunda\Client\Model\BatchDto**](../Model/BatchDto.md)
 
 ### Authorization
 
@@ -860,19 +860,19 @@ Activates or suspends a given job by id.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\JobApi(
+$apiInstance = new Camunda\Client\Api\JobApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = "id_example"; // string | The id of the job to activate or suspend.
-$body = new \Swagger\Client\Model\SuspensionStateDto(); // \Swagger\Client\Model\SuspensionStateDto | 
+$body = new \Camunda\Client\Model\SuspensionStateDto(); // \Camunda\Client\Model\SuspensionStateDto | 
 
 try {
     $apiInstance->updateJobSuspensionState($id, $body);
@@ -887,7 +887,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The id of the job to activate or suspend. |
- **body** | [**\Swagger\Client\Model\SuspensionStateDto**](../Model/SuspensionStateDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\SuspensionStateDto**](../Model/SuspensionStateDto.md)|  | [optional]
 
 ### Return type
 
@@ -916,18 +916,18 @@ Activates or suspends jobs matching the given criterion. This can only be on of:
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\JobApi(
+$apiInstance = new Camunda\Client\Api\JobApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\JobSuspensionStateDto(); // \Swagger\Client\Model\JobSuspensionStateDto | 
+$body = new \Camunda\Client\Model\JobSuspensionStateDto(); // \Camunda\Client\Model\JobSuspensionStateDto | 
 
 try {
     $apiInstance->updateSuspensionStateBy($body);
@@ -941,7 +941,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\JobSuspensionStateDto**](../Model/JobSuspensionStateDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\JobSuspensionStateDto**](../Model/JobSuspensionStateDto.md)|  | [optional]
 
 ### Return type
 

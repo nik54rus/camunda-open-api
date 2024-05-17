@@ -1,4 +1,4 @@
-# Swagger\Client\EventSubscriptionApi
+# Camunda\Client\EventSubscriptionApi
 
 All URIs are relative to *http://{host}:{port}/{contextPath}*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 [**getEventSubscriptionsCount**](EventSubscriptionApi.md#geteventsubscriptionscount) | **GET** /event-subscription/count | Get List Count
 
 # **getEventSubscriptions**
-> \Swagger\Client\Model\EventSubscriptionDto[] getEventSubscriptions($event_subscription_id, $event_name, $event_type, $execution_id, $process_instance_id, $activity_id, $tenant_id_in, $without_tenant_id, $include_event_subscriptions_without_tenant_id, $sort_by, $sort_order, $first_result, $max_results)
+> \Camunda\Client\Model\EventSubscriptionDto[] getEventSubscriptions($event_subscription_id, $event_name, $event_type, $execution_id, $process_instance_id, $activity_id, $tenant_id_in, $without_tenant_id, $include_event_subscriptions_without_tenant_id, $sort_by, $sort_order, $first_result, $max_results)
 
 Get List
 
@@ -19,12 +19,12 @@ Queries for event subscriptions that fulfill given parameters. The size of the r
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\EventSubscriptionApi(
+$apiInstance = new Camunda\Client\Api\EventSubscriptionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -73,7 +73,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\EventSubscriptionDto[]**](../Model/EventSubscriptionDto.md)
+[**\Camunda\Client\Model\EventSubscriptionDto[]**](../Model/EventSubscriptionDto.md)
 
 ### Authorization
 
@@ -87,7 +87,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getEventSubscriptionsCount**
-> \Swagger\Client\Model\CountResultDto getEventSubscriptionsCount($event_subscription_id, $event_name, $event_type, $execution_id, $process_instance_id, $activity_id, $tenant_id_in, $without_tenant_id, $include_event_subscriptions_without_tenant_id)
+> \Camunda\Client\Model\CountResultDto getEventSubscriptionsCount($event_subscription_id, $event_name, $event_type, $execution_id, $process_instance_id, $activity_id, $tenant_id_in, $without_tenant_id, $include_event_subscriptions_without_tenant_id)
 
 Get List Count
 
@@ -98,12 +98,12 @@ Queries for the number of event subscriptions that fulfill given parameters. Tak
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\EventSubscriptionApi(
+$apiInstance = new Camunda\Client\Api\EventSubscriptionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -144,7 +144,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\CountResultDto**](../Model/CountResultDto.md)
+[**\Camunda\Client\Model\CountResultDto**](../Model/CountResultDto.md)
 
 ### Authorization
 

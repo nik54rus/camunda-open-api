@@ -1,4 +1,4 @@
-# Swagger\Client\DecisionRequirementsDefinitionApi
+# Camunda\Client\DecisionRequirementsDefinitionApi
 
 All URIs are relative to *http://{host}:{port}/{contextPath}*
 
@@ -17,7 +17,7 @@ Method | HTTP request | Description
 [**getDecisionRequirementsDefinitionsCount**](DecisionRequirementsDefinitionApi.md#getdecisionrequirementsdefinitionscount) | **GET** /decision-requirements-definition/count | Get Decision Requirements Definition Count
 
 # **getDecisionRequirementsDefinitionById**
-> \Swagger\Client\Model\DecisionRequirementsDefinitionDto getDecisionRequirementsDefinitionById($id)
+> \Camunda\Client\Model\DecisionRequirementsDefinitionDto getDecisionRequirementsDefinitionById($id)
 
 Get Decision Requirements Definition by ID
 
@@ -28,12 +28,12 @@ Retrieves a decision requirements definition according to the `DecisionRequireme
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\DecisionRequirementsDefinitionApi(
+$apiInstance = new Camunda\Client\Api\DecisionRequirementsDefinitionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -58,7 +58,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\DecisionRequirementsDefinitionDto**](../Model/DecisionRequirementsDefinitionDto.md)
+[**\Camunda\Client\Model\DecisionRequirementsDefinitionDto**](../Model/DecisionRequirementsDefinitionDto.md)
 
 ### Authorization
 
@@ -72,7 +72,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getDecisionRequirementsDefinitionByKey**
-> \Swagger\Client\Model\DecisionRequirementsDefinitionDto getDecisionRequirementsDefinitionByKey($key)
+> \Camunda\Client\Model\DecisionRequirementsDefinitionDto getDecisionRequirementsDefinitionByKey($key)
 
 Get Decision Requirements Definition by Key
 
@@ -83,12 +83,12 @@ Retrieves a decision requirements definition according to the `DecisionRequireme
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\DecisionRequirementsDefinitionApi(
+$apiInstance = new Camunda\Client\Api\DecisionRequirementsDefinitionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -113,7 +113,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\DecisionRequirementsDefinitionDto**](../Model/DecisionRequirementsDefinitionDto.md)
+[**\Camunda\Client\Model\DecisionRequirementsDefinitionDto**](../Model/DecisionRequirementsDefinitionDto.md)
 
 ### Authorization
 
@@ -127,7 +127,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getDecisionRequirementsDefinitionByKeyAndTenantId**
-> \Swagger\Client\Model\DecisionRequirementsDefinitionDto getDecisionRequirementsDefinitionByKeyAndTenantId($key, $tenant_id)
+> \Camunda\Client\Model\DecisionRequirementsDefinitionDto getDecisionRequirementsDefinitionByKeyAndTenantId($key, $tenant_id)
 
 Get Decision Requirements Definition by Key and Tenant ID
 
@@ -138,12 +138,12 @@ Retrieves a decision requirements definition according to the `DecisionRequireme
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\DecisionRequirementsDefinitionApi(
+$apiInstance = new Camunda\Client\Api\DecisionRequirementsDefinitionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -170,7 +170,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\DecisionRequirementsDefinitionDto**](../Model/DecisionRequirementsDefinitionDto.md)
+[**\Camunda\Client\Model\DecisionRequirementsDefinitionDto**](../Model/DecisionRequirementsDefinitionDto.md)
 
 ### Authorization
 
@@ -195,12 +195,12 @@ Retrieves the diagram of a decision requirements definition.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\DecisionRequirementsDefinitionApi(
+$apiInstance = new Camunda\Client\Api\DecisionRequirementsDefinitionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -250,12 +250,12 @@ Retrieves the diagram of a decision requirements definition. Returns the diagram
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\DecisionRequirementsDefinitionApi(
+$apiInstance = new Camunda\Client\Api\DecisionRequirementsDefinitionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -305,12 +305,12 @@ Retrieves the diagram of a decision requirements definition. Returns the diagram
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\DecisionRequirementsDefinitionApi(
+$apiInstance = new Camunda\Client\Api\DecisionRequirementsDefinitionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -351,7 +351,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getDecisionRequirementsDefinitionDmnXmlById**
-> \Swagger\Client\Model\DecisionRequirementsDefinitionXmlDto getDecisionRequirementsDefinitionDmnXmlById($id)
+> \Camunda\Client\Model\DecisionRequirementsDefinitionXmlDto getDecisionRequirementsDefinitionDmnXmlById($id)
 
 Get DMN XML by ID
 
@@ -362,12 +362,12 @@ Retrieves the DMN XML of a decision requirements definition.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\DecisionRequirementsDefinitionApi(
+$apiInstance = new Camunda\Client\Api\DecisionRequirementsDefinitionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -392,7 +392,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\DecisionRequirementsDefinitionXmlDto**](../Model/DecisionRequirementsDefinitionXmlDto.md)
+[**\Camunda\Client\Model\DecisionRequirementsDefinitionXmlDto**](../Model/DecisionRequirementsDefinitionXmlDto.md)
 
 ### Authorization
 
@@ -406,7 +406,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getDecisionRequirementsDefinitionDmnXmlByKey**
-> \Swagger\Client\Model\DecisionRequirementsDefinitionXmlDto getDecisionRequirementsDefinitionDmnXmlByKey($key)
+> \Camunda\Client\Model\DecisionRequirementsDefinitionXmlDto getDecisionRequirementsDefinitionDmnXmlByKey($key)
 
 Get DMN XML by Key
 
@@ -417,12 +417,12 @@ Retrieves the DMN XML of a decision requirements definition. Returns the XML for
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\DecisionRequirementsDefinitionApi(
+$apiInstance = new Camunda\Client\Api\DecisionRequirementsDefinitionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -447,7 +447,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\DecisionRequirementsDefinitionXmlDto**](../Model/DecisionRequirementsDefinitionXmlDto.md)
+[**\Camunda\Client\Model\DecisionRequirementsDefinitionXmlDto**](../Model/DecisionRequirementsDefinitionXmlDto.md)
 
 ### Authorization
 
@@ -461,7 +461,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getDecisionRequirementsDefinitionDmnXmlByKeyAndTenantId**
-> \Swagger\Client\Model\DecisionRequirementsDefinitionXmlDto getDecisionRequirementsDefinitionDmnXmlByKeyAndTenantId($key, $tenant_id)
+> \Camunda\Client\Model\DecisionRequirementsDefinitionXmlDto getDecisionRequirementsDefinitionDmnXmlByKeyAndTenantId($key, $tenant_id)
 
 Get DMN XML by Key and Tenant ID
 
@@ -472,12 +472,12 @@ Retrieves the DMN XML of a decision requirements definition. Returns the XML of 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\DecisionRequirementsDefinitionApi(
+$apiInstance = new Camunda\Client\Api\DecisionRequirementsDefinitionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -504,7 +504,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\DecisionRequirementsDefinitionXmlDto**](../Model/DecisionRequirementsDefinitionXmlDto.md)
+[**\Camunda\Client\Model\DecisionRequirementsDefinitionXmlDto**](../Model/DecisionRequirementsDefinitionXmlDto.md)
 
 ### Authorization
 
@@ -518,7 +518,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getDecisionRequirementsDefinitions**
-> \Swagger\Client\Model\DecisionRequirementsDefinitionDto[] getDecisionRequirementsDefinitions($decision_requirements_definition_id, $decision_requirements_definition_id_in, $name, $name_like, $deployment_id, $key, $key_like, $category, $category_like, $version, $latest_version, $resource_name, $resource_name_like, $tenant_id_in, $without_tenant_id, $include_decision_requirements_definitions_without_tenant_id, $sort_by, $sort_order, $first_result, $max_results)
+> \Camunda\Client\Model\DecisionRequirementsDefinitionDto[] getDecisionRequirementsDefinitions($decision_requirements_definition_id, $decision_requirements_definition_id_in, $name, $name_like, $deployment_id, $key, $key_like, $category, $category_like, $version, $latest_version, $resource_name, $resource_name_like, $tenant_id_in, $without_tenant_id, $include_decision_requirements_definitions_without_tenant_id, $sort_by, $sort_order, $first_result, $max_results)
 
 Get Decision Requirements Definitions
 
@@ -529,12 +529,12 @@ Queries for decision requirements definitions that fulfill given parameters. Par
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\DecisionRequirementsDefinitionApi(
+$apiInstance = new Camunda\Client\Api\DecisionRequirementsDefinitionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -597,7 +597,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\DecisionRequirementsDefinitionDto[]**](../Model/DecisionRequirementsDefinitionDto.md)
+[**\Camunda\Client\Model\DecisionRequirementsDefinitionDto[]**](../Model/DecisionRequirementsDefinitionDto.md)
 
 ### Authorization
 
@@ -611,7 +611,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getDecisionRequirementsDefinitionsCount**
-> \Swagger\Client\Model\CountResultDto getDecisionRequirementsDefinitionsCount($decision_requirements_definition_id, $decision_requirements_definition_id_in, $name, $name_like, $deployment_id, $key, $key_like, $category, $category_like, $version, $latest_version, $resource_name, $resource_name_like, $tenant_id_in, $without_tenant_id, $include_decision_requirements_definitions_without_tenant_id)
+> \Camunda\Client\Model\CountResultDto getDecisionRequirementsDefinitionsCount($decision_requirements_definition_id, $decision_requirements_definition_id_in, $name, $name_like, $deployment_id, $key, $key_like, $category, $category_like, $version, $latest_version, $resource_name, $resource_name_like, $tenant_id_in, $without_tenant_id, $include_decision_requirements_definitions_without_tenant_id)
 
 Get Decision Requirements Definition Count
 
@@ -622,12 +622,12 @@ Requests the number of decision requirements definitions that fulfill the query 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\DecisionRequirementsDefinitionApi(
+$apiInstance = new Camunda\Client\Api\DecisionRequirementsDefinitionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -682,7 +682,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\CountResultDto**](../Model/CountResultDto.md)
+[**\Camunda\Client\Model\CountResultDto**](../Model/CountResultDto.md)
 
 ### Authorization
 

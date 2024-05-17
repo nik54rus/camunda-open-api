@@ -1,4 +1,4 @@
-# Swagger\Client\IncidentApi
+# Camunda\Client\IncidentApi
 
 All URIs are relative to *http://{host}:{port}/{contextPath}*
 
@@ -23,12 +23,12 @@ Clears the annotation of an incident with given id.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\IncidentApi(
+$apiInstance = new Camunda\Client\Api\IncidentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -66,7 +66,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getIncident**
-> \Swagger\Client\Model\IncidentDto getIncident($id)
+> \Camunda\Client\Model\IncidentDto getIncident($id)
 
 Get Incident
 
@@ -77,12 +77,12 @@ Retrieves an incident by ID.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\IncidentApi(
+$apiInstance = new Camunda\Client\Api\IncidentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -107,7 +107,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\IncidentDto**](../Model/IncidentDto.md)
+[**\Camunda\Client\Model\IncidentDto**](../Model/IncidentDto.md)
 
 ### Authorization
 
@@ -121,7 +121,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getIncidents**
-> \Swagger\Client\Model\IncidentDto[] getIncidents($incident_id, $incident_type, $incident_message, $incident_message_like, $process_definition_id, $process_definition_key_in, $process_instance_id, $execution_id, $incident_timestamp_before, $incident_timestamp_after, $activity_id, $failed_activity_id, $cause_incident_id, $root_cause_incident_id, $configuration, $tenant_id_in, $job_definition_id_in, $sort_by, $sort_order, $first_result, $max_results)
+> \Camunda\Client\Model\IncidentDto[] getIncidents($incident_id, $incident_type, $incident_message, $incident_message_like, $process_definition_id, $process_definition_key_in, $process_instance_id, $execution_id, $incident_timestamp_before, $incident_timestamp_after, $activity_id, $failed_activity_id, $cause_incident_id, $root_cause_incident_id, $configuration, $tenant_id_in, $job_definition_id_in, $sort_by, $sort_order, $first_result, $max_results)
 
 Get List
 
@@ -132,12 +132,12 @@ Queries for incidents that fulfill given parameters. The size of the result set 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\IncidentApi(
+$apiInstance = new Camunda\Client\Api\IncidentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -202,7 +202,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\IncidentDto[]**](../Model/IncidentDto.md)
+[**\Camunda\Client\Model\IncidentDto[]**](../Model/IncidentDto.md)
 
 ### Authorization
 
@@ -216,7 +216,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getIncidentsCount**
-> \Swagger\Client\Model\CountResultDto getIncidentsCount($incident_id, $incident_type, $incident_message, $incident_message_like, $process_definition_id, $process_definition_key_in, $process_instance_id, $execution_id, $incident_timestamp_before, $incident_timestamp_after, $activity_id, $failed_activity_id, $cause_incident_id, $root_cause_incident_id, $configuration, $tenant_id_in, $job_definition_id_in)
+> \Camunda\Client\Model\CountResultDto getIncidentsCount($incident_id, $incident_type, $incident_message, $incident_message_like, $process_definition_id, $process_definition_key_in, $process_instance_id, $execution_id, $incident_timestamp_before, $incident_timestamp_after, $activity_id, $failed_activity_id, $cause_incident_id, $root_cause_incident_id, $configuration, $tenant_id_in, $job_definition_id_in)
 
 Get List Count
 
@@ -227,12 +227,12 @@ Queries for the number of incidents that fulfill given parameters. Takes the sam
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\IncidentApi(
+$apiInstance = new Camunda\Client\Api\IncidentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -289,7 +289,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\CountResultDto**](../Model/CountResultDto.md)
+[**\Camunda\Client\Model\CountResultDto**](../Model/CountResultDto.md)
 
 ### Authorization
 
@@ -314,12 +314,12 @@ Resolves an incident with given id.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\IncidentApi(
+$apiInstance = new Camunda\Client\Api\IncidentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -368,19 +368,19 @@ Sets the annotation of an incident with given id.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\IncidentApi(
+$apiInstance = new Camunda\Client\Api\IncidentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = "id_example"; // string | The id of the incident to clear the annotation at.
-$body = new \Swagger\Client\Model\AnnotationDto(); // \Swagger\Client\Model\AnnotationDto | 
+$body = new \Camunda\Client\Model\AnnotationDto(); // \Camunda\Client\Model\AnnotationDto | 
 
 try {
     $apiInstance->setIncidentAnnotation($id, $body);
@@ -395,7 +395,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The id of the incident to clear the annotation at. |
- **body** | [**\Swagger\Client\Model\AnnotationDto**](../Model/AnnotationDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\AnnotationDto**](../Model/AnnotationDto.md)|  | [optional]
 
 ### Return type
 

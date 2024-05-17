@@ -1,4 +1,4 @@
-# Swagger\Client\VariableInstanceApi
+# Camunda\Client\VariableInstanceApi
 
 All URIs are relative to *http://{host}:{port}/{contextPath}*
 
@@ -12,7 +12,7 @@ Method | HTTP request | Description
 [**queryVariableInstancesCount**](VariableInstanceApi.md#queryvariableinstancescount) | **POST** /variable-instance/count | Get Variable Instance Count (POST)
 
 # **getVariableInstance**
-> \Swagger\Client\Model\VariableInstanceDto getVariableInstance($id, $deserialize_value)
+> \Camunda\Client\Model\VariableInstanceDto getVariableInstance($id, $deserialize_value)
 
 Get Variable Instance
 
@@ -23,12 +23,12 @@ Retrieves a variable by id.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\VariableInstanceApi(
+$apiInstance = new Camunda\Client\Api\VariableInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -55,7 +55,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\VariableInstanceDto**](../Model/VariableInstanceDto.md)
+[**\Camunda\Client\Model\VariableInstanceDto**](../Model/VariableInstanceDto.md)
 
 ### Authorization
 
@@ -80,12 +80,12 @@ Retrieves the content of a variable by id. Applicable for byte array and file va
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\VariableInstanceApi(
+$apiInstance = new Camunda\Client\Api\VariableInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -124,7 +124,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getVariableInstances**
-> \Swagger\Client\Model\VariableInstanceDto[] getVariableInstances($variable_name, $variable_name_like, $process_instance_id_in, $execution_id_in, $case_instance_id_in, $case_execution_id_in, $task_id_in, $batch_id_in, $activity_instance_id_in, $tenant_id_in, $variable_values, $variable_names_ignore_case, $variable_values_ignore_case, $variable_scope_id_in, $sort_by, $sort_order, $first_result, $max_results, $deserialize_values)
+> \Camunda\Client\Model\VariableInstanceDto[] getVariableInstances($variable_name, $variable_name_like, $process_instance_id_in, $execution_id_in, $case_instance_id_in, $case_execution_id_in, $task_id_in, $batch_id_in, $activity_instance_id_in, $tenant_id_in, $variable_values, $variable_names_ignore_case, $variable_values_ignore_case, $variable_scope_id_in, $sort_by, $sort_order, $first_result, $max_results, $deserialize_values)
 
 Get Variable Instances
 
@@ -135,12 +135,12 @@ Query for variable instances that fulfill given parameters. Parameters may be th
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\VariableInstanceApi(
+$apiInstance = new Camunda\Client\Api\VariableInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -201,7 +201,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\VariableInstanceDto[]**](../Model/VariableInstanceDto.md)
+[**\Camunda\Client\Model\VariableInstanceDto[]**](../Model/VariableInstanceDto.md)
 
 ### Authorization
 
@@ -215,7 +215,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getVariableInstancesCount**
-> \Swagger\Client\Model\CountResultDto getVariableInstancesCount($variable_name, $variable_name_like, $process_instance_id_in, $execution_id_in, $case_instance_id_in, $case_execution_id_in, $task_id_in, $batch_id_in, $activity_instance_id_in, $tenant_id_in, $variable_values, $variable_names_ignore_case, $variable_values_ignore_case, $variable_scope_id_in)
+> \Camunda\Client\Model\CountResultDto getVariableInstancesCount($variable_name, $variable_name_like, $process_instance_id_in, $execution_id_in, $case_instance_id_in, $case_execution_id_in, $task_id_in, $batch_id_in, $activity_instance_id_in, $tenant_id_in, $variable_values, $variable_names_ignore_case, $variable_values_ignore_case, $variable_scope_id_in)
 
 Get Variable Instance Count
 
@@ -226,12 +226,12 @@ Query for the number of variable instances that fulfill given parameters. Takes 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\VariableInstanceApi(
+$apiInstance = new Camunda\Client\Api\VariableInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -282,7 +282,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\CountResultDto**](../Model/CountResultDto.md)
+[**\Camunda\Client\Model\CountResultDto**](../Model/CountResultDto.md)
 
 ### Authorization
 
@@ -296,7 +296,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **queryVariableInstances**
-> \Swagger\Client\Model\VariableInstanceDto[] queryVariableInstances($body, $first_result, $max_results, $deserialize_values)
+> \Camunda\Client\Model\VariableInstanceDto[] queryVariableInstances($body, $first_result, $max_results, $deserialize_values)
 
 Get Variable Instances (POST)
 
@@ -307,18 +307,18 @@ Query for variable instances that fulfill given parameters through a JSON object
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\VariableInstanceApi(
+$apiInstance = new Camunda\Client\Api\VariableInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\VariableInstanceQueryDto(); // \Swagger\Client\Model\VariableInstanceQueryDto | 
+$body = new \Camunda\Client\Model\VariableInstanceQueryDto(); // \Camunda\Client\Model\VariableInstanceQueryDto | 
 $first_result = 56; // int | Pagination of results. Specifies the index of the first result to return.
 $max_results = 56; // int | Pagination of results. Specifies the maximum number of results to return. Will return less results if there are no more results left.
 $deserialize_values = true; // bool | Determines whether serializable variable values (typically variables that store custom Java objects) should be deserialized on server side (default `true`).  If set to `true`, a serializable variable will be deserialized on server side and transformed to JSON using [Jackson's](https://github.com/FasterXML/jackson) POJO/bean property introspection feature. Note that this requires the Java classes of the variable value to be on the REST API's classpath.  If set to `false`, a serializable variable will be returned in its serialized format. For example, a variable that is serialized as XML will be returned as a JSON string containing XML.  **Note:** While `true` is the default value for reasons of backward compatibility, we recommend setting this parameter to `false` when developing web applications that are independent of the Java process applications deployed to the engine.
@@ -336,14 +336,14 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\VariableInstanceQueryDto**](../Model/VariableInstanceQueryDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\VariableInstanceQueryDto**](../Model/VariableInstanceQueryDto.md)|  | [optional]
  **first_result** | **int**| Pagination of results. Specifies the index of the first result to return. | [optional]
  **max_results** | **int**| Pagination of results. Specifies the maximum number of results to return. Will return less results if there are no more results left. | [optional]
  **deserialize_values** | **bool**| Determines whether serializable variable values (typically variables that store custom Java objects) should be deserialized on server side (default &#x60;true&#x60;).  If set to &#x60;true&#x60;, a serializable variable will be deserialized on server side and transformed to JSON using [Jackson&#x27;s](https://github.com/FasterXML/jackson) POJO/bean property introspection feature. Note that this requires the Java classes of the variable value to be on the REST API&#x27;s classpath.  If set to &#x60;false&#x60;, a serializable variable will be returned in its serialized format. For example, a variable that is serialized as XML will be returned as a JSON string containing XML.  **Note:** While &#x60;true&#x60; is the default value for reasons of backward compatibility, we recommend setting this parameter to &#x60;false&#x60; when developing web applications that are independent of the Java process applications deployed to the engine. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\VariableInstanceDto[]**](../Model/VariableInstanceDto.md)
+[**\Camunda\Client\Model\VariableInstanceDto[]**](../Model/VariableInstanceDto.md)
 
 ### Authorization
 
@@ -357,7 +357,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **queryVariableInstancesCount**
-> \Swagger\Client\Model\CountResultDto queryVariableInstancesCount($body)
+> \Camunda\Client\Model\CountResultDto queryVariableInstancesCount($body)
 
 Get Variable Instance Count (POST)
 
@@ -368,18 +368,18 @@ Query for the number of variable instances that fulfill given parameters. This m
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\VariableInstanceApi(
+$apiInstance = new Camunda\Client\Api\VariableInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\VariableInstanceQueryDto(); // \Swagger\Client\Model\VariableInstanceQueryDto | 
+$body = new \Camunda\Client\Model\VariableInstanceQueryDto(); // \Camunda\Client\Model\VariableInstanceQueryDto | 
 
 try {
     $result = $apiInstance->queryVariableInstancesCount($body);
@@ -394,11 +394,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\VariableInstanceQueryDto**](../Model/VariableInstanceQueryDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\VariableInstanceQueryDto**](../Model/VariableInstanceQueryDto.md)|  | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\CountResultDto**](../Model/CountResultDto.md)
+[**\Camunda\Client\Model\CountResultDto**](../Model/CountResultDto.md)
 
 ### Authorization
 

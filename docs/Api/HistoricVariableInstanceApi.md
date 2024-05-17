@@ -1,4 +1,4 @@
-# Swagger\Client\HistoricVariableInstanceApi
+# Camunda\Client\HistoricVariableInstanceApi
 
 All URIs are relative to *http://{host}:{port}/{contextPath}*
 
@@ -24,12 +24,12 @@ Deletes a historic variable instance by id.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricVariableInstanceApi(
+$apiInstance = new Camunda\Client\Api\HistoricVariableInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -67,7 +67,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getHistoricVariableInstance**
-> \Swagger\Client\Model\HistoricVariableInstanceDto getHistoricVariableInstance($id, $deserialize_values)
+> \Camunda\Client\Model\HistoricVariableInstanceDto getHistoricVariableInstance($id, $deserialize_values)
 
 Get Variable Instance
 
@@ -78,12 +78,12 @@ Retrieves a historic variable by id.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricVariableInstanceApi(
+$apiInstance = new Camunda\Client\Api\HistoricVariableInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -110,7 +110,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\HistoricVariableInstanceDto**](../Model/HistoricVariableInstanceDto.md)
+[**\Camunda\Client\Model\HistoricVariableInstanceDto**](../Model/HistoricVariableInstanceDto.md)
 
 ### Authorization
 
@@ -135,12 +135,12 @@ Retrieves the content of a historic variable by id. Applicable for variables tha
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricVariableInstanceApi(
+$apiInstance = new Camunda\Client\Api\HistoricVariableInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -179,7 +179,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getHistoricVariableInstances**
-> \Swagger\Client\Model\HistoricVariableInstanceDto[] getHistoricVariableInstances($variable_name, $variable_name_like, $variable_value, $variable_names_ignore_case, $variable_values_ignore_case, $variable_type_in, $include_deleted, $process_instance_id, $process_instance_id_in, $process_definition_id, $process_definition_key, $execution_id_in, $case_instance_id, $case_execution_id_in, $case_activity_id_in, $task_id_in, $activity_instance_id_in, $tenant_id_in, $without_tenant_id, $variable_name_in, $sort_by, $sort_order, $first_result, $max_results, $deserialize_values)
+> \Camunda\Client\Model\HistoricVariableInstanceDto[] getHistoricVariableInstances($variable_name, $variable_name_like, $variable_value, $variable_names_ignore_case, $variable_values_ignore_case, $variable_type_in, $include_deleted, $process_instance_id, $process_instance_id_in, $process_definition_id, $process_definition_key, $execution_id_in, $case_instance_id, $case_execution_id_in, $case_activity_id_in, $task_id_in, $activity_instance_id_in, $tenant_id_in, $without_tenant_id, $variable_name_in, $sort_by, $sort_order, $first_result, $max_results, $deserialize_values)
 
 Get Variable Instances
 
@@ -190,12 +190,12 @@ Queries for historic variable instances that fulfill the given parameters. The s
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricVariableInstanceApi(
+$apiInstance = new Camunda\Client\Api\HistoricVariableInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -268,7 +268,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\HistoricVariableInstanceDto[]**](../Model/HistoricVariableInstanceDto.md)
+[**\Camunda\Client\Model\HistoricVariableInstanceDto[]**](../Model/HistoricVariableInstanceDto.md)
 
 ### Authorization
 
@@ -282,7 +282,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getHistoricVariableInstancesCount**
-> \Swagger\Client\Model\CountResultDto getHistoricVariableInstancesCount($variable_name, $variable_name_like, $variable_value, $variable_names_ignore_case, $variable_values_ignore_case, $variable_type_in, $include_deleted, $process_instance_id, $process_instance_id_in, $process_definition_id, $process_definition_key, $execution_id_in, $case_instance_id, $case_execution_id_in, $case_activity_id_in, $task_id_in, $activity_instance_id_in, $tenant_id_in, $without_tenant_id, $variable_name_in)
+> \Camunda\Client\Model\CountResultDto getHistoricVariableInstancesCount($variable_name, $variable_name_like, $variable_value, $variable_names_ignore_case, $variable_values_ignore_case, $variable_type_in, $include_deleted, $process_instance_id, $process_instance_id_in, $process_definition_id, $process_definition_key, $execution_id_in, $case_instance_id, $case_execution_id_in, $case_activity_id_in, $task_id_in, $activity_instance_id_in, $tenant_id_in, $without_tenant_id, $variable_name_in)
 
 Get Variable Instance Count
 
@@ -293,12 +293,12 @@ Queries for the number of historic variable instances that fulfill the given par
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricVariableInstanceApi(
+$apiInstance = new Camunda\Client\Api\HistoricVariableInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -361,7 +361,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\CountResultDto**](../Model/CountResultDto.md)
+[**\Camunda\Client\Model\CountResultDto**](../Model/CountResultDto.md)
 
 ### Authorization
 
@@ -375,7 +375,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **queryHistoricVariableInstances**
-> \Swagger\Client\Model\HistoricVariableInstanceDto[] queryHistoricVariableInstances($body, $first_result, $max_results, $deserialize_values)
+> \Camunda\Client\Model\HistoricVariableInstanceDto[] queryHistoricVariableInstances($body, $first_result, $max_results, $deserialize_values)
 
 Get Variable Instances (POST)
 
@@ -386,18 +386,18 @@ Queries for historic variable instances that fulfill the given parameters. This 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricVariableInstanceApi(
+$apiInstance = new Camunda\Client\Api\HistoricVariableInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\HistoricVariableInstanceQueryDto(); // \Swagger\Client\Model\HistoricVariableInstanceQueryDto | 
+$body = new \Camunda\Client\Model\HistoricVariableInstanceQueryDto(); // \Camunda\Client\Model\HistoricVariableInstanceQueryDto | 
 $first_result = 56; // int | Pagination of results. Specifies the index of the first result to return.
 $max_results = 56; // int | Pagination of results. Specifies the maximum number of results to return. Will return less results if there are no more results left.
 $deserialize_values = true; // bool | Determines whether serializable variable values (typically variables that store custom Java objects) should be deserialized on server side (default `true`).  If set to `true`, a serializable variable will be deserialized on server side and transformed to JSON using [Jackson's](https://github.com/FasterXML/jackson) POJO/bean property introspection feature. Note that this requires the Java classes of the variable value to be on the REST API's classpath.  If set to `false`, a serializable variable will be returned in its serialized format. For example, a variable that is serialized as XML will be returned as a JSON string containing XML.  **Note:** While `true` is the default value for reasons of backward compatibility, we recommend setting this parameter to `false` when developing web applications that are independent of the Java process applications deployed to the engine.
@@ -415,14 +415,14 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\HistoricVariableInstanceQueryDto**](../Model/HistoricVariableInstanceQueryDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\HistoricVariableInstanceQueryDto**](../Model/HistoricVariableInstanceQueryDto.md)|  | [optional]
  **first_result** | **int**| Pagination of results. Specifies the index of the first result to return. | [optional]
  **max_results** | **int**| Pagination of results. Specifies the maximum number of results to return. Will return less results if there are no more results left. | [optional]
  **deserialize_values** | **bool**| Determines whether serializable variable values (typically variables that store custom Java objects) should be deserialized on server side (default &#x60;true&#x60;).  If set to &#x60;true&#x60;, a serializable variable will be deserialized on server side and transformed to JSON using [Jackson&#x27;s](https://github.com/FasterXML/jackson) POJO/bean property introspection feature. Note that this requires the Java classes of the variable value to be on the REST API&#x27;s classpath.  If set to &#x60;false&#x60;, a serializable variable will be returned in its serialized format. For example, a variable that is serialized as XML will be returned as a JSON string containing XML.  **Note:** While &#x60;true&#x60; is the default value for reasons of backward compatibility, we recommend setting this parameter to &#x60;false&#x60; when developing web applications that are independent of the Java process applications deployed to the engine. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\HistoricVariableInstanceDto[]**](../Model/HistoricVariableInstanceDto.md)
+[**\Camunda\Client\Model\HistoricVariableInstanceDto[]**](../Model/HistoricVariableInstanceDto.md)
 
 ### Authorization
 
@@ -436,7 +436,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **queryHistoricVariableInstancesCount**
-> \Swagger\Client\Model\CountResultDto queryHistoricVariableInstancesCount($body)
+> \Camunda\Client\Model\CountResultDto queryHistoricVariableInstancesCount($body)
 
 Get Variable Instance Count (POST)
 
@@ -447,18 +447,18 @@ Queries for historic variable instances that fulfill the given parameters. This 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricVariableInstanceApi(
+$apiInstance = new Camunda\Client\Api\HistoricVariableInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\HistoricVariableInstanceQueryDto(); // \Swagger\Client\Model\HistoricVariableInstanceQueryDto | 
+$body = new \Camunda\Client\Model\HistoricVariableInstanceQueryDto(); // \Camunda\Client\Model\HistoricVariableInstanceQueryDto | 
 
 try {
     $result = $apiInstance->queryHistoricVariableInstancesCount($body);
@@ -473,11 +473,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\HistoricVariableInstanceQueryDto**](../Model/HistoricVariableInstanceQueryDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\HistoricVariableInstanceQueryDto**](../Model/HistoricVariableInstanceQueryDto.md)|  | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\CountResultDto**](../Model/CountResultDto.md)
+[**\Camunda\Client\Model\CountResultDto**](../Model/CountResultDto.md)
 
 ### Authorization
 

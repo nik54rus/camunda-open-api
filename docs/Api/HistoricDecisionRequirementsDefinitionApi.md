@@ -1,4 +1,4 @@
-# Swagger\Client\HistoricDecisionRequirementsDefinitionApi
+# Camunda\Client\HistoricDecisionRequirementsDefinitionApi
 
 All URIs are relative to *http://{host}:{port}/{contextPath}*
 
@@ -7,7 +7,7 @@ Method | HTTP request | Description
 [**getDecisionStatistics**](HistoricDecisionRequirementsDefinitionApi.md#getdecisionstatistics) | **GET** /history/decision-requirements-definition/{id}/statistics | Get DRD Statistics
 
 # **getDecisionStatistics**
-> \Swagger\Client\Model\HistoricDecisionInstanceStatisticsDto[] getDecisionStatistics($id, $decision_instance_id)
+> \Camunda\Client\Model\HistoricDecisionInstanceStatisticsDto[] getDecisionStatistics($id, $decision_instance_id)
 
 Get DRD Statistics
 
@@ -18,12 +18,12 @@ Retrieves evaluation statistics of a given decision requirements definition.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricDecisionRequirementsDefinitionApi(
+$apiInstance = new Camunda\Client\Api\HistoricDecisionRequirementsDefinitionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -50,7 +50,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\HistoricDecisionInstanceStatisticsDto[]**](../Model/HistoricDecisionInstanceStatisticsDto.md)
+[**\Camunda\Client\Model\HistoricDecisionInstanceStatisticsDto[]**](../Model/HistoricDecisionInstanceStatisticsDto.md)
 
 ### Authorization
 

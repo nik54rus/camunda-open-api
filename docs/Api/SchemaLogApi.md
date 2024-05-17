@@ -1,4 +1,4 @@
-# Swagger\Client\SchemaLogApi
+# Camunda\Client\SchemaLogApi
 
 All URIs are relative to *http://{host}:{port}/{contextPath}*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 [**querySchemaLog**](SchemaLogApi.md#queryschemalog) | **POST** /schema/log | Get List (POST)
 
 # **getSchemaLog**
-> \Swagger\Client\Model\SchemaLogEntryDto[] getSchemaLog($version, $sort_by, $sort_order, $first_result, $max_results)
+> \Camunda\Client\Model\SchemaLogEntryDto[] getSchemaLog($version, $sort_by, $sort_order, $first_result, $max_results)
 
 Get List
 
@@ -19,12 +19,12 @@ Queries for schema log entries that fulfill given parameters.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\SchemaLogApi(
+$apiInstance = new Camunda\Client\Api\SchemaLogApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -57,7 +57,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\SchemaLogEntryDto[]**](../Model/SchemaLogEntryDto.md)
+[**\Camunda\Client\Model\SchemaLogEntryDto[]**](../Model/SchemaLogEntryDto.md)
 
 ### Authorization
 
@@ -71,7 +71,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **querySchemaLog**
-> \Swagger\Client\Model\SchemaLogEntryDto[] querySchemaLog($body, $first_result, $max_results)
+> \Camunda\Client\Model\SchemaLogEntryDto[] querySchemaLog($body, $first_result, $max_results)
 
 Get List (POST)
 
@@ -82,18 +82,18 @@ Queries for schema log entries that fulfill given parameters.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\SchemaLogApi(
+$apiInstance = new Camunda\Client\Api\SchemaLogApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\SchemaLogQueryDto(); // \Swagger\Client\Model\SchemaLogQueryDto | 
+$body = new \Camunda\Client\Model\SchemaLogQueryDto(); // \Camunda\Client\Model\SchemaLogQueryDto | 
 $first_result = 56; // int | Pagination of results. Specifies the index of the first result to return.
 $max_results = 56; // int | Pagination of results. Specifies the maximum number of results to return. Will return less results if there are no more results left.
 
@@ -110,13 +110,13 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\SchemaLogQueryDto**](../Model/SchemaLogQueryDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\SchemaLogQueryDto**](../Model/SchemaLogQueryDto.md)|  | [optional]
  **first_result** | **int**| Pagination of results. Specifies the index of the first result to return. | [optional]
  **max_results** | **int**| Pagination of results. Specifies the maximum number of results to return. Will return less results if there are no more results left. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\SchemaLogEntryDto[]**](../Model/SchemaLogEntryDto.md)
+[**\Camunda\Client\Model\SchemaLogEntryDto[]**](../Model/SchemaLogEntryDto.md)
 
 ### Authorization
 

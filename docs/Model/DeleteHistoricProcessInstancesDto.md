@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **historic_process_instance_ids** | **string[]** | A list historic process instance ids to delete. | [optional] 
-**historic_process_instance_query** | [**\Swagger\Client\Model\HistoricProcessInstanceQueryDto**](HistoricProcessInstanceQueryDto.md) |  | [optional] 
+**historic_process_instance_query** | [**\Camunda\Client\Model\HistoricProcessInstanceQueryDto**](HistoricProcessInstanceQueryDto.md) |  | [optional] 
 **delete_reason** | **string** | A string with delete reason. | [optional] 
 **fail_if_not_exists** | **bool** | If set to &#x60;false&#x60;, the request will still be successful if one ore more of the process ids are not found. | [optional] 
 

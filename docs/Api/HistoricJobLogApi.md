@@ -1,4 +1,4 @@
-# Swagger\Client\HistoricJobLogApi
+# Camunda\Client\HistoricJobLogApi
 
 All URIs are relative to *http://{host}:{port}/{contextPath}*
 
@@ -12,7 +12,7 @@ Method | HTTP request | Description
 [**queryHistoricJobLogsCount**](HistoricJobLogApi.md#queryhistoricjoblogscount) | **POST** /history/job-log/count | Get Job Log Count (POST)
 
 # **getHistoricJobLog**
-> \Swagger\Client\Model\HistoricJobLogDto getHistoricJobLog($id)
+> \Camunda\Client\Model\HistoricJobLogDto getHistoricJobLog($id)
 
 Get Job Log
 
@@ -23,12 +23,12 @@ Retrieves a historic job log by id.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricJobLogApi(
+$apiInstance = new Camunda\Client\Api\HistoricJobLogApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -53,7 +53,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\HistoricJobLogDto**](../Model/HistoricJobLogDto.md)
+[**\Camunda\Client\Model\HistoricJobLogDto**](../Model/HistoricJobLogDto.md)
 
 ### Authorization
 
@@ -67,7 +67,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getHistoricJobLogs**
-> \Swagger\Client\Model\HistoricJobLogDto[] getHistoricJobLogs($log_id, $job_id, $job_exception_message, $job_definition_id, $job_definition_type, $job_definition_configuration, $activity_id_in, $failed_activity_id_in, $execution_id_in, $process_instance_id, $process_definition_id, $process_definition_key, $deployment_id, $tenant_id_in, $without_tenant_id, $hostname, $job_priority_lower_than_or_equals, $job_priority_higher_than_or_equals, $creation_log, $failure_log, $success_log, $deletion_log, $sort_by, $sort_order, $first_result, $max_results)
+> \Camunda\Client\Model\HistoricJobLogDto[] getHistoricJobLogs($log_id, $job_id, $job_exception_message, $job_definition_id, $job_definition_type, $job_definition_configuration, $activity_id_in, $failed_activity_id_in, $execution_id_in, $process_instance_id, $process_definition_id, $process_definition_key, $deployment_id, $tenant_id_in, $without_tenant_id, $hostname, $job_priority_lower_than_or_equals, $job_priority_higher_than_or_equals, $creation_log, $failure_log, $success_log, $deletion_log, $sort_by, $sort_order, $first_result, $max_results)
 
 Get Job Logs
 
@@ -78,12 +78,12 @@ Queries for historic job logs that fulfill the given parameters. The size of the
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricJobLogApi(
+$apiInstance = new Camunda\Client\Api\HistoricJobLogApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -158,7 +158,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\HistoricJobLogDto[]**](../Model/HistoricJobLogDto.md)
+[**\Camunda\Client\Model\HistoricJobLogDto[]**](../Model/HistoricJobLogDto.md)
 
 ### Authorization
 
@@ -172,7 +172,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getHistoricJobLogsCount**
-> \Swagger\Client\Model\CountResultDto getHistoricJobLogsCount($log_id, $job_id, $job_exception_message, $job_definition_id, $job_definition_type, $job_definition_configuration, $activity_id_in, $failed_activity_id_in, $execution_id_in, $process_instance_id, $process_definition_id, $process_definition_key, $deployment_id, $tenant_id_in, $without_tenant_id, $hostname, $job_priority_lower_than_or_equals, $job_priority_higher_than_or_equals, $creation_log, $failure_log, $success_log, $deletion_log)
+> \Camunda\Client\Model\CountResultDto getHistoricJobLogsCount($log_id, $job_id, $job_exception_message, $job_definition_id, $job_definition_type, $job_definition_configuration, $activity_id_in, $failed_activity_id_in, $execution_id_in, $process_instance_id, $process_definition_id, $process_definition_key, $deployment_id, $tenant_id_in, $without_tenant_id, $hostname, $job_priority_lower_than_or_equals, $job_priority_higher_than_or_equals, $creation_log, $failure_log, $success_log, $deletion_log)
 
 Get Job Log Count
 
@@ -183,12 +183,12 @@ Queries for the number of historic job logs that fulfill the given parameters. T
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricJobLogApi(
+$apiInstance = new Camunda\Client\Api\HistoricJobLogApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -255,7 +255,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\CountResultDto**](../Model/CountResultDto.md)
+[**\Camunda\Client\Model\CountResultDto**](../Model/CountResultDto.md)
 
 ### Authorization
 
@@ -280,12 +280,12 @@ Retrieves the corresponding exception stacktrace to the passed historic job log 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricJobLogApi(
+$apiInstance = new Camunda\Client\Api\HistoricJobLogApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -323,7 +323,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **queryHistoricJobLogs**
-> \Swagger\Client\Model\HistoricJobLogDto[] queryHistoricJobLogs($body, $first_result, $max_results)
+> \Camunda\Client\Model\HistoricJobLogDto[] queryHistoricJobLogs($body, $first_result, $max_results)
 
 Get Job Logs (POST)
 
@@ -334,18 +334,18 @@ Queries for historic job logs that fulfill the given parameters. This method is 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricJobLogApi(
+$apiInstance = new Camunda\Client\Api\HistoricJobLogApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\HistoricJobLogQueryDto(); // \Swagger\Client\Model\HistoricJobLogQueryDto | 
+$body = new \Camunda\Client\Model\HistoricJobLogQueryDto(); // \Camunda\Client\Model\HistoricJobLogQueryDto | 
 $first_result = 56; // int | Pagination of results. Specifies the index of the first result to return.
 $max_results = 56; // int | Pagination of results. Specifies the maximum number of results to return. Will return less results if there are no more results left.
 
@@ -362,13 +362,13 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\HistoricJobLogQueryDto**](../Model/HistoricJobLogQueryDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\HistoricJobLogQueryDto**](../Model/HistoricJobLogQueryDto.md)|  | [optional]
  **first_result** | **int**| Pagination of results. Specifies the index of the first result to return. | [optional]
  **max_results** | **int**| Pagination of results. Specifies the maximum number of results to return. Will return less results if there are no more results left. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\HistoricJobLogDto[]**](../Model/HistoricJobLogDto.md)
+[**\Camunda\Client\Model\HistoricJobLogDto[]**](../Model/HistoricJobLogDto.md)
 
 ### Authorization
 
@@ -382,7 +382,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **queryHistoricJobLogsCount**
-> \Swagger\Client\Model\CountResultDto queryHistoricJobLogsCount($body)
+> \Camunda\Client\Model\CountResultDto queryHistoricJobLogsCount($body)
 
 Get Job Log Count (POST)
 
@@ -393,18 +393,18 @@ Queries for the number of historic job logs that fulfill the given parameters. T
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricJobLogApi(
+$apiInstance = new Camunda\Client\Api\HistoricJobLogApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\HistoricJobLogQueryDto(); // \Swagger\Client\Model\HistoricJobLogQueryDto | 
+$body = new \Camunda\Client\Model\HistoricJobLogQueryDto(); // \Camunda\Client\Model\HistoricJobLogQueryDto | 
 
 try {
     $result = $apiInstance->queryHistoricJobLogsCount($body);
@@ -419,11 +419,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\HistoricJobLogQueryDto**](../Model/HistoricJobLogQueryDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\HistoricJobLogQueryDto**](../Model/HistoricJobLogQueryDto.md)|  | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\CountResultDto**](../Model/CountResultDto.md)
+[**\Camunda\Client\Model\CountResultDto**](../Model/CountResultDto.md)
 
 ### Authorization
 

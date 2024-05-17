@@ -1,4 +1,4 @@
-# Swagger\Client\HistoricDecisionInstanceApi
+# Camunda\Client\HistoricDecisionInstanceApi
 
 All URIs are relative to *http://{host}:{port}/{contextPath}*
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 [**setRemovalTimeAsyncHistoricDecisionInstance**](HistoricDecisionInstanceApi.md#setremovaltimeasynchistoricdecisioninstance) | **POST** /history/decision-instance/set-removal-time | Set Removal Time Async (POST)
 
 # **deleteAsync**
-> \Swagger\Client\Model\BatchDto deleteAsync($body)
+> \Camunda\Client\Model\BatchDto deleteAsync($body)
 
 Delete Async (POST)
 
@@ -22,18 +22,18 @@ Delete multiple historic decision instances asynchronously (batch). At least `hi
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricDecisionInstanceApi(
+$apiInstance = new Camunda\Client\Api\HistoricDecisionInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\DeleteHistoricDecisionInstancesDto(); // \Swagger\Client\Model\DeleteHistoricDecisionInstancesDto | 
+$body = new \Camunda\Client\Model\DeleteHistoricDecisionInstancesDto(); // \Camunda\Client\Model\DeleteHistoricDecisionInstancesDto | 
 
 try {
     $result = $apiInstance->deleteAsync($body);
@@ -48,11 +48,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\DeleteHistoricDecisionInstancesDto**](../Model/DeleteHistoricDecisionInstancesDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\DeleteHistoricDecisionInstancesDto**](../Model/DeleteHistoricDecisionInstancesDto.md)|  | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\BatchDto**](../Model/BatchDto.md)
+[**\Camunda\Client\Model\BatchDto**](../Model/BatchDto.md)
 
 ### Authorization
 
@@ -66,7 +66,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getHistoricDecisionInstance**
-> \Swagger\Client\Model\HistoricDecisionInstanceDto getHistoricDecisionInstance($id, $include_inputs, $include_outputs, $disable_binary_fetching, $disable_custom_object_deserialization)
+> \Camunda\Client\Model\HistoricDecisionInstanceDto getHistoricDecisionInstance($id, $include_inputs, $include_outputs, $disable_binary_fetching, $disable_custom_object_deserialization)
 
 Get Historic Decision Instance
 
@@ -77,12 +77,12 @@ Retrieves a historic decision instance by id, according to the  `HistoricDecisio
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricDecisionInstanceApi(
+$apiInstance = new Camunda\Client\Api\HistoricDecisionInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -115,7 +115,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\HistoricDecisionInstanceDto**](../Model/HistoricDecisionInstanceDto.md)
+[**\Camunda\Client\Model\HistoricDecisionInstanceDto**](../Model/HistoricDecisionInstanceDto.md)
 
 ### Authorization
 
@@ -129,7 +129,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getHistoricDecisionInstances**
-> \Swagger\Client\Model\HistoricDecisionInstanceDto[] getHistoricDecisionInstances($decision_instance_id, $decision_instance_id_in, $decision_definition_id, $decision_definition_id_in, $decision_definition_key, $decision_definition_key_in, $decision_definition_name, $decision_definition_name_like, $process_definition_id, $process_definition_key, $process_instance_id, $case_definition_id, $case_definition_key, $case_instance_id, $activity_id_in, $activity_instance_id_in, $tenant_id_in, $without_tenant_id, $evaluated_before, $evaluated_after, $user_id, $root_decision_instance_id, $root_decision_instances_only, $decision_requirements_definition_id, $decision_requirements_definition_key, $include_inputs, $include_outputs, $disable_binary_fetching, $disable_custom_object_deserialization, $sort_by, $sort_order, $first_result, $max_results)
+> \Camunda\Client\Model\HistoricDecisionInstanceDto[] getHistoricDecisionInstances($decision_instance_id, $decision_instance_id_in, $decision_definition_id, $decision_definition_id_in, $decision_definition_key, $decision_definition_key_in, $decision_definition_name, $decision_definition_name_like, $process_definition_id, $process_definition_key, $process_instance_id, $case_definition_id, $case_definition_key, $case_instance_id, $activity_id_in, $activity_instance_id_in, $tenant_id_in, $without_tenant_id, $evaluated_before, $evaluated_after, $user_id, $root_decision_instance_id, $root_decision_instances_only, $decision_requirements_definition_id, $decision_requirements_definition_key, $include_inputs, $include_outputs, $disable_binary_fetching, $disable_custom_object_deserialization, $sort_by, $sort_order, $first_result, $max_results)
 
 Get Historic Decision Instances
 
@@ -140,12 +140,12 @@ Queries for historic decision instances that fulfill the given parameters.  The 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricDecisionInstanceApi(
+$apiInstance = new Camunda\Client\Api\HistoricDecisionInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -234,7 +234,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\HistoricDecisionInstanceDto[]**](../Model/HistoricDecisionInstanceDto.md)
+[**\Camunda\Client\Model\HistoricDecisionInstanceDto[]**](../Model/HistoricDecisionInstanceDto.md)
 
 ### Authorization
 
@@ -248,7 +248,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getHistoricDecisionInstancesCount**
-> \Swagger\Client\Model\CountResultDto getHistoricDecisionInstancesCount($decision_instance_id, $decision_instance_id_in, $decision_definition_id, $decision_definition_id_in, $decision_definition_key, $decision_definition_key_in, $decision_definition_name, $decision_definition_name_like, $process_definition_id, $process_definition_key, $process_instance_id, $case_definition_id, $case_definition_key, $case_instance_id, $activity_id_in, $activity_instance_id_in, $tenant_id_in, $without_tenant_id, $evaluated_before, $evaluated_after, $user_id, $root_decision_instance_id, $root_decision_instances_only, $decision_requirements_definition_id, $decision_requirements_definition_key)
+> \Camunda\Client\Model\CountResultDto getHistoricDecisionInstancesCount($decision_instance_id, $decision_instance_id_in, $decision_definition_id, $decision_definition_id_in, $decision_definition_key, $decision_definition_key_in, $decision_definition_name, $decision_definition_name_like, $process_definition_id, $process_definition_key, $process_instance_id, $case_definition_id, $case_definition_key, $case_instance_id, $activity_id_in, $activity_instance_id_in, $tenant_id_in, $without_tenant_id, $evaluated_before, $evaluated_after, $user_id, $root_decision_instance_id, $root_decision_instances_only, $decision_requirements_definition_id, $decision_requirements_definition_key)
 
 Get Historic Decision Instance Count
 
@@ -259,12 +259,12 @@ Queries for the number of historic decision instances that fulfill the given par
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricDecisionInstanceApi(
+$apiInstance = new Camunda\Client\Api\HistoricDecisionInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -337,7 +337,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\CountResultDto**](../Model/CountResultDto.md)
+[**\Camunda\Client\Model\CountResultDto**](../Model/CountResultDto.md)
 
 ### Authorization
 
@@ -351,7 +351,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **setRemovalTimeAsyncHistoricDecisionInstance**
-> \Swagger\Client\Model\BatchDto setRemovalTimeAsyncHistoricDecisionInstance($body)
+> \Camunda\Client\Model\BatchDto setRemovalTimeAsyncHistoricDecisionInstance($body)
 
 Set Removal Time Async (POST)
 
@@ -362,18 +362,18 @@ Sets the removal time to multiple historic decision instances asynchronously (ba
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricDecisionInstanceApi(
+$apiInstance = new Camunda\Client\Api\HistoricDecisionInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\SetRemovalTimeToHistoricDecisionInstancesDto(); // \Swagger\Client\Model\SetRemovalTimeToHistoricDecisionInstancesDto | 
+$body = new \Camunda\Client\Model\SetRemovalTimeToHistoricDecisionInstancesDto(); // \Camunda\Client\Model\SetRemovalTimeToHistoricDecisionInstancesDto | 
 
 try {
     $result = $apiInstance->setRemovalTimeAsyncHistoricDecisionInstance($body);
@@ -388,11 +388,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\SetRemovalTimeToHistoricDecisionInstancesDto**](../Model/SetRemovalTimeToHistoricDecisionInstancesDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\SetRemovalTimeToHistoricDecisionInstancesDto**](../Model/SetRemovalTimeToHistoricDecisionInstancesDto.md)|  | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\BatchDto**](../Model/BatchDto.md)
+[**\Camunda\Client\Model\BatchDto**](../Model/BatchDto.md)
 
 ### Authorization
 

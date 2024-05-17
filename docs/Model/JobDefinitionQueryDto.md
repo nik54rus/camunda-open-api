@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 **tenant_id_in** | **string[]** | Only include job definitions which belong to one of the passed tenant ids. | [optional] 
 **without_tenant_id** | **bool** | Only include job definitions which belong to no tenant. Value may only be &#x60;true&#x60;, as &#x60;false&#x60; is the default behavior. | [optional] 
 **include_job_definitions_without_tenant_id** | **bool** | Include job definitions which belong to no tenant. Can be used in combination with &#x60;tenantIdIn&#x60;. Value may only be &#x60;true&#x60;, as &#x60;false&#x60; is the default behavior. | [optional] 
-**sorting** | [**\Swagger\Client\Model\JobDefinitionQueryDtoSorting[]**](JobDefinitionQueryDtoSorting.md) | An array of criteria to sort the result by. Each element of the array is                        an object that specifies one ordering. The position in the array                        identifies the rank of an ordering, i.e., whether it is primary, secondary,                        etc. Sorting has no effect for &#x60;count&#x60; endpoints. | [optional] 
+**sorting** | [**\Camunda\Client\Model\JobDefinitionQueryDtoSorting[]**](JobDefinitionQueryDtoSorting.md) | An array of criteria to sort the result by. Each element of the array is                        an object that specifies one ordering. The position in the array                        identifies the rank of an ordering, i.e., whether it is primary, secondary,                        etc. Sorting has no effect for &#x60;count&#x60; endpoints. | [optional] 
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 

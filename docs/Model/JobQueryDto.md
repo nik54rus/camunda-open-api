@@ -16,8 +16,8 @@ Name | Type | Description | Notes
 **executable** | **bool** | Only select jobs which are executable, i.e., retries &gt; 0 and due date is &#x60;null&#x60; or due date is in the past. Value may only be &#x60;true&#x60;, as &#x60;false&#x60; is the default behavior. | [optional] 
 **timers** | **bool** | Only select jobs that are timers. Cannot be used together with &#x60;messages&#x60;. Value may only be &#x60;true&#x60;, as &#x60;false&#x60; is the default behavior. | [optional] 
 **messages** | **bool** | Only select jobs that are messages. Cannot be used together with &#x60;timers&#x60;. Value may only be &#x60;true&#x60;, as &#x60;false&#x60; is the default behavior. | [optional] 
-**due_dates** | [**\Swagger\Client\Model\JobConditionQueryParameterDto[]**](JobConditionQueryParameterDto.md) | Only select jobs where the due date is lower or higher than the given date. | [optional] 
-**create_times** | [**\Swagger\Client\Model\JobConditionQueryParameterDto[]**](JobConditionQueryParameterDto.md) | Only select jobs created before or after the given date. | [optional] 
+**due_dates** | [**\Camunda\Client\Model\JobConditionQueryParameterDto[]**](JobConditionQueryParameterDto.md) | Only select jobs where the due date is lower or higher than the given date. | [optional] 
+**create_times** | [**\Camunda\Client\Model\JobConditionQueryParameterDto[]**](JobConditionQueryParameterDto.md) | Only select jobs created before or after the given date. | [optional] 
 **with_exception** | **bool** | Only select jobs that failed due to an exception. Value may only be &#x60;true&#x60;, as &#x60;false&#x60; is the default behavior. | [optional] 
 **exception_message** | **string** | Only select jobs that failed due to an exception with the given message. | [optional] 
 **failed_activity_id** | **string** | Only select jobs that failed due to an exception at an activity with the given id. | [optional] 
@@ -29,7 +29,7 @@ Name | Type | Description | Notes
 **tenant_id_in** | **string[]** | Only include jobs which belong to one of the passed  tenant ids. | [optional] 
 **without_tenant_id** | **bool** | Only include jobs which belong to no tenant. Value may only be &#x60;true&#x60;, as &#x60;false&#x60; is the default behavior. | [optional] 
 **include_jobs_without_tenant_id** | **bool** | Include jobs which belong to no tenant. Can be used in combination with &#x60;tenantIdIn&#x60;. Value may only be &#x60;true&#x60;, as &#x60;false&#x60; is the default behavior. | [optional] 
-**sorting** | [**\Swagger\Client\Model\JobQueryDtoSorting[]**](JobQueryDtoSorting.md) | An array of criteria to sort the result by. Each element of the array is                        an object that specifies one ordering. The position in the array                        identifies the rank of an ordering, i.e., whether it is primary, secondary,                        etc. Does not have an effect for the &#x60;count&#x60; endpoint. | [optional] 
+**sorting** | [**\Camunda\Client\Model\JobQueryDtoSorting[]**](JobQueryDtoSorting.md) | An array of criteria to sort the result by. Each element of the array is                        an object that specifies one ordering. The position in the array                        identifies the rank of an ordering, i.e., whether it is primary, secondary,                        etc. Does not have an effect for the &#x60;count&#x60; endpoint. | [optional] 
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 

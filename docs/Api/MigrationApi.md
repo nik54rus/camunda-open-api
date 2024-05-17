@@ -1,4 +1,4 @@
-# Swagger\Client\MigrationApi
+# Camunda\Client\MigrationApi
 
 All URIs are relative to *http://{host}:{port}/{contextPath}*
 
@@ -21,18 +21,18 @@ Executes a migration plan synchronously for multiple process instances. To execu
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\MigrationApi(
+$apiInstance = new Camunda\Client\Api\MigrationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\MigrationExecutionDto(); // \Swagger\Client\Model\MigrationExecutionDto | 
+$body = new \Camunda\Client\Model\MigrationExecutionDto(); // \Camunda\Client\Model\MigrationExecutionDto | 
 
 try {
     $apiInstance->executeMigrationPlan($body);
@@ -46,7 +46,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\MigrationExecutionDto**](../Model/MigrationExecutionDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\MigrationExecutionDto**](../Model/MigrationExecutionDto.md)|  | [optional]
 
 ### Return type
 
@@ -64,7 +64,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **executeMigrationPlanAsync**
-> \Swagger\Client\Model\BatchDto executeMigrationPlanAsync($body)
+> \Camunda\Client\Model\BatchDto executeMigrationPlanAsync($body)
 
 Execute Migration Plan Async (Batch)
 
@@ -75,18 +75,18 @@ Executes a migration plan asynchronously (batch) for multiple process instances.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\MigrationApi(
+$apiInstance = new Camunda\Client\Api\MigrationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\MigrationExecutionDto(); // \Swagger\Client\Model\MigrationExecutionDto | 
+$body = new \Camunda\Client\Model\MigrationExecutionDto(); // \Camunda\Client\Model\MigrationExecutionDto | 
 
 try {
     $result = $apiInstance->executeMigrationPlanAsync($body);
@@ -101,11 +101,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\MigrationExecutionDto**](../Model/MigrationExecutionDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\MigrationExecutionDto**](../Model/MigrationExecutionDto.md)|  | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\BatchDto**](../Model/BatchDto.md)
+[**\Camunda\Client\Model\BatchDto**](../Model/BatchDto.md)
 
 ### Authorization
 
@@ -119,7 +119,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **generateMigrationPlan**
-> \Swagger\Client\Model\MigrationPlanDto generateMigrationPlan($body)
+> \Camunda\Client\Model\MigrationPlanDto generateMigrationPlan($body)
 
 Generate Migration Plan
 
@@ -130,18 +130,18 @@ Generates a migration plan for two process definitions. The generated migration 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\MigrationApi(
+$apiInstance = new Camunda\Client\Api\MigrationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\MigrationPlanGenerationDto(); // \Swagger\Client\Model\MigrationPlanGenerationDto | 
+$body = new \Camunda\Client\Model\MigrationPlanGenerationDto(); // \Camunda\Client\Model\MigrationPlanGenerationDto | 
 
 try {
     $result = $apiInstance->generateMigrationPlan($body);
@@ -156,11 +156,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\MigrationPlanGenerationDto**](../Model/MigrationPlanGenerationDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\MigrationPlanGenerationDto**](../Model/MigrationPlanGenerationDto.md)|  | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\MigrationPlanDto**](../Model/MigrationPlanDto.md)
+[**\Camunda\Client\Model\MigrationPlanDto**](../Model/MigrationPlanDto.md)
 
 ### Authorization
 
@@ -174,7 +174,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **validateMigrationPlan**
-> \Swagger\Client\Model\MigrationPlanReportDto validateMigrationPlan($body)
+> \Camunda\Client\Model\MigrationPlanReportDto validateMigrationPlan($body)
 
 Validate Migration Plan
 
@@ -185,18 +185,18 @@ Validates a migration plan statically without executing it. This corresponds to 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\MigrationApi(
+$apiInstance = new Camunda\Client\Api\MigrationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\MigrationPlanDto(); // \Swagger\Client\Model\MigrationPlanDto | 
+$body = new \Camunda\Client\Model\MigrationPlanDto(); // \Camunda\Client\Model\MigrationPlanDto | 
 
 try {
     $result = $apiInstance->validateMigrationPlan($body);
@@ -211,11 +211,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\MigrationPlanDto**](../Model/MigrationPlanDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\MigrationPlanDto**](../Model/MigrationPlanDto.md)|  | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\MigrationPlanReportDto**](../Model/MigrationPlanReportDto.md)
+[**\Camunda\Client\Model\MigrationPlanReportDto**](../Model/MigrationPlanReportDto.md)
 
 ### Authorization
 

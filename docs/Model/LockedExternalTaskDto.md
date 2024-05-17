@@ -21,7 +21,7 @@ Name | Type | Description | Notes
 **priority** | **int** | The priority of the external task. | [optional] 
 **topic_name** | **string** | The topic name of the external task. | [optional] 
 **business_key** | **string** | The business key of the process instance the external task belongs to. | [optional] 
-**variables** | [**map[string,\Swagger\Client\Model\VariableValueDto]**](VariableValueDto.md) | A JSON object containing a property for each of the requested variables. The key is the variable name, the value is a JSON object of serialized variable values with the following properties: | [optional] 
+**variables** | [**map[string,\Camunda\Client\Model\VariableValueDto]**](VariableValueDto.md) | A JSON object containing a property for each of the requested variables. The key is the variable name, the value is a JSON object of serialized variable values with the following properties: | [optional] 
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 

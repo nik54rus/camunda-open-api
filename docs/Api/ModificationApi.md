@@ -1,4 +1,4 @@
-# Swagger\Client\ModificationApi
+# Camunda\Client\ModificationApi
 
 All URIs are relative to *http://{host}:{port}/{contextPath}*
 
@@ -19,18 +19,18 @@ Executes a modification synchronously for multiple process instances. To modify 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\ModificationApi(
+$apiInstance = new Camunda\Client\Api\ModificationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\ModificationDto(); // \Swagger\Client\Model\ModificationDto | 
+$body = new \Camunda\Client\Model\ModificationDto(); // \Camunda\Client\Model\ModificationDto | 
 
 try {
     $apiInstance->executeModification($body);
@@ -44,7 +44,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\ModificationDto**](../Model/ModificationDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\ModificationDto**](../Model/ModificationDto.md)|  | [optional]
 
 ### Return type
 
@@ -62,7 +62,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **executeModificationAsync**
-> \Swagger\Client\Model\BatchDto executeModificationAsync($body)
+> \Camunda\Client\Model\BatchDto executeModificationAsync($body)
 
 Execute Modification Async (Batch)
 
@@ -73,18 +73,18 @@ Executes a modification asynchronously for multiple process instances. To execut
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\ModificationApi(
+$apiInstance = new Camunda\Client\Api\ModificationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\ModificationDto(); // \Swagger\Client\Model\ModificationDto | 
+$body = new \Camunda\Client\Model\ModificationDto(); // \Camunda\Client\Model\ModificationDto | 
 
 try {
     $result = $apiInstance->executeModificationAsync($body);
@@ -99,11 +99,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\ModificationDto**](../Model/ModificationDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\ModificationDto**](../Model/ModificationDto.md)|  | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\BatchDto**](../Model/BatchDto.md)
+[**\Camunda\Client\Model\BatchDto**](../Model/BatchDto.md)
 
 ### Authorization
 

@@ -1,4 +1,4 @@
-# Swagger\Client\TaskApi
+# Camunda\Client\TaskApi
 
 All URIs are relative to *http://{host}:{port}/{contextPath}*
 
@@ -39,19 +39,19 @@ Claims a task for a specific user.  **Note:** The difference with the [Set Assig
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\TaskApi(
+$apiInstance = new Camunda\Client\Api\TaskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = "id_example"; // string | The id of the task to claim.
-$body = new \Swagger\Client\Model\UserIdDto(); // \Swagger\Client\Model\UserIdDto | Provide the id of the user that claims the task.
+$body = new \Camunda\Client\Model\UserIdDto(); // \Camunda\Client\Model\UserIdDto | Provide the id of the user that claims the task.
 
 try {
     $apiInstance->claim($id, $body);
@@ -66,7 +66,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The id of the task to claim. |
- **body** | [**\Swagger\Client\Model\UserIdDto**](../Model/UserIdDto.md)| Provide the id of the user that claims the task. | [optional]
+ **body** | [**\Camunda\Client\Model\UserIdDto**](../Model/UserIdDto.md)| Provide the id of the user that claims the task. | [optional]
 
 ### Return type
 
@@ -84,7 +84,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **complete**
-> map[string,\Swagger\Client\Model\VariableValueDto] complete($id, $body)
+> map[string,\Camunda\Client\Model\VariableValueDto] complete($id, $body)
 
 Complete
 
@@ -95,19 +95,19 @@ Completes a task and updates process variables.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\TaskApi(
+$apiInstance = new Camunda\Client\Api\TaskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = "id_example"; // string | The id of the task to complete.
-$body = new \Swagger\Client\Model\CompleteTaskDto(); // \Swagger\Client\Model\CompleteTaskDto | 
+$body = new \Camunda\Client\Model\CompleteTaskDto(); // \Camunda\Client\Model\CompleteTaskDto | 
 
 try {
     $result = $apiInstance->complete($id, $body);
@@ -123,11 +123,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The id of the task to complete. |
- **body** | [**\Swagger\Client\Model\CompleteTaskDto**](../Model/CompleteTaskDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\CompleteTaskDto**](../Model/CompleteTaskDto.md)|  | [optional]
 
 ### Return type
 
-[**map[string,\Swagger\Client\Model\VariableValueDto]**](../Model/VariableValueDto.md)
+[**map[string,\Camunda\Client\Model\VariableValueDto]**](../Model/VariableValueDto.md)
 
 ### Authorization
 
@@ -152,18 +152,18 @@ Creates a new task.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\TaskApi(
+$apiInstance = new Camunda\Client\Api\TaskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\TaskDto(); // \Swagger\Client\Model\TaskDto | 
+$body = new \Camunda\Client\Model\TaskDto(); // \Camunda\Client\Model\TaskDto | 
 
 try {
     $apiInstance->createTask($body);
@@ -177,7 +177,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\TaskDto**](../Model/TaskDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\TaskDto**](../Model/TaskDto.md)|  | [optional]
 
 ### Return type
 
@@ -206,19 +206,19 @@ Delegates a task to another user.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\TaskApi(
+$apiInstance = new Camunda\Client\Api\TaskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = "id_example"; // string | The id of the task to delegate.
-$body = new \Swagger\Client\Model\UserIdDto(); // \Swagger\Client\Model\UserIdDto | Provide the id of the user that the task should be delegated to.
+$body = new \Camunda\Client\Model\UserIdDto(); // \Camunda\Client\Model\UserIdDto | Provide the id of the user that the task should be delegated to.
 
 try {
     $apiInstance->delegateTask($id, $body);
@@ -233,7 +233,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The id of the task to delegate. |
- **body** | [**\Swagger\Client\Model\UserIdDto**](../Model/UserIdDto.md)| Provide the id of the user that the task should be delegated to. | [optional]
+ **body** | [**\Camunda\Client\Model\UserIdDto**](../Model/UserIdDto.md)| Provide the id of the user that the task should be delegated to. | [optional]
 
 ### Return type
 
@@ -262,12 +262,12 @@ Removes a task by id.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\TaskApi(
+$apiInstance = new Camunda\Client\Api\TaskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -316,12 +316,12 @@ Retrieves the deployed form that is referenced from a given task. For further in
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\TaskApi(
+$apiInstance = new Camunda\Client\Api\TaskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -360,7 +360,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getForm**
-> \Swagger\Client\Model\FormDto getForm($id)
+> \Camunda\Client\Model\FormDto getForm($id)
 
 Get Form Key
 
@@ -371,12 +371,12 @@ Retrieves the form key for a task. The form key corresponds to the `FormData#for
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\TaskApi(
+$apiInstance = new Camunda\Client\Api\TaskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -401,7 +401,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\FormDto**](../Model/FormDto.md)
+[**\Camunda\Client\Model\FormDto**](../Model/FormDto.md)
 
 ### Authorization
 
@@ -415,7 +415,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getFormVariables**
-> map[string,\Swagger\Client\Model\VariableValueDto] getFormVariables($id, $variable_names, $deserialize_values)
+> map[string,\Camunda\Client\Model\VariableValueDto] getFormVariables($id, $variable_names, $deserialize_values)
 
 Get Task Form Variables
 
@@ -426,12 +426,12 @@ Retrieves the form variables for a task. The form variables take form data speci
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\TaskApi(
+$apiInstance = new Camunda\Client\Api\TaskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -460,7 +460,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**map[string,\Swagger\Client\Model\VariableValueDto]**](../Model/VariableValueDto.md)
+[**map[string,\Camunda\Client\Model\VariableValueDto]**](../Model/VariableValueDto.md)
 
 ### Authorization
 
@@ -485,12 +485,12 @@ Retrieves the rendered form for a task. This method can be used to get the HTML 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\TaskApi(
+$apiInstance = new Camunda\Client\Api\TaskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -529,7 +529,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getTask**
-> \Swagger\Client\Model\TaskDto getTask($id)
+> \Camunda\Client\Model\TaskDto getTask($id)
 
 Get
 
@@ -540,12 +540,12 @@ Retrieves a task by id.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\TaskApi(
+$apiInstance = new Camunda\Client\Api\TaskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -570,7 +570,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\TaskDto**](../Model/TaskDto.md)
+[**\Camunda\Client\Model\TaskDto**](../Model/TaskDto.md)
 
 ### Authorization
 
@@ -584,7 +584,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getTaskCountByCandidateGroup**
-> \Swagger\Client\Model\TaskCountByCandidateGroupResultDto[] getTaskCountByCandidateGroup()
+> \Camunda\Client\Model\TaskCountByCandidateGroupResultDto[] getTaskCountByCandidateGroup()
 
 Get Task Count By Candidate Group
 
@@ -595,12 +595,12 @@ Retrieves the number of tasks for each candidate group.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\TaskApi(
+$apiInstance = new Camunda\Client\Api\TaskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -621,7 +621,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\TaskCountByCandidateGroupResultDto[]**](../Model/TaskCountByCandidateGroupResultDto.md)
+[**\Camunda\Client\Model\TaskCountByCandidateGroupResultDto[]**](../Model/TaskCountByCandidateGroupResultDto.md)
 
 ### Authorization
 
@@ -635,7 +635,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getTasks**
-> \Swagger\Client\Model\TaskDto[] getTasks($task_id, $task_id_in, $process_instance_id, $process_instance_id_in, $process_instance_business_key, $process_instance_business_key_expression, $process_instance_business_key_in, $process_instance_business_key_like, $process_instance_business_key_like_expression, $process_definition_id, $process_definition_key, $process_definition_key_in, $process_definition_name, $process_definition_name_like, $execution_id, $case_instance_id, $case_instance_business_key, $case_instance_business_key_like, $case_definition_id, $case_definition_key, $case_definition_name, $case_definition_name_like, $case_execution_id, $activity_instance_id_in, $tenant_id_in, $without_tenant_id, $assignee, $assignee_expression, $assignee_like, $assignee_like_expression, $assignee_in, $assignee_not_in, $owner, $owner_expression, $candidate_group, $candidate_group_expression, $candidate_user, $candidate_user_expression, $include_assigned_tasks, $involved_user, $involved_user_expression, $assigned, $unassigned, $task_definition_key, $task_definition_key_in, $task_definition_key_like, $name, $name_not_equal, $name_like, $name_not_like, $description, $description_like, $priority, $max_priority, $min_priority, $due_date, $due_date_expression, $due_after, $due_after_expression, $due_before, $due_before_expression, $without_due_date, $follow_up_date, $follow_up_date_expression, $follow_up_after, $follow_up_after_expression, $follow_up_before, $follow_up_before_expression, $follow_up_before_or_not_existent, $follow_up_before_or_not_existent_expression, $created_on, $created_on_expression, $created_after, $created_after_expression, $created_before, $created_before_expression, $updated_after, $updated_after_expression, $delegation_state, $candidate_groups, $candidate_groups_expression, $with_candidate_groups, $without_candidate_groups, $with_candidate_users, $without_candidate_users, $active, $suspended, $task_variables, $process_variables, $case_instance_variables, $variable_names_ignore_case, $variable_values_ignore_case, $parent_task_id, $sort_by, $sort_order, $first_result, $max_results)
+> \Camunda\Client\Model\TaskDto[] getTasks($task_id, $task_id_in, $process_instance_id, $process_instance_id_in, $process_instance_business_key, $process_instance_business_key_expression, $process_instance_business_key_in, $process_instance_business_key_like, $process_instance_business_key_like_expression, $process_definition_id, $process_definition_key, $process_definition_key_in, $process_definition_name, $process_definition_name_like, $execution_id, $case_instance_id, $case_instance_business_key, $case_instance_business_key_like, $case_definition_id, $case_definition_key, $case_definition_name, $case_definition_name_like, $case_execution_id, $activity_instance_id_in, $tenant_id_in, $without_tenant_id, $assignee, $assignee_expression, $assignee_like, $assignee_like_expression, $assignee_in, $assignee_not_in, $owner, $owner_expression, $candidate_group, $candidate_group_expression, $candidate_user, $candidate_user_expression, $include_assigned_tasks, $involved_user, $involved_user_expression, $assigned, $unassigned, $task_definition_key, $task_definition_key_in, $task_definition_key_like, $name, $name_not_equal, $name_like, $name_not_like, $description, $description_like, $priority, $max_priority, $min_priority, $due_date, $due_date_expression, $due_after, $due_after_expression, $due_before, $due_before_expression, $without_due_date, $follow_up_date, $follow_up_date_expression, $follow_up_after, $follow_up_after_expression, $follow_up_before, $follow_up_before_expression, $follow_up_before_or_not_existent, $follow_up_before_or_not_existent_expression, $created_on, $created_on_expression, $created_after, $created_after_expression, $created_before, $created_before_expression, $updated_after, $updated_after_expression, $delegation_state, $candidate_groups, $candidate_groups_expression, $with_candidate_groups, $without_candidate_groups, $with_candidate_users, $without_candidate_users, $active, $suspended, $task_variables, $process_variables, $case_instance_variables, $variable_names_ignore_case, $variable_values_ignore_case, $parent_task_id, $sort_by, $sort_order, $first_result, $max_results)
 
 Get List
 
@@ -646,12 +646,12 @@ Queries for tasks that fulfill a given filter. The size of the result set can be
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\TaskApi(
+$apiInstance = new Camunda\Client\Api\TaskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -868,7 +868,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\TaskDto[]**](../Model/TaskDto.md)
+[**\Camunda\Client\Model\TaskDto[]**](../Model/TaskDto.md)
 
 ### Authorization
 
@@ -882,7 +882,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getTasksCount**
-> \Swagger\Client\Model\CountResultDto getTasksCount($task_id, $task_id_in, $process_instance_id, $process_instance_id_in, $process_instance_business_key, $process_instance_business_key_expression, $process_instance_business_key_in, $process_instance_business_key_like, $process_instance_business_key_like_expression, $process_definition_id, $process_definition_key, $process_definition_key_in, $process_definition_name, $process_definition_name_like, $execution_id, $case_instance_id, $case_instance_business_key, $case_instance_business_key_like, $case_definition_id, $case_definition_key, $case_definition_name, $case_definition_name_like, $case_execution_id, $activity_instance_id_in, $tenant_id_in, $without_tenant_id, $assignee, $assignee_expression, $assignee_like, $assignee_like_expression, $assignee_in, $assignee_not_in, $owner, $owner_expression, $candidate_group, $candidate_group_expression, $candidate_user, $candidate_user_expression, $include_assigned_tasks, $involved_user, $involved_user_expression, $assigned, $unassigned, $task_definition_key, $task_definition_key_in, $task_definition_key_like, $name, $name_not_equal, $name_like, $name_not_like, $description, $description_like, $priority, $max_priority, $min_priority, $due_date, $due_date_expression, $due_after, $due_after_expression, $due_before, $due_before_expression, $without_due_date, $follow_up_date, $follow_up_date_expression, $follow_up_after, $follow_up_after_expression, $follow_up_before, $follow_up_before_expression, $follow_up_before_or_not_existent, $follow_up_before_or_not_existent_expression, $created_on, $created_on_expression, $created_after, $created_after_expression, $created_before, $created_before_expression, $updated_after, $updated_after_expression, $delegation_state, $candidate_groups, $candidate_groups_expression, $with_candidate_groups, $without_candidate_groups, $with_candidate_users, $without_candidate_users, $active, $suspended, $task_variables, $process_variables, $case_instance_variables, $variable_names_ignore_case, $variable_values_ignore_case, $parent_task_id)
+> \Camunda\Client\Model\CountResultDto getTasksCount($task_id, $task_id_in, $process_instance_id, $process_instance_id_in, $process_instance_business_key, $process_instance_business_key_expression, $process_instance_business_key_in, $process_instance_business_key_like, $process_instance_business_key_like_expression, $process_definition_id, $process_definition_key, $process_definition_key_in, $process_definition_name, $process_definition_name_like, $execution_id, $case_instance_id, $case_instance_business_key, $case_instance_business_key_like, $case_definition_id, $case_definition_key, $case_definition_name, $case_definition_name_like, $case_execution_id, $activity_instance_id_in, $tenant_id_in, $without_tenant_id, $assignee, $assignee_expression, $assignee_like, $assignee_like_expression, $assignee_in, $assignee_not_in, $owner, $owner_expression, $candidate_group, $candidate_group_expression, $candidate_user, $candidate_user_expression, $include_assigned_tasks, $involved_user, $involved_user_expression, $assigned, $unassigned, $task_definition_key, $task_definition_key_in, $task_definition_key_like, $name, $name_not_equal, $name_like, $name_not_like, $description, $description_like, $priority, $max_priority, $min_priority, $due_date, $due_date_expression, $due_after, $due_after_expression, $due_before, $due_before_expression, $without_due_date, $follow_up_date, $follow_up_date_expression, $follow_up_after, $follow_up_after_expression, $follow_up_before, $follow_up_before_expression, $follow_up_before_or_not_existent, $follow_up_before_or_not_existent_expression, $created_on, $created_on_expression, $created_after, $created_after_expression, $created_before, $created_before_expression, $updated_after, $updated_after_expression, $delegation_state, $candidate_groups, $candidate_groups_expression, $with_candidate_groups, $without_candidate_groups, $with_candidate_users, $without_candidate_users, $active, $suspended, $task_variables, $process_variables, $case_instance_variables, $variable_names_ignore_case, $variable_values_ignore_case, $parent_task_id)
 
 Get List Count
 
@@ -893,12 +893,12 @@ Retrieves the number of tasks that fulfill a provided filter. Corresponds to the
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\TaskApi(
+$apiInstance = new Camunda\Client\Api\TaskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -1107,7 +1107,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\CountResultDto**](../Model/CountResultDto.md)
+[**\Camunda\Client\Model\CountResultDto**](../Model/CountResultDto.md)
 
 ### Authorization
 
@@ -1132,19 +1132,19 @@ Reports a business error in the context of a running task by id. The error code 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\TaskApi(
+$apiInstance = new Camunda\Client\Api\TaskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = "id_example"; // string | The id of the task a BPMN error is reported for.
-$body = new \Swagger\Client\Model\TaskBpmnErrorDto(); // \Swagger\Client\Model\TaskBpmnErrorDto | 
+$body = new \Camunda\Client\Model\TaskBpmnErrorDto(); // \Camunda\Client\Model\TaskBpmnErrorDto | 
 
 try {
     $apiInstance->handleBpmnError($id, $body);
@@ -1159,7 +1159,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The id of the task a BPMN error is reported for. |
- **body** | [**\Swagger\Client\Model\TaskBpmnErrorDto**](../Model/TaskBpmnErrorDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\TaskBpmnErrorDto**](../Model/TaskBpmnErrorDto.md)|  | [optional]
 
 ### Return type
 
@@ -1188,19 +1188,19 @@ Reports an escalation in the context of a running task by id. The escalation cod
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\TaskApi(
+$apiInstance = new Camunda\Client\Api\TaskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = "id_example"; // string | The id of the task in which context a BPMN escalation is reported.
-$body = new \Swagger\Client\Model\TaskEscalationDto(); // \Swagger\Client\Model\TaskEscalationDto | 
+$body = new \Camunda\Client\Model\TaskEscalationDto(); // \Camunda\Client\Model\TaskEscalationDto | 
 
 try {
     $apiInstance->handleEscalation($id, $body);
@@ -1215,7 +1215,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The id of the task in which context a BPMN escalation is reported. |
- **body** | [**\Swagger\Client\Model\TaskEscalationDto**](../Model/TaskEscalationDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\TaskEscalationDto**](../Model/TaskEscalationDto.md)|  | [optional]
 
 ### Return type
 
@@ -1233,7 +1233,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **queryTasks**
-> \Swagger\Client\Model\TaskDto[] queryTasks($body, $first_result, $max_results)
+> \Camunda\Client\Model\TaskDto[] queryTasks($body, $first_result, $max_results)
 
 Get List (POST)
 
@@ -1244,18 +1244,18 @@ Queries for tasks that fulfill a given filter. This method is slightly more powe
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\TaskApi(
+$apiInstance = new Camunda\Client\Api\TaskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\TaskQueryDto(); // \Swagger\Client\Model\TaskQueryDto | 
+$body = new \Camunda\Client\Model\TaskQueryDto(); // \Camunda\Client\Model\TaskQueryDto | 
 $first_result = 56; // int | Pagination of results. Specifies the index of the first result to return.
 $max_results = 56; // int | Pagination of results. Specifies the maximum number of results to return. Will return less results if there are no more results left.
 
@@ -1272,13 +1272,13 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\TaskQueryDto**](../Model/TaskQueryDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\TaskQueryDto**](../Model/TaskQueryDto.md)|  | [optional]
  **first_result** | **int**| Pagination of results. Specifies the index of the first result to return. | [optional]
  **max_results** | **int**| Pagination of results. Specifies the maximum number of results to return. Will return less results if there are no more results left. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\TaskDto[]**](../Model/TaskDto.md)
+[**\Camunda\Client\Model\TaskDto[]**](../Model/TaskDto.md)
 
 ### Authorization
 
@@ -1292,7 +1292,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **queryTasksCount**
-> \Swagger\Client\Model\CountResultDto queryTasksCount($body)
+> \Camunda\Client\Model\CountResultDto queryTasksCount($body)
 
 Get List Count (POST)
 
@@ -1303,18 +1303,18 @@ Retrieves the number of tasks that fulfill the given filter. Corresponds to the 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\TaskApi(
+$apiInstance = new Camunda\Client\Api\TaskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\TaskQueryDto(); // \Swagger\Client\Model\TaskQueryDto | 
+$body = new \Camunda\Client\Model\TaskQueryDto(); // \Camunda\Client\Model\TaskQueryDto | 
 
 try {
     $result = $apiInstance->queryTasksCount($body);
@@ -1329,11 +1329,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\TaskQueryDto**](../Model/TaskQueryDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\TaskQueryDto**](../Model/TaskQueryDto.md)|  | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\CountResultDto**](../Model/CountResultDto.md)
+[**\Camunda\Client\Model\CountResultDto**](../Model/CountResultDto.md)
 
 ### Authorization
 
@@ -1358,19 +1358,19 @@ Resolves a task and updates execution variables.  Resolving a task marks that th
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\TaskApi(
+$apiInstance = new Camunda\Client\Api\TaskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = "id_example"; // string | The id of the task to resolve.
-$body = new \Swagger\Client\Model\CompleteTaskDto(); // \Swagger\Client\Model\CompleteTaskDto | 
+$body = new \Camunda\Client\Model\CompleteTaskDto(); // \Camunda\Client\Model\CompleteTaskDto | 
 
 try {
     $apiInstance->resolve($id, $body);
@@ -1385,7 +1385,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The id of the task to resolve. |
- **body** | [**\Swagger\Client\Model\CompleteTaskDto**](../Model/CompleteTaskDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\CompleteTaskDto**](../Model/CompleteTaskDto.md)|  | [optional]
 
 ### Return type
 
@@ -1414,19 +1414,19 @@ Changes the assignee of a task to a specific user.  **Note:** The difference wit
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\TaskApi(
+$apiInstance = new Camunda\Client\Api\TaskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = "id_example"; // string | The id of the task to set the assignee for.
-$body = new \Swagger\Client\Model\UserIdDto(); // \Swagger\Client\Model\UserIdDto | Provide the id of the user that will be the assignee of the task.
+$body = new \Camunda\Client\Model\UserIdDto(); // \Camunda\Client\Model\UserIdDto | Provide the id of the user that will be the assignee of the task.
 
 try {
     $apiInstance->setAssignee($id, $body);
@@ -1441,7 +1441,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The id of the task to set the assignee for. |
- **body** | [**\Swagger\Client\Model\UserIdDto**](../Model/UserIdDto.md)| Provide the id of the user that will be the assignee of the task. | [optional]
+ **body** | [**\Camunda\Client\Model\UserIdDto**](../Model/UserIdDto.md)| Provide the id of the user that will be the assignee of the task. | [optional]
 
 ### Return type
 
@@ -1459,7 +1459,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **submit**
-> map[string,\Swagger\Client\Model\VariableValueDto] submit($id, $body)
+> map[string,\Camunda\Client\Model\VariableValueDto] submit($id, $body)
 
 Submit Form
 
@@ -1470,19 +1470,19 @@ Completes a task and updates process variables using a form submit. There are tw
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\TaskApi(
+$apiInstance = new Camunda\Client\Api\TaskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = "id_example"; // string | The id of the task to submit the form for.
-$body = new \Swagger\Client\Model\CompleteTaskDto(); // \Swagger\Client\Model\CompleteTaskDto | 
+$body = new \Camunda\Client\Model\CompleteTaskDto(); // \Camunda\Client\Model\CompleteTaskDto | 
 
 try {
     $result = $apiInstance->submit($id, $body);
@@ -1498,11 +1498,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The id of the task to submit the form for. |
- **body** | [**\Swagger\Client\Model\CompleteTaskDto**](../Model/CompleteTaskDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\CompleteTaskDto**](../Model/CompleteTaskDto.md)|  | [optional]
 
 ### Return type
 
-[**map[string,\Swagger\Client\Model\VariableValueDto]**](../Model/VariableValueDto.md)
+[**map[string,\Camunda\Client\Model\VariableValueDto]**](../Model/VariableValueDto.md)
 
 ### Authorization
 
@@ -1527,12 +1527,12 @@ Resets a task's assignee. If successful, the task is not assigned to a user.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\TaskApi(
+$apiInstance = new Camunda\Client\Api\TaskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -1581,19 +1581,19 @@ Updates a task.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\TaskApi(
+$apiInstance = new Camunda\Client\Api\TaskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = "id_example"; // string | The id of the task to be updated.
-$body = new \Swagger\Client\Model\TaskDto(); // \Swagger\Client\Model\TaskDto | 
+$body = new \Camunda\Client\Model\TaskDto(); // \Camunda\Client\Model\TaskDto | 
 
 try {
     $apiInstance->updateTask($id, $body);
@@ -1608,7 +1608,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The id of the task to be updated. |
- **body** | [**\Swagger\Client\Model\TaskDto**](../Model/TaskDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\TaskDto**](../Model/TaskDto.md)|  | [optional]
 
 ### Return type
 

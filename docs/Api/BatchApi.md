@@ -1,4 +1,4 @@
-# Swagger\Client\BatchApi
+# Camunda\Client\BatchApi
 
 All URIs are relative to *http://{host}:{port}/{contextPath}*
 
@@ -24,12 +24,12 @@ Deletes a batch by id, including all related jobs and job definitions. Optionall
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\BatchApi(
+$apiInstance = new Camunda\Client\Api\BatchApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -69,7 +69,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getBatch**
-> \Swagger\Client\Model\BatchDto getBatch($id)
+> \Camunda\Client\Model\BatchDto getBatch($id)
 
 Get
 
@@ -80,12 +80,12 @@ Retrieves a batch by id, according to the Batch interface in the engine.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\BatchApi(
+$apiInstance = new Camunda\Client\Api\BatchApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -110,7 +110,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\BatchDto**](../Model/BatchDto.md)
+[**\Camunda\Client\Model\BatchDto**](../Model/BatchDto.md)
 
 ### Authorization
 
@@ -124,7 +124,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getBatchStatistics**
-> \Swagger\Client\Model\BatchStatisticsDto[] getBatchStatistics($sort_by, $sort_order, $first_result, $max_results, $batch_id, $type, $tenant_id_in, $without_tenant_id, $suspended, $created_by, $started_before, $started_after, $with_failures, $without_failures)
+> \Camunda\Client\Model\BatchStatisticsDto[] getBatchStatistics($sort_by, $sort_order, $first_result, $max_results, $batch_id, $type, $tenant_id_in, $without_tenant_id, $suspended, $created_by, $started_before, $started_after, $with_failures, $without_failures)
 
 Get Statistics
 
@@ -135,12 +135,12 @@ Queries for batch statistics that fulfill given parameters. Parameters may be th
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\BatchApi(
+$apiInstance = new Camunda\Client\Api\BatchApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -191,7 +191,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\BatchStatisticsDto[]**](../Model/BatchStatisticsDto.md)
+[**\Camunda\Client\Model\BatchStatisticsDto[]**](../Model/BatchStatisticsDto.md)
 
 ### Authorization
 
@@ -205,7 +205,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getBatchStatisticsCount**
-> \Swagger\Client\Model\CountResultDto getBatchStatisticsCount($batch_id, $type, $tenant_id_in, $without_tenant_id, $suspended, $created_by, $started_before, $started_after, $with_failures, $without_failures)
+> \Camunda\Client\Model\CountResultDto getBatchStatisticsCount($batch_id, $type, $tenant_id_in, $without_tenant_id, $suspended, $created_by, $started_before, $started_after, $with_failures, $without_failures)
 
 Get Statistics Count
 
@@ -216,12 +216,12 @@ Requests the number of batch statistics that fulfill the query criteria. Takes t
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\BatchApi(
+$apiInstance = new Camunda\Client\Api\BatchApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -264,7 +264,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\CountResultDto**](../Model/CountResultDto.md)
+[**\Camunda\Client\Model\CountResultDto**](../Model/CountResultDto.md)
 
 ### Authorization
 
@@ -278,7 +278,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getBatches**
-> \Swagger\Client\Model\BatchDto[] getBatches($sort_by, $sort_order, $first_result, $max_results, $batch_id, $type, $tenant_id_in, $without_tenant_id, $suspended, $created_by, $started_before, $started_after, $with_failures, $without_failures)
+> \Camunda\Client\Model\BatchDto[] getBatches($sort_by, $sort_order, $first_result, $max_results, $batch_id, $type, $tenant_id_in, $without_tenant_id, $suspended, $created_by, $started_before, $started_after, $with_failures, $without_failures)
 
 Get List
 
@@ -289,12 +289,12 @@ Queries for batches that fulfill given parameters. Parameters may be the propert
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\BatchApi(
+$apiInstance = new Camunda\Client\Api\BatchApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -345,7 +345,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\BatchDto[]**](../Model/BatchDto.md)
+[**\Camunda\Client\Model\BatchDto[]**](../Model/BatchDto.md)
 
 ### Authorization
 
@@ -359,7 +359,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getBatchesCount**
-> \Swagger\Client\Model\CountResultDto getBatchesCount($batch_id, $type, $tenant_id_in, $without_tenant_id, $suspended, $created_by, $started_before, $started_after, $with_failures, $without_failures)
+> \Camunda\Client\Model\CountResultDto getBatchesCount($batch_id, $type, $tenant_id_in, $without_tenant_id, $suspended, $created_by, $started_before, $started_after, $with_failures, $without_failures)
 
 Get List Count
 
@@ -370,12 +370,12 @@ Requests the number of batches that fulfill the query criteria. Takes the same f
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\BatchApi(
+$apiInstance = new Camunda\Client\Api\BatchApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -418,7 +418,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\CountResultDto**](../Model/CountResultDto.md)
+[**\Camunda\Client\Model\CountResultDto**](../Model/CountResultDto.md)
 
 ### Authorization
 
@@ -443,19 +443,19 @@ Activates or suspends a batch by id.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\BatchApi(
+$apiInstance = new Camunda\Client\Api\BatchApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = "id_example"; // string | The id of the batch to activate or suspend.
-$body = new \Swagger\Client\Model\SuspensionStateDto(); // \Swagger\Client\Model\SuspensionStateDto | 
+$body = new \Camunda\Client\Model\SuspensionStateDto(); // \Camunda\Client\Model\SuspensionStateDto | 
 
 try {
     $apiInstance->updateBatchSuspensionState($id, $body);
@@ -470,7 +470,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The id of the batch to activate or suspend. |
- **body** | [**\Swagger\Client\Model\SuspensionStateDto**](../Model/SuspensionStateDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\SuspensionStateDto**](../Model/SuspensionStateDto.md)|  | [optional]
 
 ### Return type
 

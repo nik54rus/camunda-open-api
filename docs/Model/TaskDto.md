@@ -24,7 +24,7 @@ Name | Type | Description | Notes
 **task_definition_key** | **string** | The task&#x27;s key. | [optional] 
 **suspended** | **bool** | Whether the task belongs to a process instance that is suspended. | [optional] 
 **form_key** | **string** | If not &#x60;null&#x60;, the form key for the task. | [optional] 
-**camunda_form_ref** | [**\Swagger\Client\Model\CamundaFormRef**](CamundaFormRef.md) |  | [optional] 
+**camunda_form_ref** | [**\Camunda\Client\Model\CamundaFormRef**](CamundaFormRef.md) |  | [optional] 
 **tenant_id** | **string** | If not &#x60;null&#x60;, the tenant id of the task. | [optional] 
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)

@@ -1,4 +1,4 @@
-# Swagger\Client\HistoricIncidentApi
+# Camunda\Client\HistoricIncidentApi
 
 All URIs are relative to *http://{host}:{port}/{contextPath}*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 [**getHistoricIncidentsCount**](HistoricIncidentApi.md#gethistoricincidentscount) | **GET** /history/incident/count | Get Incident Count
 
 # **getHistoricIncidents**
-> \Swagger\Client\Model\HistoricIncidentDto[] getHistoricIncidents($incident_id, $incident_type, $incident_message, $incident_message_like, $process_definition_id, $process_definition_key, $process_definition_key_in, $process_instance_id, $execution_id, $create_time_before, $create_time_after, $end_time_before, $end_time_after, $activity_id, $failed_activity_id, $cause_incident_id, $root_cause_incident_id, $configuration, $history_configuration, $open, $resolved, $deleted, $tenant_id_in, $without_tenant_id, $job_definition_id_in, $sort_by, $sort_order, $first_result, $max_results)
+> \Camunda\Client\Model\HistoricIncidentDto[] getHistoricIncidents($incident_id, $incident_type, $incident_message, $incident_message_like, $process_definition_id, $process_definition_key, $process_definition_key_in, $process_instance_id, $execution_id, $create_time_before, $create_time_after, $end_time_before, $end_time_after, $activity_id, $failed_activity_id, $cause_incident_id, $root_cause_incident_id, $configuration, $history_configuration, $open, $resolved, $deleted, $tenant_id_in, $without_tenant_id, $job_definition_id_in, $sort_by, $sort_order, $first_result, $max_results)
 
 Get Incidents
 
@@ -19,12 +19,12 @@ Queries for historic incidents that fulfill given parameters. The size of the re
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricIncidentApi(
+$apiInstance = new Camunda\Client\Api\HistoricIncidentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -105,7 +105,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\HistoricIncidentDto[]**](../Model/HistoricIncidentDto.md)
+[**\Camunda\Client\Model\HistoricIncidentDto[]**](../Model/HistoricIncidentDto.md)
 
 ### Authorization
 
@@ -119,7 +119,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getHistoricIncidentsCount**
-> \Swagger\Client\Model\CountResultDto getHistoricIncidentsCount($incident_id, $incident_type, $incident_message, $incident_message_like, $process_definition_id, $process_definition_key, $process_definition_key_in, $process_instance_id, $execution_id, $create_time_before, $create_time_after, $end_time_before, $end_time_after, $activity_id, $failed_activity_id, $cause_incident_id, $root_cause_incident_id, $configuration, $history_configuration, $open, $resolved, $deleted, $tenant_id_in, $without_tenant_id, $job_definition_id_in)
+> \Camunda\Client\Model\CountResultDto getHistoricIncidentsCount($incident_id, $incident_type, $incident_message, $incident_message_like, $process_definition_id, $process_definition_key, $process_definition_key_in, $process_instance_id, $execution_id, $create_time_before, $create_time_after, $end_time_before, $end_time_after, $activity_id, $failed_activity_id, $cause_incident_id, $root_cause_incident_id, $configuration, $history_configuration, $open, $resolved, $deleted, $tenant_id_in, $without_tenant_id, $job_definition_id_in)
 
 Get Incident Count
 
@@ -130,12 +130,12 @@ Queries for the number of historic incidents that fulfill the given parameters. 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricIncidentApi(
+$apiInstance = new Camunda\Client\Api\HistoricIncidentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -208,7 +208,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\CountResultDto**](../Model/CountResultDto.md)
+[**\Camunda\Client\Model\CountResultDto**](../Model/CountResultDto.md)
 
 ### Authorization
 

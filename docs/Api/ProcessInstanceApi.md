@@ -1,4 +1,4 @@
-# Swagger\Client\ProcessInstanceApi
+# Camunda\Client\ProcessInstanceApi
 
 All URIs are relative to *http://{host}:{port}/{contextPath}*
 
@@ -32,7 +32,7 @@ Method | HTTP request | Description
 [**updateSuspensionStateById**](ProcessInstanceApi.md#updatesuspensionstatebyid) | **PUT** /process-instance/{id}/suspended | Activate/Suspend Process Instance By Id
 
 # **correlateMessageAsyncOperation**
-> \Swagger\Client\Model\BatchDto correlateMessageAsyncOperation($body)
+> \Camunda\Client\Model\BatchDto correlateMessageAsyncOperation($body)
 
 Correlate Message Async (POST)
 
@@ -43,18 +43,18 @@ Correlates a message asynchronously to executions that are waiting for this mess
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\ProcessInstanceApi(
+$apiInstance = new Camunda\Client\Api\ProcessInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\CorrelationMessageAsyncDto(); // \Swagger\Client\Model\CorrelationMessageAsyncDto | 
+$body = new \Camunda\Client\Model\CorrelationMessageAsyncDto(); // \Camunda\Client\Model\CorrelationMessageAsyncDto | 
 
 try {
     $result = $apiInstance->correlateMessageAsyncOperation($body);
@@ -69,11 +69,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\CorrelationMessageAsyncDto**](../Model/CorrelationMessageAsyncDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\CorrelationMessageAsyncDto**](../Model/CorrelationMessageAsyncDto.md)|  | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\BatchDto**](../Model/BatchDto.md)
+[**\Camunda\Client\Model\BatchDto**](../Model/BatchDto.md)
 
 ### Authorization
 
@@ -87,7 +87,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteAsyncHistoricQueryBased**
-> \Swagger\Client\Model\BatchDto deleteAsyncHistoricQueryBased($body)
+> \Camunda\Client\Model\BatchDto deleteAsyncHistoricQueryBased($body)
 
 Delete Async Historic Query Based (POST)
 
@@ -98,18 +98,18 @@ Deletes a set of process instances asynchronously (batch) based on a historic pr
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\ProcessInstanceApi(
+$apiInstance = new Camunda\Client\Api\ProcessInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\DeleteProcessInstancesDto(); // \Swagger\Client\Model\DeleteProcessInstancesDto | **Unallowed property**: `processInstanceQuery`
+$body = new \Camunda\Client\Model\DeleteProcessInstancesDto(); // \Camunda\Client\Model\DeleteProcessInstancesDto | **Unallowed property**: `processInstanceQuery`
 
 try {
     $result = $apiInstance->deleteAsyncHistoricQueryBased($body);
@@ -124,11 +124,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\DeleteProcessInstancesDto**](../Model/DeleteProcessInstancesDto.md)| **Unallowed property**: &#x60;processInstanceQuery&#x60; | [optional]
+ **body** | [**\Camunda\Client\Model\DeleteProcessInstancesDto**](../Model/DeleteProcessInstancesDto.md)| **Unallowed property**: &#x60;processInstanceQuery&#x60; | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\BatchDto**](../Model/BatchDto.md)
+[**\Camunda\Client\Model\BatchDto**](../Model/BatchDto.md)
 
 ### Authorization
 
@@ -153,12 +153,12 @@ Deletes a running process instance by id.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\ProcessInstanceApi(
+$apiInstance = new Camunda\Client\Api\ProcessInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -215,12 +215,12 @@ Deletes a variable of a process instance by id.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\ProcessInstanceApi(
+$apiInstance = new Camunda\Client\Api\ProcessInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -260,7 +260,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteProcessInstancesAsyncOperation**
-> \Swagger\Client\Model\BatchDto deleteProcessInstancesAsyncOperation($body)
+> \Camunda\Client\Model\BatchDto deleteProcessInstancesAsyncOperation($body)
 
 Delete Async (POST)
 
@@ -271,18 +271,18 @@ Deletes multiple process instances asynchronously (batch).
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\ProcessInstanceApi(
+$apiInstance = new Camunda\Client\Api\ProcessInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\DeleteProcessInstancesDto(); // \Swagger\Client\Model\DeleteProcessInstancesDto | **Unallowed property**: `historicProcessInstanceQuery`
+$body = new \Camunda\Client\Model\DeleteProcessInstancesDto(); // \Camunda\Client\Model\DeleteProcessInstancesDto | **Unallowed property**: `historicProcessInstanceQuery`
 
 try {
     $result = $apiInstance->deleteProcessInstancesAsyncOperation($body);
@@ -297,11 +297,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\DeleteProcessInstancesDto**](../Model/DeleteProcessInstancesDto.md)| **Unallowed property**: &#x60;historicProcessInstanceQuery&#x60; | [optional]
+ **body** | [**\Camunda\Client\Model\DeleteProcessInstancesDto**](../Model/DeleteProcessInstancesDto.md)| **Unallowed property**: &#x60;historicProcessInstanceQuery&#x60; | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\BatchDto**](../Model/BatchDto.md)
+[**\Camunda\Client\Model\BatchDto**](../Model/BatchDto.md)
 
 ### Authorization
 
@@ -315,7 +315,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getActivityInstanceTree**
-> \Swagger\Client\Model\ActivityInstanceDto getActivityInstanceTree($id)
+> \Camunda\Client\Model\ActivityInstanceDto getActivityInstanceTree($id)
 
 Get Activity Instance
 
@@ -326,12 +326,12 @@ Retrieves an Activity Instance (Tree) for a given process instance by id.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\ProcessInstanceApi(
+$apiInstance = new Camunda\Client\Api\ProcessInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -356,7 +356,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ActivityInstanceDto**](../Model/ActivityInstanceDto.md)
+[**\Camunda\Client\Model\ActivityInstanceDto**](../Model/ActivityInstanceDto.md)
 
 ### Authorization
 
@@ -370,7 +370,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getProcessInstance**
-> \Swagger\Client\Model\ProcessInstanceDto getProcessInstance($id)
+> \Camunda\Client\Model\ProcessInstanceDto getProcessInstance($id)
 
 Get Process Instance
 
@@ -381,12 +381,12 @@ Retrieves a process instance by id, according to the `ProcessInstance` interface
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\ProcessInstanceApi(
+$apiInstance = new Camunda\Client\Api\ProcessInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -411,7 +411,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ProcessInstanceDto**](../Model/ProcessInstanceDto.md)
+[**\Camunda\Client\Model\ProcessInstanceDto**](../Model/ProcessInstanceDto.md)
 
 ### Authorization
 
@@ -425,7 +425,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getProcessInstanceComments**
-> \Swagger\Client\Model\CommentDto[] getProcessInstanceComments($id)
+> \Camunda\Client\Model\CommentDto[] getProcessInstanceComments($id)
 
 Get Process Instance Comments
 
@@ -436,12 +436,12 @@ Gets the comments for a process instance by id.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\ProcessInstanceApi(
+$apiInstance = new Camunda\Client\Api\ProcessInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -466,7 +466,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\CommentDto[]**](../Model/CommentDto.md)
+[**\Camunda\Client\Model\CommentDto[]**](../Model/CommentDto.md)
 
 ### Authorization
 
@@ -480,7 +480,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getProcessInstanceVariable**
-> \Swagger\Client\Model\VariableValueDto getProcessInstanceVariable($id, $var_name, $deserialize_value)
+> \Camunda\Client\Model\VariableValueDto getProcessInstanceVariable($id, $var_name, $deserialize_value)
 
 Get Process Variable
 
@@ -491,12 +491,12 @@ Retrieves a variable of a given process instance by id.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\ProcessInstanceApi(
+$apiInstance = new Camunda\Client\Api\ProcessInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -525,7 +525,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\VariableValueDto**](../Model/VariableValueDto.md)
+[**\Camunda\Client\Model\VariableValueDto**](../Model/VariableValueDto.md)
 
 ### Authorization
 
@@ -550,12 +550,12 @@ Retrieves the content of a Process Variable by the Process Instance id and the P
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\ProcessInstanceApi(
+$apiInstance = new Camunda\Client\Api\ProcessInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -596,7 +596,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getProcessInstanceVariables**
-> map[string,\Swagger\Client\Model\VariableValueDto] getProcessInstanceVariables($id, $deserialize_values)
+> map[string,\Camunda\Client\Model\VariableValueDto] getProcessInstanceVariables($id, $deserialize_values)
 
 Get Process Variables
 
@@ -607,12 +607,12 @@ Retrieves all variables of a given process instance by id.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\ProcessInstanceApi(
+$apiInstance = new Camunda\Client\Api\ProcessInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -639,7 +639,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**map[string,\Swagger\Client\Model\VariableValueDto]**](../Model/VariableValueDto.md)
+[**map[string,\Camunda\Client\Model\VariableValueDto]**](../Model/VariableValueDto.md)
 
 ### Authorization
 
@@ -653,7 +653,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getProcessInstances**
-> \Swagger\Client\Model\ProcessInstanceDto[] getProcessInstances($sort_by, $sort_order, $first_result, $max_results, $process_instance_ids, $business_key, $business_key_like, $case_instance_id, $process_definition_id, $process_definition_key, $process_definition_key_in, $process_definition_key_not_in, $deployment_id, $super_process_instance, $sub_process_instance, $super_case_instance, $sub_case_instance, $active, $suspended, $with_incident, $incident_id, $incident_type, $incident_message, $incident_message_like, $tenant_id_in, $without_tenant_id, $process_definition_without_tenant_id, $activity_id_in, $root_process_instances, $leaf_process_instances, $variables, $variable_names_ignore_case, $variable_values_ignore_case)
+> \Camunda\Client\Model\ProcessInstanceDto[] getProcessInstances($sort_by, $sort_order, $first_result, $max_results, $process_instance_ids, $business_key, $business_key_like, $case_instance_id, $process_definition_id, $process_definition_key, $process_definition_key_in, $process_definition_key_not_in, $deployment_id, $super_process_instance, $sub_process_instance, $super_case_instance, $sub_case_instance, $active, $suspended, $with_incident, $incident_id, $incident_type, $incident_message, $incident_message_like, $tenant_id_in, $without_tenant_id, $process_definition_without_tenant_id, $activity_id_in, $root_process_instances, $leaf_process_instances, $variables, $variable_names_ignore_case, $variable_values_ignore_case)
 
 Get List
 
@@ -664,12 +664,12 @@ Queries for process instances that fulfill given parameters. Parameters may be s
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\ProcessInstanceApi(
+$apiInstance = new Camunda\Client\Api\ProcessInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -758,7 +758,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ProcessInstanceDto[]**](../Model/ProcessInstanceDto.md)
+[**\Camunda\Client\Model\ProcessInstanceDto[]**](../Model/ProcessInstanceDto.md)
 
 ### Authorization
 
@@ -772,7 +772,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getProcessInstancesCount**
-> \Swagger\Client\Model\CountResultDto getProcessInstancesCount($process_instance_ids, $business_key, $business_key_like, $case_instance_id, $process_definition_id, $process_definition_key, $process_definition_key_in, $process_definition_key_not_in, $deployment_id, $super_process_instance, $sub_process_instance, $super_case_instance, $sub_case_instance, $active, $suspended, $with_incident, $incident_id, $incident_type, $incident_message, $incident_message_like, $tenant_id_in, $without_tenant_id, $process_definition_without_tenant_id, $activity_id_in, $root_process_instances, $leaf_process_instances, $variables, $variable_names_ignore_case, $variable_values_ignore_case)
+> \Camunda\Client\Model\CountResultDto getProcessInstancesCount($process_instance_ids, $business_key, $business_key_like, $case_instance_id, $process_definition_id, $process_definition_key, $process_definition_key_in, $process_definition_key_not_in, $deployment_id, $super_process_instance, $sub_process_instance, $super_case_instance, $sub_case_instance, $active, $suspended, $with_incident, $incident_id, $incident_type, $incident_message, $incident_message_like, $tenant_id_in, $without_tenant_id, $process_definition_without_tenant_id, $activity_id_in, $root_process_instances, $leaf_process_instances, $variables, $variable_names_ignore_case, $variable_values_ignore_case)
 
 Get List Count
 
@@ -783,12 +783,12 @@ Queries for the number of process instances that fulfill given parameters.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\ProcessInstanceApi(
+$apiInstance = new Camunda\Client\Api\ProcessInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -869,7 +869,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\CountResultDto**](../Model/CountResultDto.md)
+[**\Camunda\Client\Model\CountResultDto**](../Model/CountResultDto.md)
 
 ### Authorization
 
@@ -894,19 +894,19 @@ Submits a list of modification instructions to change a process instance's execu
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\ProcessInstanceApi(
+$apiInstance = new Camunda\Client\Api\ProcessInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = "id_example"; // string | The id of the process instance to modify.
-$body = new \Swagger\Client\Model\ProcessInstanceModificationDto(); // \Swagger\Client\Model\ProcessInstanceModificationDto | 
+$body = new \Camunda\Client\Model\ProcessInstanceModificationDto(); // \Camunda\Client\Model\ProcessInstanceModificationDto | 
 
 try {
     $apiInstance->modifyProcessInstance($id, $body);
@@ -921,7 +921,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The id of the process instance to modify. |
- **body** | [**\Swagger\Client\Model\ProcessInstanceModificationDto**](../Model/ProcessInstanceModificationDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\ProcessInstanceModificationDto**](../Model/ProcessInstanceModificationDto.md)|  | [optional]
 
 ### Return type
 
@@ -939,7 +939,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **modifyProcessInstanceAsyncOperation**
-> \Swagger\Client\Model\BatchDto modifyProcessInstanceAsyncOperation($id, $body)
+> \Camunda\Client\Model\BatchDto modifyProcessInstanceAsyncOperation($id, $body)
 
 Modify Process Instance Execution State Async
 
@@ -950,19 +950,19 @@ Submits a list of modification instructions to change a process instance's execu
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\ProcessInstanceApi(
+$apiInstance = new Camunda\Client\Api\ProcessInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = "id_example"; // string | The id of the process instance to modify.
-$body = new \Swagger\Client\Model\ProcessInstanceModificationDto(); // \Swagger\Client\Model\ProcessInstanceModificationDto | 
+$body = new \Camunda\Client\Model\ProcessInstanceModificationDto(); // \Camunda\Client\Model\ProcessInstanceModificationDto | 
 
 try {
     $result = $apiInstance->modifyProcessInstanceAsyncOperation($id, $body);
@@ -978,11 +978,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The id of the process instance to modify. |
- **body** | [**\Swagger\Client\Model\ProcessInstanceModificationDto**](../Model/ProcessInstanceModificationDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\ProcessInstanceModificationDto**](../Model/ProcessInstanceModificationDto.md)|  | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\BatchDto**](../Model/BatchDto.md)
+[**\Camunda\Client\Model\BatchDto**](../Model/BatchDto.md)
 
 ### Authorization
 
@@ -1007,19 +1007,19 @@ Updates or deletes the variables of a process instance by id. Updates precede de
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\ProcessInstanceApi(
+$apiInstance = new Camunda\Client\Api\ProcessInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = "id_example"; // string | The id of the process instance to set variables for.
-$body = new \Swagger\Client\Model\PatchVariablesDto(); // \Swagger\Client\Model\PatchVariablesDto | 
+$body = new \Camunda\Client\Model\PatchVariablesDto(); // \Camunda\Client\Model\PatchVariablesDto | 
 
 try {
     $apiInstance->modifyProcessInstanceVariables($id, $body);
@@ -1034,7 +1034,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The id of the process instance to set variables for. |
- **body** | [**\Swagger\Client\Model\PatchVariablesDto**](../Model/PatchVariablesDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\PatchVariablesDto**](../Model/PatchVariablesDto.md)|  | [optional]
 
 ### Return type
 
@@ -1052,7 +1052,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **queryProcessInstances**
-> \Swagger\Client\Model\ProcessInstanceDto[] queryProcessInstances($body, $first_result, $max_results)
+> \Camunda\Client\Model\ProcessInstanceDto[] queryProcessInstances($body, $first_result, $max_results)
 
 Get List (POST)
 
@@ -1063,18 +1063,18 @@ Queries for process instances that fulfill given parameters through a JSON objec
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\ProcessInstanceApi(
+$apiInstance = new Camunda\Client\Api\ProcessInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\ProcessInstanceQueryDto(); // \Swagger\Client\Model\ProcessInstanceQueryDto | 
+$body = new \Camunda\Client\Model\ProcessInstanceQueryDto(); // \Camunda\Client\Model\ProcessInstanceQueryDto | 
 $first_result = 56; // int | Pagination of results. Specifies the index of the first result to return.
 $max_results = 56; // int | Pagination of results. Specifies the maximum number of results to return. Will return less results if there are no more results left.
 
@@ -1091,13 +1091,13 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\ProcessInstanceQueryDto**](../Model/ProcessInstanceQueryDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\ProcessInstanceQueryDto**](../Model/ProcessInstanceQueryDto.md)|  | [optional]
  **first_result** | **int**| Pagination of results. Specifies the index of the first result to return. | [optional]
  **max_results** | **int**| Pagination of results. Specifies the maximum number of results to return. Will return less results if there are no more results left. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\ProcessInstanceDto[]**](../Model/ProcessInstanceDto.md)
+[**\Camunda\Client\Model\ProcessInstanceDto[]**](../Model/ProcessInstanceDto.md)
 
 ### Authorization
 
@@ -1111,7 +1111,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **queryProcessInstancesCount**
-> \Swagger\Client\Model\CountResultDto queryProcessInstancesCount($body)
+> \Camunda\Client\Model\CountResultDto queryProcessInstancesCount($body)
 
 Get List Count (POST)
 
@@ -1122,18 +1122,18 @@ Queries for the number of process instances that fulfill the given parameters. T
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\ProcessInstanceApi(
+$apiInstance = new Camunda\Client\Api\ProcessInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\ProcessInstanceQueryDto(); // \Swagger\Client\Model\ProcessInstanceQueryDto | 
+$body = new \Camunda\Client\Model\ProcessInstanceQueryDto(); // \Camunda\Client\Model\ProcessInstanceQueryDto | 
 
 try {
     $result = $apiInstance->queryProcessInstancesCount($body);
@@ -1148,11 +1148,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\ProcessInstanceQueryDto**](../Model/ProcessInstanceQueryDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\ProcessInstanceQueryDto**](../Model/ProcessInstanceQueryDto.md)|  | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\CountResultDto**](../Model/CountResultDto.md)
+[**\Camunda\Client\Model\CountResultDto**](../Model/CountResultDto.md)
 
 ### Authorization
 
@@ -1177,12 +1177,12 @@ Sets a variable of a given process instance by id.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\ProcessInstanceApi(
+$apiInstance = new Camunda\Client\Api\ProcessInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -1190,7 +1190,7 @@ $apiInstance = new Swagger\Client\Api\ProcessInstanceApi(
 );
 $id = "id_example"; // string | The id of the process instance to set the variable for.
 $var_name = "var_name_example"; // string | The name of the variable to set.
-$body = new \Swagger\Client\Model\VariableValueDto(); // \Swagger\Client\Model\VariableValueDto | 
+$body = new \Camunda\Client\Model\VariableValueDto(); // \Camunda\Client\Model\VariableValueDto | 
 
 try {
     $apiInstance->setProcessInstanceVariable($id, $var_name, $body);
@@ -1206,7 +1206,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The id of the process instance to set the variable for. |
  **var_name** | **string**| The name of the variable to set. |
- **body** | [**\Swagger\Client\Model\VariableValueDto**](../Model/VariableValueDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\VariableValueDto**](../Model/VariableValueDto.md)|  | [optional]
 
 ### Return type
 
@@ -1235,12 +1235,12 @@ Sets the serialized value for a binary variable or the binary value for a file v
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\ProcessInstanceApi(
+$apiInstance = new Camunda\Client\Api\ProcessInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -1284,7 +1284,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **setRetriesByProcess**
-> \Swagger\Client\Model\BatchDto setRetriesByProcess($body)
+> \Camunda\Client\Model\BatchDto setRetriesByProcess($body)
 
 Set Job Retries Async (POST)
 
@@ -1295,18 +1295,18 @@ Create a batch to set retries of jobs associated with given processes asynchrono
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\ProcessInstanceApi(
+$apiInstance = new Camunda\Client\Api\ProcessInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\SetJobRetriesByProcessDto(); // \Swagger\Client\Model\SetJobRetriesByProcessDto | Please note that if both processInstances and processInstanceQuery are provided,
+$body = new \Camunda\Client\Model\SetJobRetriesByProcessDto(); // \Camunda\Client\Model\SetJobRetriesByProcessDto | Please note that if both processInstances and processInstanceQuery are provided,
 then the resulting execution will be performed on the union of these sets.
 **Unallowed property**: `historicProcessInstanceQuery`
 
@@ -1323,13 +1323,13 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\SetJobRetriesByProcessDto**](../Model/SetJobRetriesByProcessDto.md)| Please note that if both processInstances and processInstanceQuery are provided,
+ **body** | [**\Camunda\Client\Model\SetJobRetriesByProcessDto**](../Model/SetJobRetriesByProcessDto.md)| Please note that if both processInstances and processInstanceQuery are provided,
 then the resulting execution will be performed on the union of these sets.
 **Unallowed property**: &#x60;historicProcessInstanceQuery&#x60; | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\BatchDto**](../Model/BatchDto.md)
+[**\Camunda\Client\Model\BatchDto**](../Model/BatchDto.md)
 
 ### Authorization
 
@@ -1343,7 +1343,7 @@ then the resulting execution will be performed on the union of these sets.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **setRetriesByProcessHistoricQueryBased**
-> \Swagger\Client\Model\BatchDto setRetriesByProcessHistoricQueryBased($body)
+> \Camunda\Client\Model\BatchDto setRetriesByProcessHistoricQueryBased($body)
 
 Set Job Retries Async Historic Query Based (POST)
 
@@ -1354,18 +1354,18 @@ Create a batch to set retries of jobs asynchronously based on a historic process
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\ProcessInstanceApi(
+$apiInstance = new Camunda\Client\Api\ProcessInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\SetJobRetriesByProcessDto(); // \Swagger\Client\Model\SetJobRetriesByProcessDto | Please note that if both processInstances and historicProcessInstanceQuery are provided,
+$body = new \Camunda\Client\Model\SetJobRetriesByProcessDto(); // \Camunda\Client\Model\SetJobRetriesByProcessDto | Please note that if both processInstances and historicProcessInstanceQuery are provided,
 then the resulting execution will be performed on the union of these sets.
 **Unallowed property**: `processInstanceQuery`
 
@@ -1382,13 +1382,13 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\SetJobRetriesByProcessDto**](../Model/SetJobRetriesByProcessDto.md)| Please note that if both processInstances and historicProcessInstanceQuery are provided,
+ **body** | [**\Camunda\Client\Model\SetJobRetriesByProcessDto**](../Model/SetJobRetriesByProcessDto.md)| Please note that if both processInstances and historicProcessInstanceQuery are provided,
 then the resulting execution will be performed on the union of these sets.
 **Unallowed property**: &#x60;processInstanceQuery&#x60; | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\BatchDto**](../Model/BatchDto.md)
+[**\Camunda\Client\Model\BatchDto**](../Model/BatchDto.md)
 
 ### Authorization
 
@@ -1402,7 +1402,7 @@ then the resulting execution will be performed on the union of these sets.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **setVariablesAsyncOperation**
-> \Swagger\Client\Model\BatchDto setVariablesAsyncOperation($body)
+> \Camunda\Client\Model\BatchDto setVariablesAsyncOperation($body)
 
 Set Variables Async (POST)
 
@@ -1413,18 +1413,18 @@ Update or create runtime process variables in the root scope of process instance
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\ProcessInstanceApi(
+$apiInstance = new Camunda\Client\Api\ProcessInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\SetVariablesAsyncDto(); // \Swagger\Client\Model\SetVariablesAsyncDto | 
+$body = new \Camunda\Client\Model\SetVariablesAsyncDto(); // \Camunda\Client\Model\SetVariablesAsyncDto | 
 
 try {
     $result = $apiInstance->setVariablesAsyncOperation($body);
@@ -1439,11 +1439,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\SetVariablesAsyncDto**](../Model/SetVariablesAsyncDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\SetVariablesAsyncDto**](../Model/SetVariablesAsyncDto.md)|  | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\BatchDto**](../Model/BatchDto.md)
+[**\Camunda\Client\Model\BatchDto**](../Model/BatchDto.md)
 
 ### Authorization
 
@@ -1468,18 +1468,18 @@ Activates or suspends process instances by providing certain criteria:  # Activa
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\ProcessInstanceApi(
+$apiInstance = new Camunda\Client\Api\ProcessInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\ProcessInstanceSuspensionStateDto(); // \Swagger\Client\Model\ProcessInstanceSuspensionStateDto | 
+$body = new \Camunda\Client\Model\ProcessInstanceSuspensionStateDto(); // \Camunda\Client\Model\ProcessInstanceSuspensionStateDto | 
 
 try {
     $apiInstance->updateSuspensionState($body);
@@ -1493,7 +1493,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\ProcessInstanceSuspensionStateDto**](../Model/ProcessInstanceSuspensionStateDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\ProcessInstanceSuspensionStateDto**](../Model/ProcessInstanceSuspensionStateDto.md)|  | [optional]
 
 ### Return type
 
@@ -1511,7 +1511,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateSuspensionStateAsyncOperation**
-> \Swagger\Client\Model\BatchDto updateSuspensionStateAsyncOperation($body)
+> \Camunda\Client\Model\BatchDto updateSuspensionStateAsyncOperation($body)
 
 Activate/Suspend In Batch
 
@@ -1522,18 +1522,18 @@ Activates or suspends process instances asynchronously with a list of process in
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\ProcessInstanceApi(
+$apiInstance = new Camunda\Client\Api\ProcessInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\ProcessInstanceSuspensionStateAsyncDto(); // \Swagger\Client\Model\ProcessInstanceSuspensionStateAsyncDto | 
+$body = new \Camunda\Client\Model\ProcessInstanceSuspensionStateAsyncDto(); // \Camunda\Client\Model\ProcessInstanceSuspensionStateAsyncDto | 
 
 try {
     $result = $apiInstance->updateSuspensionStateAsyncOperation($body);
@@ -1548,11 +1548,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\ProcessInstanceSuspensionStateAsyncDto**](../Model/ProcessInstanceSuspensionStateAsyncDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\ProcessInstanceSuspensionStateAsyncDto**](../Model/ProcessInstanceSuspensionStateAsyncDto.md)|  | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\BatchDto**](../Model/BatchDto.md)
+[**\Camunda\Client\Model\BatchDto**](../Model/BatchDto.md)
 
 ### Authorization
 
@@ -1577,19 +1577,19 @@ Activates or suspends a given process instance by id.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\ProcessInstanceApi(
+$apiInstance = new Camunda\Client\Api\ProcessInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = "id_example"; // string | The id of the process instance to activate or suspend.
-$body = new \Swagger\Client\Model\SuspensionStateDto(); // \Swagger\Client\Model\SuspensionStateDto | 
+$body = new \Camunda\Client\Model\SuspensionStateDto(); // \Camunda\Client\Model\SuspensionStateDto | 
 
 try {
     $apiInstance->updateSuspensionStateById($id, $body);
@@ -1604,7 +1604,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The id of the process instance to activate or suspend. |
- **body** | [**\Swagger\Client\Model\SuspensionStateDto**](../Model/SuspensionStateDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\SuspensionStateDto**](../Model/SuspensionStateDto.md)|  | [optional]
 
 ### Return type
 

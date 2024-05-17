@@ -1,4 +1,4 @@
-# Swagger\Client\UserApi
+# Camunda\Client\UserApi
 
 All URIs are relative to *http://{host}:{port}/{contextPath}*
 
@@ -16,7 +16,7 @@ Method | HTTP request | Description
 [**updateProfile**](UserApi.md#updateprofile) | **PUT** /user/{id}/profile | Update User Profile
 
 # **availableOperations**
-> \Swagger\Client\Model\ResourceOptionsDto availableOperations()
+> \Camunda\Client\Model\ResourceOptionsDto availableOperations()
 
 Options
 
@@ -27,12 +27,12 @@ The `/user` resource supports two custom `OPTIONS` requests, one for the resourc
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\UserApi(
+$apiInstance = new Camunda\Client\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -53,7 +53,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\ResourceOptionsDto**](../Model/ResourceOptionsDto.md)
+[**\Camunda\Client\Model\ResourceOptionsDto**](../Model/ResourceOptionsDto.md)
 
 ### Authorization
 
@@ -67,7 +67,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **availableUserOperations**
-> \Swagger\Client\Model\ResourceOptionsDto availableUserOperations($id)
+> \Camunda\Client\Model\ResourceOptionsDto availableUserOperations($id)
 
 Options
 
@@ -78,12 +78,12 @@ The `/user` resource supports two custom `OPTIONS` requests, one for the resourc
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\UserApi(
+$apiInstance = new Camunda\Client\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -108,7 +108,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ResourceOptionsDto**](../Model/ResourceOptionsDto.md)
+[**\Camunda\Client\Model\ResourceOptionsDto**](../Model/ResourceOptionsDto.md)
 
 ### Authorization
 
@@ -133,18 +133,18 @@ Create a new user.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\UserApi(
+$apiInstance = new Camunda\Client\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\UserDto(); // \Swagger\Client\Model\UserDto | 
+$body = new \Camunda\Client\Model\UserDto(); // \Camunda\Client\Model\UserDto | 
 
 try {
     $apiInstance->createUser($body);
@@ -158,7 +158,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\UserDto**](../Model/UserDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\UserDto**](../Model/UserDto.md)|  | [optional]
 
 ### Return type
 
@@ -187,12 +187,12 @@ Deletes a user by id.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\UserApi(
+$apiInstance = new Camunda\Client\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -230,7 +230,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUserCount**
-> \Swagger\Client\Model\CountResultDto getUserCount($id, $id_in, $first_name, $first_name_like, $last_name, $last_name_like, $email, $email_like, $member_of_group, $member_of_tenant, $potential_starter)
+> \Camunda\Client\Model\CountResultDto getUserCount($id, $id_in, $first_name, $first_name_like, $last_name, $last_name_like, $email, $email_like, $member_of_group, $member_of_tenant, $potential_starter)
 
 Get List Count
 
@@ -241,12 +241,12 @@ Queries for the number of deployments that fulfill given parameters. Takes the s
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\UserApi(
+$apiInstance = new Camunda\Client\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -291,7 +291,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\CountResultDto**](../Model/CountResultDto.md)
+[**\Camunda\Client\Model\CountResultDto**](../Model/CountResultDto.md)
 
 ### Authorization
 
@@ -305,7 +305,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUserProfile**
-> \Swagger\Client\Model\UserProfileDto getUserProfile($id)
+> \Camunda\Client\Model\UserProfileDto getUserProfile($id)
 
 Get Profile
 
@@ -316,12 +316,12 @@ Retrieves a user's profile.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\UserApi(
+$apiInstance = new Camunda\Client\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -346,7 +346,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\UserProfileDto**](../Model/UserProfileDto.md)
+[**\Camunda\Client\Model\UserProfileDto**](../Model/UserProfileDto.md)
 
 ### Authorization
 
@@ -360,7 +360,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUsers**
-> \Swagger\Client\Model\UserProfileDto[] getUsers($id, $id_in, $first_name, $first_name_like, $last_name, $last_name_like, $email, $email_like, $member_of_group, $member_of_tenant, $potential_starter, $sort_by, $sort_order, $first_result, $max_results)
+> \Camunda\Client\Model\UserProfileDto[] getUsers($id, $id_in, $first_name, $first_name_like, $last_name, $last_name_like, $email, $email_like, $member_of_group, $member_of_tenant, $potential_starter, $sort_by, $sort_order, $first_result, $max_results)
 
 Get List
 
@@ -371,12 +371,12 @@ Query for a list of users using a list of parameters. The size of the result set
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\UserApi(
+$apiInstance = new Camunda\Client\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -429,7 +429,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\UserProfileDto[]**](../Model/UserProfileDto.md)
+[**\Camunda\Client\Model\UserProfileDto[]**](../Model/UserProfileDto.md)
 
 ### Authorization
 
@@ -454,12 +454,12 @@ Unlocks a user by id.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\UserApi(
+$apiInstance = new Camunda\Client\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -508,19 +508,19 @@ Updates a user's credentials (password)
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\UserApi(
+$apiInstance = new Camunda\Client\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = "id_example"; // string | The id of the user to be updated.
-$body = new \Swagger\Client\Model\UserCredentialsDto(); // \Swagger\Client\Model\UserCredentialsDto | 
+$body = new \Camunda\Client\Model\UserCredentialsDto(); // \Camunda\Client\Model\UserCredentialsDto | 
 
 try {
     $apiInstance->updateCredentials($id, $body);
@@ -535,7 +535,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The id of the user to be updated. |
- **body** | [**\Swagger\Client\Model\UserCredentialsDto**](../Model/UserCredentialsDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\UserCredentialsDto**](../Model/UserCredentialsDto.md)|  | [optional]
 
 ### Return type
 
@@ -564,19 +564,19 @@ Updates the profile information of an already existing user.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\UserApi(
+$apiInstance = new Camunda\Client\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = "id_example"; // string | The id of the user.
-$body = new \Swagger\Client\Model\UserProfileDto(); // \Swagger\Client\Model\UserProfileDto | 
+$body = new \Camunda\Client\Model\UserProfileDto(); // \Camunda\Client\Model\UserProfileDto | 
 
 try {
     $apiInstance->updateProfile($id, $body);
@@ -591,7 +591,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The id of the user. |
- **body** | [**\Swagger\Client\Model\UserProfileDto**](../Model/UserProfileDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\UserProfileDto**](../Model/UserProfileDto.md)|  | [optional]
 
 ### Return type
 

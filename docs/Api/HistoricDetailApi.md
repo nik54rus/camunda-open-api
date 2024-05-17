@@ -1,4 +1,4 @@
-# Swagger\Client\HistoricDetailApi
+# Camunda\Client\HistoricDetailApi
 
 All URIs are relative to *http://{host}:{port}/{contextPath}*
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 [**queryHistoricDetails**](HistoricDetailApi.md#queryhistoricdetails) | **POST** /history/detail | Get Historic Details (POST)
 
 # **getHistoricDetails**
-> \Swagger\Client\Model\HistoricDetailDto[] getHistoricDetails($process_instance_id, $process_instance_id_in, $execution_id, $task_id, $activity_instance_id, $case_instance_id, $case_execution_id, $variable_instance_id, $variable_type_in, $tenant_id_in, $without_tenant_id, $user_operation_id, $form_fields, $variable_updates, $exclude_task_details, $initial, $occurred_before, $occurred_after, $sort_by, $sort_order, $first_result, $max_results, $deserialize_values)
+> \Camunda\Client\Model\HistoricDetailDto[] getHistoricDetails($process_instance_id, $process_instance_id_in, $execution_id, $task_id, $activity_instance_id, $case_instance_id, $case_execution_id, $variable_instance_id, $variable_type_in, $tenant_id_in, $without_tenant_id, $user_operation_id, $form_fields, $variable_updates, $exclude_task_details, $initial, $occurred_before, $occurred_after, $sort_by, $sort_order, $first_result, $max_results, $deserialize_values)
 
 Get Historic Details
 
@@ -22,12 +22,12 @@ Queries for historic details that fulfill the given parameters. The size of the 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricDetailApi(
+$apiInstance = new Camunda\Client\Api\HistoricDetailApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -96,7 +96,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\HistoricDetailDto[]**](../Model/HistoricDetailDto.md)
+[**\Camunda\Client\Model\HistoricDetailDto[]**](../Model/HistoricDetailDto.md)
 
 ### Authorization
 
@@ -110,7 +110,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getHistoricDetailsCount**
-> \Swagger\Client\Model\CountResultDto getHistoricDetailsCount($process_instance_id, $process_instance_id_in, $execution_id, $task_id, $activity_instance_id, $case_instance_id, $case_execution_id, $variable_instance_id, $variable_type_in, $tenant_id_in, $without_tenant_id, $user_operation_id, $form_fields, $variable_updates, $exclude_task_details, $initial, $occurred_before, $occurred_after)
+> \Camunda\Client\Model\CountResultDto getHistoricDetailsCount($process_instance_id, $process_instance_id_in, $execution_id, $task_id, $activity_instance_id, $case_instance_id, $case_execution_id, $variable_instance_id, $variable_type_in, $tenant_id_in, $without_tenant_id, $user_operation_id, $form_fields, $variable_updates, $exclude_task_details, $initial, $occurred_before, $occurred_after)
 
 Get Historic Detail Count
 
@@ -121,12 +121,12 @@ Queries for the number of historic details that fulfill the given parameters. Ta
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricDetailApi(
+$apiInstance = new Camunda\Client\Api\HistoricDetailApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -185,7 +185,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\CountResultDto**](../Model/CountResultDto.md)
+[**\Camunda\Client\Model\CountResultDto**](../Model/CountResultDto.md)
 
 ### Authorization
 
@@ -199,7 +199,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **historicDetail**
-> \Swagger\Client\Model\HistoricDetailDto historicDetail($id, $deserialize_value)
+> \Camunda\Client\Model\HistoricDetailDto historicDetail($id, $deserialize_value)
 
 Get Historic Detail
 
@@ -210,12 +210,12 @@ Retrieves a historic detail by id.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricDetailApi(
+$apiInstance = new Camunda\Client\Api\HistoricDetailApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -242,7 +242,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\HistoricDetailDto**](../Model/HistoricDetailDto.md)
+[**\Camunda\Client\Model\HistoricDetailDto**](../Model/HistoricDetailDto.md)
 
 ### Authorization
 
@@ -267,12 +267,12 @@ Retrieves the content of a historic variable update by id. Applicable for byte a
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricDetailApi(
+$apiInstance = new Camunda\Client\Api\HistoricDetailApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -311,7 +311,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **queryHistoricDetails**
-> \Swagger\Client\Model\HistoricDetailDto[] queryHistoricDetails($body, $first_result, $max_results, $deserialize_values)
+> \Camunda\Client\Model\HistoricDetailDto[] queryHistoricDetails($body, $first_result, $max_results, $deserialize_values)
 
 Get Historic Details (POST)
 
@@ -322,18 +322,18 @@ Queries for historic details that fulfill the given parameters. This method is s
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricDetailApi(
+$apiInstance = new Camunda\Client\Api\HistoricDetailApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\HistoricDetailQueryDto(); // \Swagger\Client\Model\HistoricDetailQueryDto | 
+$body = new \Camunda\Client\Model\HistoricDetailQueryDto(); // \Camunda\Client\Model\HistoricDetailQueryDto | 
 $first_result = 56; // int | Pagination of results. Specifies the index of the first result to return.
 $max_results = 56; // int | Pagination of results. Specifies the maximum number of results to return. Will return less results if there are no more results left.
 $deserialize_values = true; // bool | Determines whether serializable variable values (typically variables that store custom Java objects) should be deserialized on server side (default `true`).  If set to `true`, a serializable variable will be deserialized on server side and transformed to JSON using [Jackson's](https://github.com/FasterXML/jackson) POJO/bean property introspection feature. Note that this requires the Java classes of the variable value to be on the REST API's classpath.  If set to `false`, a serializable variable will be returned in its serialized format. For example, a variable that is serialized as XML will be returned as a JSON string containing XML.  **Note:** While `true` is the default value for reasons of backward compatibility, we recommend setting this parameter to `false` when developing web applications that are independent of the Java process applications deployed to the engine.
@@ -351,14 +351,14 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\HistoricDetailQueryDto**](../Model/HistoricDetailQueryDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\HistoricDetailQueryDto**](../Model/HistoricDetailQueryDto.md)|  | [optional]
  **first_result** | **int**| Pagination of results. Specifies the index of the first result to return. | [optional]
  **max_results** | **int**| Pagination of results. Specifies the maximum number of results to return. Will return less results if there are no more results left. | [optional]
  **deserialize_values** | **bool**| Determines whether serializable variable values (typically variables that store custom Java objects) should be deserialized on server side (default &#x60;true&#x60;).  If set to &#x60;true&#x60;, a serializable variable will be deserialized on server side and transformed to JSON using [Jackson&#x27;s](https://github.com/FasterXML/jackson) POJO/bean property introspection feature. Note that this requires the Java classes of the variable value to be on the REST API&#x27;s classpath.  If set to &#x60;false&#x60;, a serializable variable will be returned in its serialized format. For example, a variable that is serialized as XML will be returned as a JSON string containing XML.  **Note:** While &#x60;true&#x60; is the default value for reasons of backward compatibility, we recommend setting this parameter to &#x60;false&#x60; when developing web applications that are independent of the Java process applications deployed to the engine. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\HistoricDetailDto[]**](../Model/HistoricDetailDto.md)
+[**\Camunda\Client\Model\HistoricDetailDto[]**](../Model/HistoricDetailDto.md)
 
 ### Authorization
 

@@ -1,4 +1,4 @@
-# Swagger\Client\HistoricTaskInstanceApi
+# Camunda\Client\HistoricTaskInstanceApi
 
 All URIs are relative to *http://{host}:{port}/{contextPath}*
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 [**queryHistoricTaskInstancesCount**](HistoricTaskInstanceApi.md#queryhistorictaskinstancescount) | **POST** /history/task/count | Get Task Count (POST)
 
 # **getHistoricTaskInstanceReport**
-> \Swagger\Client\Model\HistoricTaskInstanceReportResultDto[] getHistoricTaskInstanceReport($report_type, $period_unit, $completed_before, $completed_after, $group_by)
+> \Camunda\Client\Model\HistoricTaskInstanceReportResultDto[] getHistoricTaskInstanceReport($report_type, $period_unit, $completed_before, $completed_after, $group_by)
 
 Get Task Report (Historic)
 
@@ -22,12 +22,12 @@ Retrieves a report of completed tasks. When the report type is set to `count`, t
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricTaskInstanceApi(
+$apiInstance = new Camunda\Client\Api\HistoricTaskInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -60,7 +60,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\HistoricTaskInstanceReportResultDto[]**](../Model/HistoricTaskInstanceReportResultDto.md)
+[**\Camunda\Client\Model\HistoricTaskInstanceReportResultDto[]**](../Model/HistoricTaskInstanceReportResultDto.md)
 
 ### Authorization
 
@@ -74,7 +74,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getHistoricTaskInstances**
-> \Swagger\Client\Model\HistoricTaskInstanceDto[] getHistoricTaskInstances($task_id, $task_parent_task_id, $process_instance_id, $process_instance_business_key, $process_instance_business_key_in, $process_instance_business_key_like, $execution_id, $process_definition_id, $process_definition_key, $process_definition_name, $case_instance_id, $case_execution_id, $case_definition_id, $case_definition_key, $case_definition_name, $activity_instance_id_in, $task_name, $task_name_like, $task_description, $task_description_like, $task_definition_key, $task_definition_key_in, $task_delete_reason, $task_delete_reason_like, $task_assignee, $task_assignee_like, $task_owner, $task_owner_like, $task_priority, $assigned, $unassigned, $finished, $unfinished, $process_finished, $process_unfinished, $task_due_date, $task_due_date_before, $task_due_date_after, $without_task_due_date, $task_follow_up_date, $task_follow_up_date_before, $task_follow_up_date_after, $started_before, $started_after, $finished_before, $finished_after, $tenant_id_in, $without_tenant_id, $task_variables, $process_variables, $variable_names_ignore_case, $variable_values_ignore_case, $task_involved_user, $task_involved_group, $task_had_candidate_user, $task_had_candidate_group, $with_candidate_groups, $without_candidate_groups, $sort_by, $sort_order, $first_result, $max_results)
+> \Camunda\Client\Model\HistoricTaskInstanceDto[] getHistoricTaskInstances($task_id, $task_parent_task_id, $process_instance_id, $process_instance_business_key, $process_instance_business_key_in, $process_instance_business_key_like, $execution_id, $process_definition_id, $process_definition_key, $process_definition_name, $case_instance_id, $case_execution_id, $case_definition_id, $case_definition_key, $case_definition_name, $activity_instance_id_in, $task_name, $task_name_like, $task_description, $task_description_like, $task_definition_key, $task_definition_key_in, $task_delete_reason, $task_delete_reason_like, $task_assignee, $task_assignee_like, $task_owner, $task_owner_like, $task_priority, $assigned, $unassigned, $finished, $unfinished, $process_finished, $process_unfinished, $task_due_date, $task_due_date_before, $task_due_date_after, $without_task_due_date, $task_follow_up_date, $task_follow_up_date_before, $task_follow_up_date_after, $started_before, $started_after, $finished_before, $finished_after, $tenant_id_in, $without_tenant_id, $task_variables, $process_variables, $variable_names_ignore_case, $variable_values_ignore_case, $task_involved_user, $task_involved_group, $task_had_candidate_user, $task_had_candidate_group, $with_candidate_groups, $without_candidate_groups, $sort_by, $sort_order, $first_result, $max_results)
 
 Get Tasks (Historic)
 
@@ -85,12 +85,12 @@ Queries for historic tasks that fulfill the given parameters. The size of the re
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricTaskInstanceApi(
+$apiInstance = new Camunda\Client\Api\HistoricTaskInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -237,7 +237,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\HistoricTaskInstanceDto[]**](../Model/HistoricTaskInstanceDto.md)
+[**\Camunda\Client\Model\HistoricTaskInstanceDto[]**](../Model/HistoricTaskInstanceDto.md)
 
 ### Authorization
 
@@ -251,7 +251,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getHistoricTaskInstancesCount**
-> \Swagger\Client\Model\CountResultDto getHistoricTaskInstancesCount($task_id, $task_parent_task_id, $process_instance_id, $process_instance_business_key, $process_instance_business_key_in, $process_instance_business_key_like, $execution_id, $process_definition_id, $process_definition_key, $process_definition_name, $case_instance_id, $case_execution_id, $case_definition_id, $case_definition_key, $case_definition_name, $activity_instance_id_in, $task_name, $task_name_like, $task_description, $task_description_like, $task_definition_key, $task_definition_key_in, $task_delete_reason, $task_delete_reason_like, $task_assignee, $task_assignee_like, $task_owner, $task_owner_like, $task_priority, $assigned, $unassigned, $finished, $unfinished, $process_finished, $process_unfinished, $task_due_date, $task_due_date_before, $task_due_date_after, $without_task_due_date, $task_follow_up_date, $task_follow_up_date_before, $task_follow_up_date_after, $started_before, $started_after, $finished_before, $finished_after, $tenant_id_in, $without_tenant_id, $task_variables, $process_variables, $variable_names_ignore_case, $variable_values_ignore_case, $task_involved_user, $task_involved_group, $task_had_candidate_user, $task_had_candidate_group, $with_candidate_groups, $without_candidate_groups)
+> \Camunda\Client\Model\CountResultDto getHistoricTaskInstancesCount($task_id, $task_parent_task_id, $process_instance_id, $process_instance_business_key, $process_instance_business_key_in, $process_instance_business_key_like, $execution_id, $process_definition_id, $process_definition_key, $process_definition_name, $case_instance_id, $case_execution_id, $case_definition_id, $case_definition_key, $case_definition_name, $activity_instance_id_in, $task_name, $task_name_like, $task_description, $task_description_like, $task_definition_key, $task_definition_key_in, $task_delete_reason, $task_delete_reason_like, $task_assignee, $task_assignee_like, $task_owner, $task_owner_like, $task_priority, $assigned, $unassigned, $finished, $unfinished, $process_finished, $process_unfinished, $task_due_date, $task_due_date_before, $task_due_date_after, $without_task_due_date, $task_follow_up_date, $task_follow_up_date_before, $task_follow_up_date_after, $started_before, $started_after, $finished_before, $finished_after, $tenant_id_in, $without_tenant_id, $task_variables, $process_variables, $variable_names_ignore_case, $variable_values_ignore_case, $task_involved_user, $task_involved_group, $task_had_candidate_user, $task_had_candidate_group, $with_candidate_groups, $without_candidate_groups)
 
 Get Task Count
 
@@ -262,12 +262,12 @@ Queries for the number of historic tasks that fulfill the given parameters. Take
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricTaskInstanceApi(
+$apiInstance = new Camunda\Client\Api\HistoricTaskInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -406,7 +406,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\CountResultDto**](../Model/CountResultDto.md)
+[**\Camunda\Client\Model\CountResultDto**](../Model/CountResultDto.md)
 
 ### Authorization
 
@@ -420,7 +420,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **queryHistoricTaskInstances**
-> \Swagger\Client\Model\HistoricTaskInstanceDto[] queryHistoricTaskInstances($body, $first_result, $max_results)
+> \Camunda\Client\Model\HistoricTaskInstanceDto[] queryHistoricTaskInstances($body, $first_result, $max_results)
 
 Get Tasks (Historic) (POST)
 
@@ -431,18 +431,18 @@ Queries for historic tasks that fulfill the given parameters. This method is sli
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricTaskInstanceApi(
+$apiInstance = new Camunda\Client\Api\HistoricTaskInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\HistoricTaskInstanceQueryDto(); // \Swagger\Client\Model\HistoricTaskInstanceQueryDto | 
+$body = new \Camunda\Client\Model\HistoricTaskInstanceQueryDto(); // \Camunda\Client\Model\HistoricTaskInstanceQueryDto | 
 $first_result = 56; // int | Pagination of results. Specifies the index of the first result to return.
 $max_results = 56; // int | Pagination of results. Specifies the maximum number of results to return. Will return less results if there are no more results left.
 
@@ -459,13 +459,13 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\HistoricTaskInstanceQueryDto**](../Model/HistoricTaskInstanceQueryDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\HistoricTaskInstanceQueryDto**](../Model/HistoricTaskInstanceQueryDto.md)|  | [optional]
  **first_result** | **int**| Pagination of results. Specifies the index of the first result to return. | [optional]
  **max_results** | **int**| Pagination of results. Specifies the maximum number of results to return. Will return less results if there are no more results left. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\HistoricTaskInstanceDto[]**](../Model/HistoricTaskInstanceDto.md)
+[**\Camunda\Client\Model\HistoricTaskInstanceDto[]**](../Model/HistoricTaskInstanceDto.md)
 
 ### Authorization
 
@@ -479,7 +479,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **queryHistoricTaskInstancesCount**
-> \Swagger\Client\Model\CountResultDto queryHistoricTaskInstancesCount($body)
+> \Camunda\Client\Model\CountResultDto queryHistoricTaskInstancesCount($body)
 
 Get Task Count (POST)
 
@@ -490,18 +490,18 @@ Queries for the number of historic tasks that fulfill the given parameters. Take
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricTaskInstanceApi(
+$apiInstance = new Camunda\Client\Api\HistoricTaskInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\HistoricTaskInstanceQueryDto(); // \Swagger\Client\Model\HistoricTaskInstanceQueryDto | 
+$body = new \Camunda\Client\Model\HistoricTaskInstanceQueryDto(); // \Camunda\Client\Model\HistoricTaskInstanceQueryDto | 
 
 try {
     $result = $apiInstance->queryHistoricTaskInstancesCount($body);
@@ -516,11 +516,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\HistoricTaskInstanceQueryDto**](../Model/HistoricTaskInstanceQueryDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\HistoricTaskInstanceQueryDto**](../Model/HistoricTaskInstanceQueryDto.md)|  | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\CountResultDto**](../Model/CountResultDto.md)
+[**\Camunda\Client\Model\CountResultDto**](../Model/CountResultDto.md)
 
 ### Authorization
 

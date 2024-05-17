@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 **tenant_id_in** | **string[]** | Filter by a comma-separated list of tenant ids. Only select subscriptions that belong to one of the given tenant ids. | [optional] 
 **without_tenant_id** | **bool** | Only select subscriptions which have no tenant id. Value may only be &#x60;true&#x60;, as &#x60;false&#x60; is the default behavior. | [optional] 
 **include_event_subscriptions_without_tenant_id** | **bool** | Select event subscriptions which have no tenant id. Can be used in combination with tenantIdIn parameter. Value may only be &#x60;true&#x60;, as &#x60;false&#x60; is the default behavior. | [optional] 
-**sorting** | [**\Swagger\Client\Model\EventSubscriptionQueryDtoSorting[]**](EventSubscriptionQueryDtoSorting.md) | Apply sorting of the result | [optional] 
+**sorting** | [**\Camunda\Client\Model\EventSubscriptionQueryDtoSorting[]**](EventSubscriptionQueryDtoSorting.md) | Apply sorting of the result | [optional] 
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 

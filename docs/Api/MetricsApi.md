@@ -1,4 +1,4 @@
-# Swagger\Client\MetricsApi
+# Camunda\Client\MetricsApi
 
 All URIs are relative to *http://{host}:{port}/{contextPath}*
 
@@ -20,12 +20,12 @@ Deletes all task worker metrics prior to the given date or all if no date is pro
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\MetricsApi(
+$apiInstance = new Camunda\Client\Api\MetricsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -63,7 +63,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getMetrics**
-> \Swagger\Client\Model\MetricsResultDto getMetrics($metrics_name, $start_date, $end_date)
+> \Camunda\Client\Model\MetricsResultDto getMetrics($metrics_name, $start_date, $end_date)
 
 Get Sum
 
@@ -74,12 +74,12 @@ Retrieves the `sum` (count) for a given metric.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\MetricsApi(
+$apiInstance = new Camunda\Client\Api\MetricsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -108,7 +108,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\MetricsResultDto**](../Model/MetricsResultDto.md)
+[**\Camunda\Client\Model\MetricsResultDto**](../Model/MetricsResultDto.md)
 
 ### Authorization
 
@@ -122,7 +122,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **interval**
-> \Swagger\Client\Model\MetricsIntervalResultDto[] interval($name, $reporter, $start_date, $end_date, $first_result, $max_results, $interval, $aggregate_by_reporter)
+> \Camunda\Client\Model\MetricsIntervalResultDto[] interval($name, $reporter, $start_date, $end_date, $first_result, $max_results, $interval, $aggregate_by_reporter)
 
 Get Metrics in Interval
 
@@ -133,12 +133,12 @@ Retrieves a list of metrics, aggregated for a given interval.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\MetricsApi(
+$apiInstance = new Camunda\Client\Api\MetricsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -177,7 +177,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\MetricsIntervalResultDto[]**](../Model/MetricsIntervalResultDto.md)
+[**\Camunda\Client\Model\MetricsIntervalResultDto[]**](../Model/MetricsIntervalResultDto.md)
 
 ### Authorization
 

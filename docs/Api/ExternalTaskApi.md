@@ -1,4 +1,4 @@
-# Swagger\Client\ExternalTaskApi
+# Camunda\Client\ExternalTaskApi
 
 All URIs are relative to *http://{host}:{port}/{contextPath}*
 
@@ -35,19 +35,19 @@ Completes an external task by id and updates process variables.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\ExternalTaskApi(
+$apiInstance = new Camunda\Client\Api\ExternalTaskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = "id_example"; // string | The id of the task to complete.
-$body = new \Swagger\Client\Model\CompleteExternalTaskDto(); // \Swagger\Client\Model\CompleteExternalTaskDto | 
+$body = new \Camunda\Client\Model\CompleteExternalTaskDto(); // \Camunda\Client\Model\CompleteExternalTaskDto | 
 
 try {
     $apiInstance->completeExternalTaskResource($id, $body);
@@ -62,7 +62,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The id of the task to complete. |
- **body** | [**\Swagger\Client\Model\CompleteExternalTaskDto**](../Model/CompleteExternalTaskDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\CompleteExternalTaskDto**](../Model/CompleteExternalTaskDto.md)|  | [optional]
 
 ### Return type
 
@@ -91,19 +91,19 @@ Extends the timeout of the lock by a given amount of time.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\ExternalTaskApi(
+$apiInstance = new Camunda\Client\Api\ExternalTaskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = "id_example"; // string | The id of the external task.
-$body = new \Swagger\Client\Model\ExtendLockOnExternalTaskDto(); // \Swagger\Client\Model\ExtendLockOnExternalTaskDto | 
+$body = new \Camunda\Client\Model\ExtendLockOnExternalTaskDto(); // \Camunda\Client\Model\ExtendLockOnExternalTaskDto | 
 
 try {
     $apiInstance->extendLock($id, $body);
@@ -118,7 +118,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The id of the external task. |
- **body** | [**\Swagger\Client\Model\ExtendLockOnExternalTaskDto**](../Model/ExtendLockOnExternalTaskDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\ExtendLockOnExternalTaskDto**](../Model/ExtendLockOnExternalTaskDto.md)|  | [optional]
 
 ### Return type
 
@@ -136,7 +136,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **fetchAndLock**
-> \Swagger\Client\Model\LockedExternalTaskDto[] fetchAndLock($body)
+> \Camunda\Client\Model\LockedExternalTaskDto[] fetchAndLock($body)
 
 Fetch and Lock
 
@@ -147,18 +147,18 @@ Fetches and locks a specific number of external tasks for execution by a worker.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\ExternalTaskApi(
+$apiInstance = new Camunda\Client\Api\ExternalTaskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\FetchExternalTasksDto(); // \Swagger\Client\Model\FetchExternalTasksDto | 
+$body = new \Camunda\Client\Model\FetchExternalTasksDto(); // \Camunda\Client\Model\FetchExternalTasksDto | 
 
 try {
     $result = $apiInstance->fetchAndLock($body);
@@ -173,11 +173,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\FetchExternalTasksDto**](../Model/FetchExternalTasksDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\FetchExternalTasksDto**](../Model/FetchExternalTasksDto.md)|  | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\LockedExternalTaskDto[]**](../Model/LockedExternalTaskDto.md)
+[**\Camunda\Client\Model\LockedExternalTaskDto[]**](../Model/LockedExternalTaskDto.md)
 
 ### Authorization
 
@@ -191,7 +191,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getExternalTask**
-> \Swagger\Client\Model\ExternalTaskDto getExternalTask($id)
+> \Camunda\Client\Model\ExternalTaskDto getExternalTask($id)
 
 Get
 
@@ -202,12 +202,12 @@ Retrieves an external task by id, corresponding to the `ExternalTask` interface 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\ExternalTaskApi(
+$apiInstance = new Camunda\Client\Api\ExternalTaskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -232,7 +232,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ExternalTaskDto**](../Model/ExternalTaskDto.md)
+[**\Camunda\Client\Model\ExternalTaskDto**](../Model/ExternalTaskDto.md)
 
 ### Authorization
 
@@ -257,12 +257,12 @@ Retrieves the error details in the context of a running external task by id.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\ExternalTaskApi(
+$apiInstance = new Camunda\Client\Api\ExternalTaskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -301,7 +301,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getExternalTasks**
-> \Swagger\Client\Model\ExternalTaskDto[] getExternalTasks($external_task_id, $external_task_id_in, $topic_name, $worker_id, $locked, $not_locked, $with_retries_left, $no_retries_left, $lock_expiration_after, $lock_expiration_before, $activity_id, $activity_id_in, $execution_id, $process_instance_id, $process_instance_id_in, $process_definition_id, $tenant_id_in, $active, $suspended, $priority_higher_than_or_equals, $priority_lower_than_or_equals, $sort_by, $sort_order, $first_result, $max_results)
+> \Camunda\Client\Model\ExternalTaskDto[] getExternalTasks($external_task_id, $external_task_id_in, $topic_name, $worker_id, $locked, $not_locked, $with_retries_left, $no_retries_left, $lock_expiration_after, $lock_expiration_before, $activity_id, $activity_id_in, $execution_id, $process_instance_id, $process_instance_id_in, $process_definition_id, $tenant_id_in, $active, $suspended, $priority_higher_than_or_equals, $priority_lower_than_or_equals, $sort_by, $sort_order, $first_result, $max_results)
 
 Get List
 
@@ -312,12 +312,12 @@ Queries for the external tasks that fulfill given parameters. Parameters may be 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\ExternalTaskApi(
+$apiInstance = new Camunda\Client\Api\ExternalTaskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -390,7 +390,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ExternalTaskDto[]**](../Model/ExternalTaskDto.md)
+[**\Camunda\Client\Model\ExternalTaskDto[]**](../Model/ExternalTaskDto.md)
 
 ### Authorization
 
@@ -404,7 +404,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getExternalTasksCount**
-> \Swagger\Client\Model\CountResultDto getExternalTasksCount($external_task_id, $external_task_id_in, $topic_name, $worker_id, $locked, $not_locked, $with_retries_left, $no_retries_left, $lock_expiration_after, $lock_expiration_before, $activity_id, $activity_id_in, $execution_id, $process_instance_id, $process_instance_id_in, $process_definition_id, $tenant_id_in, $active, $suspended, $priority_higher_than_or_equals, $priority_lower_than_or_equals)
+> \Camunda\Client\Model\CountResultDto getExternalTasksCount($external_task_id, $external_task_id_in, $topic_name, $worker_id, $locked, $not_locked, $with_retries_left, $no_retries_left, $lock_expiration_after, $lock_expiration_before, $activity_id, $activity_id_in, $execution_id, $process_instance_id, $process_instance_id_in, $process_definition_id, $tenant_id_in, $active, $suspended, $priority_higher_than_or_equals, $priority_lower_than_or_equals)
 
 Get List Count
 
@@ -415,12 +415,12 @@ Queries for the number of external tasks that fulfill given parameters. Takes th
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\ExternalTaskApi(
+$apiInstance = new Camunda\Client\Api\ExternalTaskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -485,7 +485,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\CountResultDto**](../Model/CountResultDto.md)
+[**\Camunda\Client\Model\CountResultDto**](../Model/CountResultDto.md)
 
 ### Authorization
 
@@ -510,12 +510,12 @@ Queries for distinct topic names of external tasks that fulfill given parameters
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\ExternalTaskApi(
+$apiInstance = new Camunda\Client\Api\ExternalTaskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -569,19 +569,19 @@ Reports a business error in the context of a running external task by id. The er
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\ExternalTaskApi(
+$apiInstance = new Camunda\Client\Api\ExternalTaskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = "id_example"; // string | The id of the external task in which context a BPMN error is reported.
-$body = new \Swagger\Client\Model\ExternalTaskBpmnError(); // \Swagger\Client\Model\ExternalTaskBpmnError | 
+$body = new \Camunda\Client\Model\ExternalTaskBpmnError(); // \Camunda\Client\Model\ExternalTaskBpmnError | 
 
 try {
     $apiInstance->handleExternalTaskBpmnError($id, $body);
@@ -596,7 +596,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The id of the external task in which context a BPMN error is reported. |
- **body** | [**\Swagger\Client\Model\ExternalTaskBpmnError**](../Model/ExternalTaskBpmnError.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\ExternalTaskBpmnError**](../Model/ExternalTaskBpmnError.md)|  | [optional]
 
 ### Return type
 
@@ -625,19 +625,19 @@ Reports a failure to execute an external task by id. A number of retries and a t
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\ExternalTaskApi(
+$apiInstance = new Camunda\Client\Api\ExternalTaskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = "id_example"; // string | The id of the external task to report a failure for.
-$body = new \Swagger\Client\Model\ExternalTaskFailureDto(); // \Swagger\Client\Model\ExternalTaskFailureDto | 
+$body = new \Camunda\Client\Model\ExternalTaskFailureDto(); // \Camunda\Client\Model\ExternalTaskFailureDto | 
 
 try {
     $apiInstance->handleFailure($id, $body);
@@ -652,7 +652,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The id of the external task to report a failure for. |
- **body** | [**\Swagger\Client\Model\ExternalTaskFailureDto**](../Model/ExternalTaskFailureDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\ExternalTaskFailureDto**](../Model/ExternalTaskFailureDto.md)|  | [optional]
 
 ### Return type
 
@@ -681,19 +681,19 @@ Lock an external task by a given id for a specified worker and amount of time.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\ExternalTaskApi(
+$apiInstance = new Camunda\Client\Api\ExternalTaskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = "id_example"; // string | The id of the external task.
-$body = new \Swagger\Client\Model\LockExternalTaskDto(); // \Swagger\Client\Model\LockExternalTaskDto | 
+$body = new \Camunda\Client\Model\LockExternalTaskDto(); // \Camunda\Client\Model\LockExternalTaskDto | 
 
 try {
     $apiInstance->lock($id, $body);
@@ -708,7 +708,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The id of the external task. |
- **body** | [**\Swagger\Client\Model\LockExternalTaskDto**](../Model/LockExternalTaskDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\LockExternalTaskDto**](../Model/LockExternalTaskDto.md)|  | [optional]
 
 ### Return type
 
@@ -726,7 +726,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **queryExternalTasks**
-> \Swagger\Client\Model\ExternalTaskDto[] queryExternalTasks($body, $first_result, $max_results)
+> \Camunda\Client\Model\ExternalTaskDto[] queryExternalTasks($body, $first_result, $max_results)
 
 Get List (POST)
 
@@ -737,18 +737,18 @@ Queries for external tasks that fulfill given parameters in the form of a JSON o
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\ExternalTaskApi(
+$apiInstance = new Camunda\Client\Api\ExternalTaskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\ExternalTaskQueryDto(); // \Swagger\Client\Model\ExternalTaskQueryDto | 
+$body = new \Camunda\Client\Model\ExternalTaskQueryDto(); // \Camunda\Client\Model\ExternalTaskQueryDto | 
 $first_result = 56; // int | Pagination of results. Specifies the index of the first result to return.
 $max_results = 56; // int | Pagination of results. Specifies the maximum number of results to return. Will return less results if there are no more results left.
 
@@ -765,13 +765,13 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\ExternalTaskQueryDto**](../Model/ExternalTaskQueryDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\ExternalTaskQueryDto**](../Model/ExternalTaskQueryDto.md)|  | [optional]
  **first_result** | **int**| Pagination of results. Specifies the index of the first result to return. | [optional]
  **max_results** | **int**| Pagination of results. Specifies the maximum number of results to return. Will return less results if there are no more results left. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\ExternalTaskDto[]**](../Model/ExternalTaskDto.md)
+[**\Camunda\Client\Model\ExternalTaskDto[]**](../Model/ExternalTaskDto.md)
 
 ### Authorization
 
@@ -785,7 +785,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **queryExternalTasksCount**
-> \Swagger\Client\Model\CountResultDto queryExternalTasksCount($body)
+> \Camunda\Client\Model\CountResultDto queryExternalTasksCount($body)
 
 Get List Count (POST)
 
@@ -796,18 +796,18 @@ Queries for the number of external tasks that fulfill given parameters. This met
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\ExternalTaskApi(
+$apiInstance = new Camunda\Client\Api\ExternalTaskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\ExternalTaskQueryDto(); // \Swagger\Client\Model\ExternalTaskQueryDto | 
+$body = new \Camunda\Client\Model\ExternalTaskQueryDto(); // \Camunda\Client\Model\ExternalTaskQueryDto | 
 
 try {
     $result = $apiInstance->queryExternalTasksCount($body);
@@ -822,11 +822,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\ExternalTaskQueryDto**](../Model/ExternalTaskQueryDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\ExternalTaskQueryDto**](../Model/ExternalTaskQueryDto.md)|  | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\CountResultDto**](../Model/CountResultDto.md)
+[**\Camunda\Client\Model\CountResultDto**](../Model/CountResultDto.md)
 
 ### Authorization
 
@@ -851,19 +851,19 @@ Sets the priority of an existing external task by id. The default value of a pri
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\ExternalTaskApi(
+$apiInstance = new Camunda\Client\Api\ExternalTaskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = "id_example"; // string | The id of the external task to set the priority for.
-$body = new \Swagger\Client\Model\PriorityDto(); // \Swagger\Client\Model\PriorityDto | 
+$body = new \Camunda\Client\Model\PriorityDto(); // \Camunda\Client\Model\PriorityDto | 
 
 try {
     $apiInstance->setExternalTaskResourcePriority($id, $body);
@@ -878,7 +878,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The id of the external task to set the priority for. |
- **body** | [**\Swagger\Client\Model\PriorityDto**](../Model/PriorityDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\PriorityDto**](../Model/PriorityDto.md)|  | [optional]
 
 ### Return type
 
@@ -907,19 +907,19 @@ Sets the number of retries left to execute an external task by id. If retries ar
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\ExternalTaskApi(
+$apiInstance = new Camunda\Client\Api\ExternalTaskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = "id_example"; // string | The id of the external task to set the number of retries for.
-$body = new \Swagger\Client\Model\RetriesDto(); // \Swagger\Client\Model\RetriesDto | 
+$body = new \Camunda\Client\Model\RetriesDto(); // \Camunda\Client\Model\RetriesDto | 
 
 try {
     $apiInstance->setExternalTaskResourceRetries($id, $body);
@@ -934,7 +934,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The id of the external task to set the number of retries for. |
- **body** | [**\Swagger\Client\Model\RetriesDto**](../Model/RetriesDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\RetriesDto**](../Model/RetriesDto.md)|  | [optional]
 
 ### Return type
 
@@ -963,18 +963,18 @@ Sets the number of retries left to execute external tasks by id synchronously. I
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\ExternalTaskApi(
+$apiInstance = new Camunda\Client\Api\ExternalTaskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\SetRetriesForExternalTasksDto(); // \Swagger\Client\Model\SetRetriesForExternalTasksDto | 
+$body = new \Camunda\Client\Model\SetRetriesForExternalTasksDto(); // \Camunda\Client\Model\SetRetriesForExternalTasksDto | 
 
 try {
     $apiInstance->setExternalTaskRetries($body);
@@ -988,7 +988,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\SetRetriesForExternalTasksDto**](../Model/SetRetriesForExternalTasksDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\SetRetriesForExternalTasksDto**](../Model/SetRetriesForExternalTasksDto.md)|  | [optional]
 
 ### Return type
 
@@ -1006,7 +1006,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **setExternalTaskRetriesAsyncOperation**
-> \Swagger\Client\Model\BatchDto setExternalTaskRetriesAsyncOperation($body)
+> \Camunda\Client\Model\BatchDto setExternalTaskRetriesAsyncOperation($body)
 
 Set Retries Async
 
@@ -1017,18 +1017,18 @@ Sets the number of retries left to execute external tasks by id asynchronously. 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\ExternalTaskApi(
+$apiInstance = new Camunda\Client\Api\ExternalTaskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\SetRetriesForExternalTasksDto(); // \Swagger\Client\Model\SetRetriesForExternalTasksDto | 
+$body = new \Camunda\Client\Model\SetRetriesForExternalTasksDto(); // \Camunda\Client\Model\SetRetriesForExternalTasksDto | 
 
 try {
     $result = $apiInstance->setExternalTaskRetriesAsyncOperation($body);
@@ -1043,11 +1043,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\SetRetriesForExternalTasksDto**](../Model/SetRetriesForExternalTasksDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\SetRetriesForExternalTasksDto**](../Model/SetRetriesForExternalTasksDto.md)|  | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\BatchDto**](../Model/BatchDto.md)
+[**\Camunda\Client\Model\BatchDto**](../Model/BatchDto.md)
 
 ### Authorization
 
@@ -1072,12 +1072,12 @@ Unlocks an external task by id. Clears the task's lock expiration time and worke
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\ExternalTaskApi(
+$apiInstance = new Camunda\Client\Api\ExternalTaskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),

@@ -1,4 +1,4 @@
-# Swagger\Client\MessageApi
+# Camunda\Client\MessageApi
 
 All URIs are relative to *http://{host}:{port}/{contextPath}*
 
@@ -7,7 +7,7 @@ Method | HTTP request | Description
 [**deliverMessage**](MessageApi.md#delivermessage) | **POST** /message | Correlate
 
 # **deliverMessage**
-> \Swagger\Client\Model\MessageCorrelationResultWithVariableDto[] deliverMessage($body)
+> \Camunda\Client\Model\MessageCorrelationResultWithVariableDto[] deliverMessage($body)
 
 Correlate
 
@@ -18,18 +18,18 @@ Correlates a message to the process engine to either trigger a message start eve
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\MessageApi(
+$apiInstance = new Camunda\Client\Api\MessageApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\CorrelationMessageDto(); // \Swagger\Client\Model\CorrelationMessageDto | 
+$body = new \Camunda\Client\Model\CorrelationMessageDto(); // \Camunda\Client\Model\CorrelationMessageDto | 
 
 try {
     $result = $apiInstance->deliverMessage($body);
@@ -44,11 +44,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\CorrelationMessageDto**](../Model/CorrelationMessageDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\CorrelationMessageDto**](../Model/CorrelationMessageDto.md)|  | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\MessageCorrelationResultWithVariableDto[]**](../Model/MessageCorrelationResultWithVariableDto.md)
+[**\Camunda\Client\Model\MessageCorrelationResultWithVariableDto[]**](../Model/MessageCorrelationResultWithVariableDto.md)
 
 ### Authorization
 

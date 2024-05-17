@@ -1,4 +1,4 @@
-# Swagger\Client\TaskVariableApi
+# Camunda\Client\TaskVariableApi
 
 All URIs are relative to *http://{host}:{port}/{contextPath}*
 
@@ -24,12 +24,12 @@ Removes a variable that is visible to a task. A variable is visible to a task if
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\TaskVariableApi(
+$apiInstance = new Camunda\Client\Api\TaskVariableApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -69,7 +69,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getTaskVariable**
-> \Swagger\Client\Model\VariableValueDto getTaskVariable($id, $var_name, $deserialize_value)
+> \Camunda\Client\Model\VariableValueDto getTaskVariable($id, $var_name, $deserialize_value)
 
 Get Task Variable
 
@@ -80,12 +80,12 @@ Retrieves a variable from the context of a given task. The variable must be visi
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\TaskVariableApi(
+$apiInstance = new Camunda\Client\Api\TaskVariableApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -114,7 +114,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\VariableValueDto**](../Model/VariableValueDto.md)
+[**\Camunda\Client\Model\VariableValueDto**](../Model/VariableValueDto.md)
 
 ### Authorization
 
@@ -139,12 +139,12 @@ Retrieves a binary variable from the context of a given task. Applicable for byt
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\TaskVariableApi(
+$apiInstance = new Camunda\Client\Api\TaskVariableApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -185,7 +185,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getTaskVariables**
-> map[string,\Swagger\Client\Model\VariableValueDto] getTaskVariables($id, $deserialize_values)
+> map[string,\Camunda\Client\Model\VariableValueDto] getTaskVariables($id, $deserialize_values)
 
 Get Task Variables
 
@@ -196,12 +196,12 @@ Retrieves all variables visible from the task. A variable is visible from the ta
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\TaskVariableApi(
+$apiInstance = new Camunda\Client\Api\TaskVariableApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -228,7 +228,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**map[string,\Swagger\Client\Model\VariableValueDto]**](../Model/VariableValueDto.md)
+[**map[string,\Camunda\Client\Model\VariableValueDto]**](../Model/VariableValueDto.md)
 
 ### Authorization
 
@@ -253,19 +253,19 @@ Updates or deletes the variables visible from the task. Updates precede deletion
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\TaskVariableApi(
+$apiInstance = new Camunda\Client\Api\TaskVariableApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = "id_example"; // string | The id of the task to set variables for.
-$body = new \Swagger\Client\Model\PatchVariablesDto(); // \Swagger\Client\Model\PatchVariablesDto | 
+$body = new \Camunda\Client\Model\PatchVariablesDto(); // \Camunda\Client\Model\PatchVariablesDto | 
 
 try {
     $apiInstance->modifyTaskVariables($id, $body);
@@ -280,7 +280,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The id of the task to set variables for. |
- **body** | [**\Swagger\Client\Model\PatchVariablesDto**](../Model/PatchVariablesDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\PatchVariablesDto**](../Model/PatchVariablesDto.md)|  | [optional]
 
 ### Return type
 
@@ -309,12 +309,12 @@ Updates a process variable that is visible from the Task scope. A variable is vi
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\TaskVariableApi(
+$apiInstance = new Camunda\Client\Api\TaskVariableApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -322,7 +322,7 @@ $apiInstance = new Swagger\Client\Api\TaskVariableApi(
 );
 $id = "id_example"; // string | The id of the task to set the variable for.
 $var_name = "var_name_example"; // string | The name of the variable to set.
-$body = new \Swagger\Client\Model\VariableValueDto(); // \Swagger\Client\Model\VariableValueDto | 
+$body = new \Camunda\Client\Model\VariableValueDto(); // \Camunda\Client\Model\VariableValueDto | 
 
 try {
     $apiInstance->putTaskVariable($id, $var_name, $body);
@@ -338,7 +338,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The id of the task to set the variable for. |
  **var_name** | **string**| The name of the variable to set. |
- **body** | [**\Swagger\Client\Model\VariableValueDto**](../Model/VariableValueDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\VariableValueDto**](../Model/VariableValueDto.md)|  | [optional]
 
 ### Return type
 
@@ -367,12 +367,12 @@ Sets the serialized value for a binary variable or the binary value for a file v
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\TaskVariableApi(
+$apiInstance = new Camunda\Client\Api\TaskVariableApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),

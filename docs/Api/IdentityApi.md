@@ -1,4 +1,4 @@
-# Swagger\Client\IdentityApi
+# Camunda\Client\IdentityApi
 
 All URIs are relative to *http://{host}:{port}/{contextPath}*
 
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 [**verifyUser**](IdentityApi.md#verifyuser) | **POST** /identity/verify | Verify User
 
 # **checkPassword**
-> \Swagger\Client\Model\CheckPasswordPolicyResultDto checkPassword($body)
+> \Camunda\Client\Model\CheckPasswordPolicyResultDto checkPassword($body)
 
 Validate Password
 
@@ -21,18 +21,18 @@ A password policy consists of a list of rules that new passwords must follow to 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\IdentityApi(
+$apiInstance = new Camunda\Client\Api\IdentityApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\PasswordPolicyRequestDto(); // \Swagger\Client\Model\PasswordPolicyRequestDto | 
+$body = new \Camunda\Client\Model\PasswordPolicyRequestDto(); // \Camunda\Client\Model\PasswordPolicyRequestDto | 
 
 try {
     $result = $apiInstance->checkPassword($body);
@@ -47,11 +47,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\PasswordPolicyRequestDto**](../Model/PasswordPolicyRequestDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\PasswordPolicyRequestDto**](../Model/PasswordPolicyRequestDto.md)|  | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\CheckPasswordPolicyResultDto**](../Model/CheckPasswordPolicyResultDto.md)
+[**\Camunda\Client\Model\CheckPasswordPolicyResultDto**](../Model/CheckPasswordPolicyResultDto.md)
 
 ### Authorization
 
@@ -65,7 +65,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getGroupInfo**
-> \Swagger\Client\Model\IdentityServiceGroupInfoDto getGroupInfo($user_id)
+> \Camunda\Client\Model\IdentityServiceGroupInfoDto getGroupInfo($user_id)
 
 Get a User's Groups
 
@@ -76,12 +76,12 @@ Gets the groups of a user by id and includes all users that share a group with t
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\IdentityApi(
+$apiInstance = new Camunda\Client\Api\IdentityApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -106,7 +106,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\IdentityServiceGroupInfoDto**](../Model/IdentityServiceGroupInfoDto.md)
+[**\Camunda\Client\Model\IdentityServiceGroupInfoDto**](../Model/IdentityServiceGroupInfoDto.md)
 
 ### Authorization
 
@@ -120,7 +120,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getPasswordPolicy**
-> \Swagger\Client\Model\PasswordPolicyDto getPasswordPolicy()
+> \Camunda\Client\Model\PasswordPolicyDto getPasswordPolicy()
 
 Get Password Policy
 
@@ -131,12 +131,12 @@ A password policy consists of a list of rules that new passwords must follow to 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\IdentityApi(
+$apiInstance = new Camunda\Client\Api\IdentityApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -157,7 +157,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\PasswordPolicyDto**](../Model/PasswordPolicyDto.md)
+[**\Camunda\Client\Model\PasswordPolicyDto**](../Model/PasswordPolicyDto.md)
 
 ### Authorization
 
@@ -171,7 +171,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **verifyUser**
-> \Swagger\Client\Model\AuthenticationResult verifyUser($body)
+> \Camunda\Client\Model\AuthenticationResult verifyUser($body)
 
 Verify User
 
@@ -182,18 +182,18 @@ Verifies that user credentials are valid.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\IdentityApi(
+$apiInstance = new Camunda\Client\Api\IdentityApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\BasicUserCredentialsDto(); // \Swagger\Client\Model\BasicUserCredentialsDto | 
+$body = new \Camunda\Client\Model\BasicUserCredentialsDto(); // \Camunda\Client\Model\BasicUserCredentialsDto | 
 
 try {
     $result = $apiInstance->verifyUser($body);
@@ -208,11 +208,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\BasicUserCredentialsDto**](../Model/BasicUserCredentialsDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\BasicUserCredentialsDto**](../Model/BasicUserCredentialsDto.md)|  | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\AuthenticationResult**](../Model/AuthenticationResult.md)
+[**\Camunda\Client\Model\AuthenticationResult**](../Model/AuthenticationResult.md)
 
 ### Authorization
 

@@ -1,4 +1,4 @@
-# Swagger\Client\TelemetryApi
+# Camunda\Client\TelemetryApi
 
 All URIs are relative to *http://{host}:{port}/{contextPath}*
 
@@ -20,18 +20,18 @@ Configures whether Camunda receives data collection of the process engine setup 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\TelemetryApi(
+$apiInstance = new Camunda\Client\Api\TelemetryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\TelemetryConfigurationDto(); // \Swagger\Client\Model\TelemetryConfigurationDto | 
+$body = new \Camunda\Client\Model\TelemetryConfigurationDto(); // \Camunda\Client\Model\TelemetryConfigurationDto | 
 
 try {
     $apiInstance->configureTelemetry($body);
@@ -45,7 +45,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\TelemetryConfigurationDto**](../Model/TelemetryConfigurationDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\TelemetryConfigurationDto**](../Model/TelemetryConfigurationDto.md)|  | [optional]
 
 ### Return type
 
@@ -63,7 +63,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getTelemetryConfiguration**
-> \Swagger\Client\Model\TelemetryConfigurationDto getTelemetryConfiguration()
+> \Camunda\Client\Model\TelemetryConfigurationDto getTelemetryConfiguration()
 
 Fetch Telemetry Configuration
 
@@ -74,12 +74,12 @@ Fetches Telemetry Configuration.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\TelemetryApi(
+$apiInstance = new Camunda\Client\Api\TelemetryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -100,7 +100,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\TelemetryConfigurationDto**](../Model/TelemetryConfigurationDto.md)
+[**\Camunda\Client\Model\TelemetryConfigurationDto**](../Model/TelemetryConfigurationDto.md)
 
 ### Authorization
 
@@ -114,7 +114,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getTelemetryData**
-> \Swagger\Client\Model\TelemetryDataDto getTelemetryData()
+> \Camunda\Client\Model\TelemetryDataDto getTelemetryData()
 
 Fetch Telemetry Data
 
@@ -125,12 +125,12 @@ Fetches Telemetry Data.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\TelemetryApi(
+$apiInstance = new Camunda\Client\Api\TelemetryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -151,7 +151,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\TelemetryDataDto**](../Model/TelemetryDataDto.md)
+[**\Camunda\Client\Model\TelemetryDataDto**](../Model/TelemetryDataDto.md)
 
 ### Authorization
 

@@ -1,4 +1,4 @@
-# Swagger\Client\SignalApi
+# Camunda\Client\SignalApi
 
 All URIs are relative to *http://{host}:{port}/{contextPath}*
 
@@ -18,18 +18,18 @@ A signal is an event of global scope (broadcast semantics) and is delivered to a
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\SignalApi(
+$apiInstance = new Camunda\Client\Api\SignalApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\SignalDto(); // \Swagger\Client\Model\SignalDto | 
+$body = new \Camunda\Client\Model\SignalDto(); // \Camunda\Client\Model\SignalDto | 
 
 try {
     $apiInstance->throwSignal($body);
@@ -43,7 +43,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\SignalDto**](../Model/SignalDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\SignalDto**](../Model/SignalDto.md)|  | [optional]
 
 ### Return type
 

@@ -1,4 +1,4 @@
-# Swagger\Client\AuthorizationApi
+# Camunda\Client\AuthorizationApi
 
 All URIs are relative to *http://{host}:{port}/{contextPath}*
 
@@ -15,7 +15,7 @@ Method | HTTP request | Description
 [**updateAuthorization**](AuthorizationApi.md#updateauthorization) | **PUT** /authorization/{id} | Update an Authorization
 
 # **availableOperationsAuthorization**
-> \Swagger\Client\Model\ResourceOptionsDto availableOperationsAuthorization()
+> \Camunda\Client\Model\ResourceOptionsDto availableOperationsAuthorization()
 
 Authorization Resource Options
 
@@ -26,12 +26,12 @@ The OPTIONS request allows you to check for the set of available operations that
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\AuthorizationApi(
+$apiInstance = new Camunda\Client\Api\AuthorizationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -52,7 +52,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\ResourceOptionsDto**](../Model/ResourceOptionsDto.md)
+[**\Camunda\Client\Model\ResourceOptionsDto**](../Model/ResourceOptionsDto.md)
 
 ### Authorization
 
@@ -66,7 +66,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **availableOperationsAuthorizationInstance**
-> \Swagger\Client\Model\ResourceOptionsDto availableOperationsAuthorizationInstance($id)
+> \Camunda\Client\Model\ResourceOptionsDto availableOperationsAuthorizationInstance($id)
 
 Authorization Resource Options
 
@@ -77,12 +77,12 @@ The OPTIONS request allows you to check for the set of available operations that
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\AuthorizationApi(
+$apiInstance = new Camunda\Client\Api\AuthorizationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -107,7 +107,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ResourceOptionsDto**](../Model/ResourceOptionsDto.md)
+[**\Camunda\Client\Model\ResourceOptionsDto**](../Model/ResourceOptionsDto.md)
 
 ### Authorization
 
@@ -121,7 +121,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createAuthorization**
-> \Swagger\Client\Model\AuthorizationDto createAuthorization($body)
+> \Camunda\Client\Model\AuthorizationDto createAuthorization($body)
 
 Create a New Authorization
 
@@ -132,18 +132,18 @@ Creates a new authorization.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\AuthorizationApi(
+$apiInstance = new Camunda\Client\Api\AuthorizationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\AuthorizationCreateDto(); // \Swagger\Client\Model\AuthorizationCreateDto | 
+$body = new \Camunda\Client\Model\AuthorizationCreateDto(); // \Camunda\Client\Model\AuthorizationCreateDto | 
 
 try {
     $result = $apiInstance->createAuthorization($body);
@@ -158,11 +158,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\AuthorizationCreateDto**](../Model/AuthorizationCreateDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\AuthorizationCreateDto**](../Model/AuthorizationCreateDto.md)|  | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\AuthorizationDto**](../Model/AuthorizationDto.md)
+[**\Camunda\Client\Model\AuthorizationDto**](../Model/AuthorizationDto.md)
 
 ### Authorization
 
@@ -187,12 +187,12 @@ Deletes an authorization by id.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\AuthorizationApi(
+$apiInstance = new Camunda\Client\Api\AuthorizationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -230,7 +230,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAuthorization**
-> \Swagger\Client\Model\AuthorizationDto getAuthorization($id)
+> \Camunda\Client\Model\AuthorizationDto getAuthorization($id)
 
 Get Authorization
 
@@ -241,12 +241,12 @@ Retrieves an authorization by id.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\AuthorizationApi(
+$apiInstance = new Camunda\Client\Api\AuthorizationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -271,7 +271,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\AuthorizationDto**](../Model/AuthorizationDto.md)
+[**\Camunda\Client\Model\AuthorizationDto**](../Model/AuthorizationDto.md)
 
 ### Authorization
 
@@ -285,7 +285,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAuthorizationCount**
-> \Swagger\Client\Model\CountResultDto getAuthorizationCount($id, $type, $user_id_in, $group_id_in, $resource_type, $resource_id)
+> \Camunda\Client\Model\CountResultDto getAuthorizationCount($id, $type, $user_id_in, $group_id_in, $resource_type, $resource_id)
 
 Get Authorization Count
 
@@ -296,12 +296,12 @@ Queries for authorizations using a list of parameters and retrieves the count.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\AuthorizationApi(
+$apiInstance = new Camunda\Client\Api\AuthorizationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -336,7 +336,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\CountResultDto**](../Model/CountResultDto.md)
+[**\Camunda\Client\Model\CountResultDto**](../Model/CountResultDto.md)
 
 ### Authorization
 
@@ -350,7 +350,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **isUserAuthorized**
-> \Swagger\Client\Model\AuthorizationCheckResultDto isUserAuthorized($permission_name, $resource_name, $resource_type, $resource_id, $user_id)
+> \Camunda\Client\Model\AuthorizationCheckResultDto isUserAuthorized($permission_name, $resource_name, $resource_type, $resource_id, $user_id)
 
 Perform an Authorization Check
 
@@ -361,12 +361,12 @@ Performs an authorization check for the currently authenticated user.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\AuthorizationApi(
+$apiInstance = new Camunda\Client\Api\AuthorizationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -399,7 +399,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\AuthorizationCheckResultDto**](../Model/AuthorizationCheckResultDto.md)
+[**\Camunda\Client\Model\AuthorizationCheckResultDto**](../Model/AuthorizationCheckResultDto.md)
 
 ### Authorization
 
@@ -413,7 +413,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **queryAuthorizations**
-> \Swagger\Client\Model\AuthorizationDto[] queryAuthorizations($id, $type, $user_id_in, $group_id_in, $resource_type, $resource_id, $sort_by, $sort_order, $first_result, $max_results)
+> \Camunda\Client\Model\AuthorizationDto[] queryAuthorizations($id, $type, $user_id_in, $group_id_in, $resource_type, $resource_id, $sort_by, $sort_order, $first_result, $max_results)
 
 Get Authorizations
 
@@ -424,12 +424,12 @@ Queries for a list of authorizations using a list of parameters. The size of the
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\AuthorizationApi(
+$apiInstance = new Camunda\Client\Api\AuthorizationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -472,7 +472,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\AuthorizationDto[]**](../Model/AuthorizationDto.md)
+[**\Camunda\Client\Model\AuthorizationDto[]**](../Model/AuthorizationDto.md)
 
 ### Authorization
 
@@ -497,19 +497,19 @@ Updates an authorization by id.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\AuthorizationApi(
+$apiInstance = new Camunda\Client\Api\AuthorizationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = "id_example"; // string | The id of the authorization to be updated.
-$body = new \Swagger\Client\Model\AuthorizationUpdateDto(); // \Swagger\Client\Model\AuthorizationUpdateDto | 
+$body = new \Camunda\Client\Model\AuthorizationUpdateDto(); // \Camunda\Client\Model\AuthorizationUpdateDto | 
 
 try {
     $apiInstance->updateAuthorization($id, $body);
@@ -524,7 +524,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The id of the authorization to be updated. |
- **body** | [**\Swagger\Client\Model\AuthorizationUpdateDto**](../Model/AuthorizationUpdateDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\AuthorizationUpdateDto**](../Model/AuthorizationUpdateDto.md)|  | [optional]
 
 ### Return type
 

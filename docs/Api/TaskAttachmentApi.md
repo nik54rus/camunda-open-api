@@ -1,4 +1,4 @@
-# Swagger\Client\TaskAttachmentApi
+# Camunda\Client\TaskAttachmentApi
 
 All URIs are relative to *http://{host}:{port}/{contextPath}*
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 [**getAttachments**](TaskAttachmentApi.md#getattachments) | **GET** /task/{id}/attachment | Get List
 
 # **addAttachment**
-> \Swagger\Client\Model\AttachmentDto addAttachment($id, $attachment_name, $attachment_description, $attachment_type, $url, $content)
+> \Camunda\Client\Model\AttachmentDto addAttachment($id, $attachment_name, $attachment_description, $attachment_type, $url, $content)
 
 Create
 
@@ -22,12 +22,12 @@ Creates an attachment for a task.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\TaskAttachmentApi(
+$apiInstance = new Camunda\Client\Api\TaskAttachmentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -62,7 +62,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\AttachmentDto**](../Model/AttachmentDto.md)
+[**\Camunda\Client\Model\AttachmentDto**](../Model/AttachmentDto.md)
 
 ### Authorization
 
@@ -87,12 +87,12 @@ Removes an attachment from a task by id.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\TaskAttachmentApi(
+$apiInstance = new Camunda\Client\Api\TaskAttachmentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -132,7 +132,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAttachment**
-> \Swagger\Client\Model\AttachmentDto getAttachment($id, $attachment_id)
+> \Camunda\Client\Model\AttachmentDto getAttachment($id, $attachment_id)
 
 Get
 
@@ -143,12 +143,12 @@ Retrieves a task attachment by task id and attachment id.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\TaskAttachmentApi(
+$apiInstance = new Camunda\Client\Api\TaskAttachmentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -175,7 +175,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\AttachmentDto**](../Model/AttachmentDto.md)
+[**\Camunda\Client\Model\AttachmentDto**](../Model/AttachmentDto.md)
 
 ### Authorization
 
@@ -200,12 +200,12 @@ Retrieves the binary content of a task attachment by task id and attachment id.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\TaskAttachmentApi(
+$apiInstance = new Camunda\Client\Api\TaskAttachmentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -246,7 +246,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAttachments**
-> \Swagger\Client\Model\AttachmentDto[] getAttachments($id)
+> \Camunda\Client\Model\AttachmentDto[] getAttachments($id)
 
 Get List
 
@@ -257,12 +257,12 @@ Gets the attachments for a task.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\TaskAttachmentApi(
+$apiInstance = new Camunda\Client\Api\TaskAttachmentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -287,7 +287,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\AttachmentDto[]**](../Model/AttachmentDto.md)
+[**\Camunda\Client\Model\AttachmentDto[]**](../Model/AttachmentDto.md)
 
 ### Authorization
 

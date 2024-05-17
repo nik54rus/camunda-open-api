@@ -21,7 +21,7 @@ Name | Type | Description | Notes
 **finished_after** | [**\DateTime**](\DateTime.md) | Restrict to instances that were finished after the given date. By [default](https://docs.camunda.org/manual/7.21/reference/rest/overview/date-format/), the date must have the format &#x60;yyyy-MM-dd&#x27;T&#x27;HH:mm:ss.SSSZ&#x60;, e.g., &#x60;2013-01-23T14:42:45.000+0200&#x60;. | [optional] 
 **tenant_id_in** | **string[]** | Must be a JSON array of Strings. An activity instance must have one of the given tenant ids. | [optional] 
 **without_tenant_id** | **bool** | Only include historic activity instances that belong to no tenant. Value may only be &#x60;true&#x60;, as &#x60;false&#x60; is the default behavior. | [optional] 
-**sorting** | [**\Swagger\Client\Model\HistoricActivityInstanceQueryDtoSorting[]**](HistoricActivityInstanceQueryDtoSorting.md) | Apply sorting of the result | [optional] 
+**sorting** | [**\Camunda\Client\Model\HistoricActivityInstanceQueryDtoSorting[]**](HistoricActivityInstanceQueryDtoSorting.md) | Apply sorting of the result | [optional] 
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 

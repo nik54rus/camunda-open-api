@@ -1,4 +1,4 @@
-# Swagger\Client\GroupApi
+# Camunda\Client\GroupApi
 
 All URIs are relative to *http://{host}:{port}/{contextPath}*
 
@@ -19,7 +19,7 @@ Method | HTTP request | Description
 [**updateGroup**](GroupApi.md#updategroup) | **PUT** /group/{id} | Update Group
 
 # **availableGroupInstanceOperations**
-> \Swagger\Client\Model\ResourceOptionsDto availableGroupInstanceOperations($id)
+> \Camunda\Client\Model\ResourceOptionsDto availableGroupInstanceOperations($id)
 
 Group Resource Instance Options
 
@@ -30,12 +30,12 @@ The `/group` resource supports two custom OPTIONS requests, one for the resource
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\GroupApi(
+$apiInstance = new Camunda\Client\Api\GroupApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -60,7 +60,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ResourceOptionsDto**](../Model/ResourceOptionsDto.md)
+[**\Camunda\Client\Model\ResourceOptionsDto**](../Model/ResourceOptionsDto.md)
 
 ### Authorization
 
@@ -74,7 +74,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **availableGroupMembersOperations**
-> \Swagger\Client\Model\ResourceOptionsDto availableGroupMembersOperations($id)
+> \Camunda\Client\Model\ResourceOptionsDto availableGroupMembersOperations($id)
 
 Group Membership Resource Options
 
@@ -85,12 +85,12 @@ The OPTIONS request allows checking for the set of available operations that the
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\GroupApi(
+$apiInstance = new Camunda\Client\Api\GroupApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -115,7 +115,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ResourceOptionsDto**](../Model/ResourceOptionsDto.md)
+[**\Camunda\Client\Model\ResourceOptionsDto**](../Model/ResourceOptionsDto.md)
 
 ### Authorization
 
@@ -129,7 +129,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **availableGroupOperations**
-> \Swagger\Client\Model\ResourceOptionsDto availableGroupOperations()
+> \Camunda\Client\Model\ResourceOptionsDto availableGroupOperations()
 
 Group Resource Options
 
@@ -140,12 +140,12 @@ The `/group` resource supports two custom OPTIONS requests, this one for the res
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\GroupApi(
+$apiInstance = new Camunda\Client\Api\GroupApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -166,7 +166,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\ResourceOptionsDto**](../Model/ResourceOptionsDto.md)
+[**\Camunda\Client\Model\ResourceOptionsDto**](../Model/ResourceOptionsDto.md)
 
 ### Authorization
 
@@ -191,18 +191,18 @@ Creates a new group.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\GroupApi(
+$apiInstance = new Camunda\Client\Api\GroupApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\GroupDto(); // \Swagger\Client\Model\GroupDto | 
+$body = new \Camunda\Client\Model\GroupDto(); // \Camunda\Client\Model\GroupDto | 
 
 try {
     $apiInstance->createGroup($body);
@@ -216,7 +216,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\GroupDto**](../Model/GroupDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\GroupDto**](../Model/GroupDto.md)|  | [optional]
 
 ### Return type
 
@@ -245,12 +245,12 @@ Adds a member to a group.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\GroupApi(
+$apiInstance = new Camunda\Client\Api\GroupApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -301,12 +301,12 @@ Deletes a group by id.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\GroupApi(
+$apiInstance = new Camunda\Client\Api\GroupApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -355,12 +355,12 @@ Removes a member from a group.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\GroupApi(
+$apiInstance = new Camunda\Client\Api\GroupApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -400,7 +400,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getGroup**
-> \Swagger\Client\Model\GroupDto getGroup($id)
+> \Camunda\Client\Model\GroupDto getGroup($id)
 
 Get Group
 
@@ -411,12 +411,12 @@ Retrieves a group by id.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\GroupApi(
+$apiInstance = new Camunda\Client\Api\GroupApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -441,7 +441,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\GroupDto**](../Model/GroupDto.md)
+[**\Camunda\Client\Model\GroupDto**](../Model/GroupDto.md)
 
 ### Authorization
 
@@ -455,7 +455,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getGroupCount**
-> \Swagger\Client\Model\CountResultDto getGroupCount($id, $id_in, $name, $name_like, $type, $member, $member_of_tenant)
+> \Camunda\Client\Model\CountResultDto getGroupCount($id, $id_in, $name, $name_like, $type, $member, $member_of_tenant)
 
 Get List Count
 
@@ -466,12 +466,12 @@ Queries for groups using a list of parameters and retrieves the count.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\GroupApi(
+$apiInstance = new Camunda\Client\Api\GroupApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -508,7 +508,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\CountResultDto**](../Model/CountResultDto.md)
+[**\Camunda\Client\Model\CountResultDto**](../Model/CountResultDto.md)
 
 ### Authorization
 
@@ -522,7 +522,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getQueryGroups**
-> \Swagger\Client\Model\GroupDto[] getQueryGroups($sort_by, $sort_order, $first_result, $max_results, $id, $id_in, $name, $name_like, $type, $member, $member_of_tenant)
+> \Camunda\Client\Model\GroupDto[] getQueryGroups($sort_by, $sort_order, $first_result, $max_results, $id, $id_in, $name, $name_like, $type, $member, $member_of_tenant)
 
 Get List
 
@@ -533,12 +533,12 @@ Queries for a list of groups using a list of parameters. The size of the result 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\GroupApi(
+$apiInstance = new Camunda\Client\Api\GroupApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -583,7 +583,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\GroupDto[]**](../Model/GroupDto.md)
+[**\Camunda\Client\Model\GroupDto[]**](../Model/GroupDto.md)
 
 ### Authorization
 
@@ -597,7 +597,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **postQueryGroups**
-> \Swagger\Client\Model\GroupDto[] postQueryGroups($body, $first_result, $max_results)
+> \Camunda\Client\Model\GroupDto[] postQueryGroups($body, $first_result, $max_results)
 
 Get List (POST)
 
@@ -608,18 +608,18 @@ Queries for a list of groups using a list of parameters. The size of the result 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\GroupApi(
+$apiInstance = new Camunda\Client\Api\GroupApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\GroupQueryDto(); // \Swagger\Client\Model\GroupQueryDto | 
+$body = new \Camunda\Client\Model\GroupQueryDto(); // \Camunda\Client\Model\GroupQueryDto | 
 $first_result = 56; // int | Pagination of results. Specifies the index of the first result to return.
 $max_results = 56; // int | Pagination of results. Specifies the maximum number of results to return. Will return less results if there are no more results left.
 
@@ -636,13 +636,13 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\GroupQueryDto**](../Model/GroupQueryDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\GroupQueryDto**](../Model/GroupQueryDto.md)|  | [optional]
  **first_result** | **int**| Pagination of results. Specifies the index of the first result to return. | [optional]
  **max_results** | **int**| Pagination of results. Specifies the maximum number of results to return. Will return less results if there are no more results left. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\GroupDto[]**](../Model/GroupDto.md)
+[**\Camunda\Client\Model\GroupDto[]**](../Model/GroupDto.md)
 
 ### Authorization
 
@@ -656,7 +656,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **queryGroupCount**
-> \Swagger\Client\Model\CountResultDto queryGroupCount($body)
+> \Camunda\Client\Model\CountResultDto queryGroupCount($body)
 
 Get List Count (POST)
 
@@ -667,18 +667,18 @@ Queries for groups using a list of parameters and retrieves the count.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\GroupApi(
+$apiInstance = new Camunda\Client\Api\GroupApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\GroupQueryDto(); // \Swagger\Client\Model\GroupQueryDto | 
+$body = new \Camunda\Client\Model\GroupQueryDto(); // \Camunda\Client\Model\GroupQueryDto | 
 
 try {
     $result = $apiInstance->queryGroupCount($body);
@@ -693,11 +693,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\GroupQueryDto**](../Model/GroupQueryDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\GroupQueryDto**](../Model/GroupQueryDto.md)|  | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\CountResultDto**](../Model/CountResultDto.md)
+[**\Camunda\Client\Model\CountResultDto**](../Model/CountResultDto.md)
 
 ### Authorization
 
@@ -722,19 +722,19 @@ Updates a given group by id.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\GroupApi(
+$apiInstance = new Camunda\Client\Api\GroupApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = "id_example"; // string | The id of the group.
-$body = new \Swagger\Client\Model\GroupDto(); // \Swagger\Client\Model\GroupDto | 
+$body = new \Camunda\Client\Model\GroupDto(); // \Camunda\Client\Model\GroupDto | 
 
 try {
     $apiInstance->updateGroup($id, $body);
@@ -749,7 +749,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The id of the group. |
- **body** | [**\Swagger\Client\Model\GroupDto**](../Model/GroupDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\GroupDto**](../Model/GroupDto.md)|  | [optional]
 
 ### Return type
 

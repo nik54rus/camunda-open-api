@@ -1,4 +1,4 @@
-# Swagger\Client\HistoricBatchApi
+# Camunda\Client\HistoricBatchApi
 
 All URIs are relative to *http://{host}:{port}/{contextPath}*
 
@@ -24,12 +24,12 @@ Deletes a historic batch by id, including related historic job logs.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricBatchApi(
+$apiInstance = new Camunda\Client\Api\HistoricBatchApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -67,7 +67,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCleanableHistoricBatchesReport**
-> \Swagger\Client\Model\CleanableHistoricBatchReportResultDto[] getCleanableHistoricBatchesReport($sort_by, $sort_order, $first_result, $max_results)
+> \Camunda\Client\Model\CleanableHistoricBatchReportResultDto[] getCleanableHistoricBatchesReport($sort_by, $sort_order, $first_result, $max_results)
 
 Get Cleanable Batch Report
 
@@ -78,12 +78,12 @@ Retrieves a report about a historic batch operations relevant to history cleanup
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricBatchApi(
+$apiInstance = new Camunda\Client\Api\HistoricBatchApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -114,7 +114,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\CleanableHistoricBatchReportResultDto[]**](../Model/CleanableHistoricBatchReportResultDto.md)
+[**\Camunda\Client\Model\CleanableHistoricBatchReportResultDto[]**](../Model/CleanableHistoricBatchReportResultDto.md)
 
 ### Authorization
 
@@ -128,7 +128,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCleanableHistoricBatchesReportCount**
-> \Swagger\Client\Model\CountResultDto getCleanableHistoricBatchesReportCount()
+> \Camunda\Client\Model\CountResultDto getCleanableHistoricBatchesReportCount()
 
 Get Cleanable Batch Report Count
 
@@ -139,12 +139,12 @@ Queries for the number of report results about a historic batch operations relev
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricBatchApi(
+$apiInstance = new Camunda\Client\Api\HistoricBatchApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -165,7 +165,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\CountResultDto**](../Model/CountResultDto.md)
+[**\Camunda\Client\Model\CountResultDto**](../Model/CountResultDto.md)
 
 ### Authorization
 
@@ -179,7 +179,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getHistoricBatch**
-> \Swagger\Client\Model\HistoricBatchDto getHistoricBatch($id)
+> \Camunda\Client\Model\HistoricBatchDto getHistoricBatch($id)
 
 Get Historic Batch
 
@@ -190,12 +190,12 @@ Retrieves a historic batch by id, according to the `HistoricBatch` interface in 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricBatchApi(
+$apiInstance = new Camunda\Client\Api\HistoricBatchApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -220,7 +220,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\HistoricBatchDto**](../Model/HistoricBatchDto.md)
+[**\Camunda\Client\Model\HistoricBatchDto**](../Model/HistoricBatchDto.md)
 
 ### Authorization
 
@@ -234,7 +234,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getHistoricBatches**
-> \Swagger\Client\Model\HistoricBatchDto[] getHistoricBatches($batch_id, $type, $completed, $tenant_id_in, $without_tenant_id, $sort_by, $sort_order, $first_result, $max_results)
+> \Camunda\Client\Model\HistoricBatchDto[] getHistoricBatches($batch_id, $type, $completed, $tenant_id_in, $without_tenant_id, $sort_by, $sort_order, $first_result, $max_results)
 
 Get Historic Batches
 
@@ -245,12 +245,12 @@ Queries for historic batches that fulfill given parameters. Parameters may be th
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricBatchApi(
+$apiInstance = new Camunda\Client\Api\HistoricBatchApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -291,7 +291,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\HistoricBatchDto[]**](../Model/HistoricBatchDto.md)
+[**\Camunda\Client\Model\HistoricBatchDto[]**](../Model/HistoricBatchDto.md)
 
 ### Authorization
 
@@ -305,7 +305,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getHistoricBatchesCount**
-> \Swagger\Client\Model\CountResultDto getHistoricBatchesCount($batch_id, $type, $completed, $tenant_id_in, $without_tenant_id)
+> \Camunda\Client\Model\CountResultDto getHistoricBatchesCount($batch_id, $type, $completed, $tenant_id_in, $without_tenant_id)
 
 Get Historic Batch Count
 
@@ -316,12 +316,12 @@ Requests the number of historic batches that fulfill the query criteria. Takes t
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricBatchApi(
+$apiInstance = new Camunda\Client\Api\HistoricBatchApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -354,7 +354,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\CountResultDto**](../Model/CountResultDto.md)
+[**\Camunda\Client\Model\CountResultDto**](../Model/CountResultDto.md)
 
 ### Authorization
 
@@ -368,7 +368,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **setRemovalTimeAsyncHistoricBatch**
-> \Swagger\Client\Model\BatchDto setRemovalTimeAsyncHistoricBatch($body)
+> \Camunda\Client\Model\BatchDto setRemovalTimeAsyncHistoricBatch($body)
 
 Set Removal Time Async (POST)
 
@@ -379,18 +379,18 @@ Sets the removal time to multiple historic batches asynchronously (batch).  At l
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricBatchApi(
+$apiInstance = new Camunda\Client\Api\HistoricBatchApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\SetRemovalTimeToHistoricBatchesDto(); // \Swagger\Client\Model\SetRemovalTimeToHistoricBatchesDto | 
+$body = new \Camunda\Client\Model\SetRemovalTimeToHistoricBatchesDto(); // \Camunda\Client\Model\SetRemovalTimeToHistoricBatchesDto | 
 
 try {
     $result = $apiInstance->setRemovalTimeAsyncHistoricBatch($body);
@@ -405,11 +405,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\SetRemovalTimeToHistoricBatchesDto**](../Model/SetRemovalTimeToHistoricBatchesDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\SetRemovalTimeToHistoricBatchesDto**](../Model/SetRemovalTimeToHistoricBatchesDto.md)|  | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\BatchDto**](../Model/BatchDto.md)
+[**\Camunda\Client\Model\BatchDto**](../Model/BatchDto.md)
 
 ### Authorization
 

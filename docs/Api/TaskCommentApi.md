@@ -1,4 +1,4 @@
-# Swagger\Client\TaskCommentApi
+# Camunda\Client\TaskCommentApi
 
 All URIs are relative to *http://{host}:{port}/{contextPath}*
 
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 [**getComments**](TaskCommentApi.md#getcomments) | **GET** /task/{id}/comment | Get List
 
 # **createComment**
-> \Swagger\Client\Model\CommentDto createComment($id, $body)
+> \Camunda\Client\Model\CommentDto createComment($id, $body)
 
 Create
 
@@ -20,19 +20,19 @@ Creates a comment for a task by id.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\TaskCommentApi(
+$apiInstance = new Camunda\Client\Api\TaskCommentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = "id_example"; // string | The id of the task to add the comment to.
-$body = new \Swagger\Client\Model\CommentDto(); // \Swagger\Client\Model\CommentDto | **Note:** Only the `message` and `processInstanceId` properties will be used. Every other property passed to this endpoint will be ignored.
+$body = new \Camunda\Client\Model\CommentDto(); // \Camunda\Client\Model\CommentDto | **Note:** Only the `message` and `processInstanceId` properties will be used. Every other property passed to this endpoint will be ignored.
 
 try {
     $result = $apiInstance->createComment($id, $body);
@@ -48,11 +48,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The id of the task to add the comment to. |
- **body** | [**\Swagger\Client\Model\CommentDto**](../Model/CommentDto.md)| **Note:** Only the &#x60;message&#x60; and &#x60;processInstanceId&#x60; properties will be used. Every other property passed to this endpoint will be ignored. | [optional]
+ **body** | [**\Camunda\Client\Model\CommentDto**](../Model/CommentDto.md)| **Note:** Only the &#x60;message&#x60; and &#x60;processInstanceId&#x60; properties will be used. Every other property passed to this endpoint will be ignored. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\CommentDto**](../Model/CommentDto.md)
+[**\Camunda\Client\Model\CommentDto**](../Model/CommentDto.md)
 
 ### Authorization
 
@@ -66,7 +66,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getComment**
-> \Swagger\Client\Model\CommentDto getComment($id, $comment_id)
+> \Camunda\Client\Model\CommentDto getComment($id, $comment_id)
 
 Get
 
@@ -77,12 +77,12 @@ Retrieves a task comment by task id and comment id.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\TaskCommentApi(
+$apiInstance = new Camunda\Client\Api\TaskCommentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -109,7 +109,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\CommentDto**](../Model/CommentDto.md)
+[**\Camunda\Client\Model\CommentDto**](../Model/CommentDto.md)
 
 ### Authorization
 
@@ -123,7 +123,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getComments**
-> \Swagger\Client\Model\CommentDto[] getComments($id)
+> \Camunda\Client\Model\CommentDto[] getComments($id)
 
 Get List
 
@@ -134,12 +134,12 @@ Gets the comments for a task by id.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\TaskCommentApi(
+$apiInstance = new Camunda\Client\Api\TaskCommentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -164,7 +164,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\CommentDto[]**](../Model/CommentDto.md)
+[**\Camunda\Client\Model\CommentDto[]**](../Model/CommentDto.md)
 
 ### Authorization
 

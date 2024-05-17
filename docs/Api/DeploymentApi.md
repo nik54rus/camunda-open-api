@@ -1,4 +1,4 @@
-# Swagger\Client\DeploymentApi
+# Camunda\Client\DeploymentApi
 
 All URIs are relative to *http://{host}:{port}/{contextPath}*
 
@@ -16,7 +16,7 @@ Method | HTTP request | Description
 [**redeploy**](DeploymentApi.md#redeploy) | **POST** /deployment/{id}/redeploy | Redeploy
 
 # **createDeployment**
-> \Swagger\Client\Model\DeploymentWithDefinitionsDto createDeployment($tenant_id, $deployment_source, $deploy_changed_only, $enable_duplicate_filtering, $deployment_name, $deployment_activation_time, $data)
+> \Camunda\Client\Model\DeploymentWithDefinitionsDto createDeployment($tenant_id, $deployment_source, $deploy_changed_only, $enable_duplicate_filtering, $deployment_name, $deployment_activation_time, $data)
 
 Create
 
@@ -27,12 +27,12 @@ Creates a deployment.  **Security Consideration**  Deployments can contain custo
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\DeploymentApi(
+$apiInstance = new Camunda\Client\Api\DeploymentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -69,7 +69,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\DeploymentWithDefinitionsDto**](../Model/DeploymentWithDefinitionsDto.md)
+[**\Camunda\Client\Model\DeploymentWithDefinitionsDto**](../Model/DeploymentWithDefinitionsDto.md)
 
 ### Authorization
 
@@ -94,12 +94,12 @@ Deletes a deployment by id.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\DeploymentApi(
+$apiInstance = new Camunda\Client\Api\DeploymentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -143,7 +143,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getDeployment**
-> \Swagger\Client\Model\DeploymentDto getDeployment($id)
+> \Camunda\Client\Model\DeploymentDto getDeployment($id)
 
 Get
 
@@ -154,12 +154,12 @@ Retrieves a deployment by id, according to the `Deployment` interface of the eng
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\DeploymentApi(
+$apiInstance = new Camunda\Client\Api\DeploymentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -184,7 +184,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\DeploymentDto**](../Model/DeploymentDto.md)
+[**\Camunda\Client\Model\DeploymentDto**](../Model/DeploymentDto.md)
 
 ### Authorization
 
@@ -198,7 +198,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getDeploymentResource**
-> \Swagger\Client\Model\DeploymentResourceDto getDeploymentResource($id, $resource_id)
+> \Camunda\Client\Model\DeploymentResourceDto getDeploymentResource($id, $resource_id)
 
 Get Resource
 
@@ -209,12 +209,12 @@ Retrieves a deployment resource by resource id for the given deployment.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\DeploymentApi(
+$apiInstance = new Camunda\Client\Api\DeploymentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -241,7 +241,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\DeploymentResourceDto**](../Model/DeploymentResourceDto.md)
+[**\Camunda\Client\Model\DeploymentResourceDto**](../Model/DeploymentResourceDto.md)
 
 ### Authorization
 
@@ -266,12 +266,12 @@ Retrieves the binary content of a deployment resource for the given deployment b
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\DeploymentApi(
+$apiInstance = new Camunda\Client\Api\DeploymentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -312,7 +312,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getDeploymentResources**
-> \Swagger\Client\Model\DeploymentResourceDto[] getDeploymentResources($id)
+> \Camunda\Client\Model\DeploymentResourceDto[] getDeploymentResources($id)
 
 Get Resources
 
@@ -323,12 +323,12 @@ Retrieves all deployment resources of a given deployment.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\DeploymentApi(
+$apiInstance = new Camunda\Client\Api\DeploymentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -353,7 +353,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\DeploymentResourceDto[]**](../Model/DeploymentResourceDto.md)
+[**\Camunda\Client\Model\DeploymentResourceDto[]**](../Model/DeploymentResourceDto.md)
 
 ### Authorization
 
@@ -367,7 +367,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getDeployments**
-> \Swagger\Client\Model\DeploymentDto[] getDeployments($id, $name, $name_like, $source, $without_source, $tenant_id_in, $without_tenant_id, $include_deployments_without_tenant_id, $after, $before, $sort_by, $sort_order, $first_result, $max_results)
+> \Camunda\Client\Model\DeploymentDto[] getDeployments($id, $name, $name_like, $source, $without_source, $tenant_id_in, $without_tenant_id, $include_deployments_without_tenant_id, $after, $before, $sort_by, $sort_order, $first_result, $max_results)
 
 Get List
 
@@ -378,12 +378,12 @@ Queries for deployments that fulfill given parameters. Parameters may be the pro
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\DeploymentApi(
+$apiInstance = new Camunda\Client\Api\DeploymentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -434,7 +434,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\DeploymentDto[]**](../Model/DeploymentDto.md)
+[**\Camunda\Client\Model\DeploymentDto[]**](../Model/DeploymentDto.md)
 
 ### Authorization
 
@@ -448,7 +448,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getDeploymentsCount**
-> \Swagger\Client\Model\CountResultDto getDeploymentsCount($id, $name, $name_like, $source, $without_source, $tenant_id_in, $without_tenant_id, $include_deployments_without_tenant_id, $after, $before)
+> \Camunda\Client\Model\CountResultDto getDeploymentsCount($id, $name, $name_like, $source, $without_source, $tenant_id_in, $without_tenant_id, $include_deployments_without_tenant_id, $after, $before)
 
 Get List Count
 
@@ -459,12 +459,12 @@ Queries for the number of deployments that fulfill given parameters. Takes the s
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\DeploymentApi(
+$apiInstance = new Camunda\Client\Api\DeploymentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -507,7 +507,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\CountResultDto**](../Model/CountResultDto.md)
+[**\Camunda\Client\Model\CountResultDto**](../Model/CountResultDto.md)
 
 ### Authorization
 
@@ -532,12 +532,12 @@ Queries the registered deployment IDs for the current application.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\DeploymentApi(
+$apiInstance = new Camunda\Client\Api\DeploymentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -572,7 +572,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **redeploy**
-> \Swagger\Client\Model\DeploymentWithDefinitionsDto redeploy($id, $body)
+> \Camunda\Client\Model\DeploymentWithDefinitionsDto redeploy($id, $body)
 
 Redeploy
 
@@ -583,19 +583,19 @@ Re-deploys an existing deployment.  The deployment resources to re-deploy can be
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\DeploymentApi(
+$apiInstance = new Camunda\Client\Api\DeploymentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = "id_example"; // string | The id of the deployment to re-deploy.
-$body = new \Swagger\Client\Model\RedeploymentDto(); // \Swagger\Client\Model\RedeploymentDto | 
+$body = new \Camunda\Client\Model\RedeploymentDto(); // \Camunda\Client\Model\RedeploymentDto | 
 
 try {
     $result = $apiInstance->redeploy($id, $body);
@@ -611,11 +611,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The id of the deployment to re-deploy. |
- **body** | [**\Swagger\Client\Model\RedeploymentDto**](../Model/RedeploymentDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\RedeploymentDto**](../Model/RedeploymentDto.md)|  | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\DeploymentWithDefinitionsDto**](../Model/DeploymentWithDefinitionsDto.md)
+[**\Camunda\Client\Model\DeploymentWithDefinitionsDto**](../Model/DeploymentWithDefinitionsDto.md)
 
 ### Authorization
 

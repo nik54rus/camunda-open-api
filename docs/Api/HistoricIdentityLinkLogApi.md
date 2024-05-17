@@ -1,4 +1,4 @@
-# Swagger\Client\HistoricIdentityLinkLogApi
+# Camunda\Client\HistoricIdentityLinkLogApi
 
 All URIs are relative to *http://{host}:{port}/{contextPath}*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 [**getHistoricIdentityLinksCount**](HistoricIdentityLinkLogApi.md#gethistoricidentitylinkscount) | **GET** /history/identity-link-log/count | Get Identity Link Log Count
 
 # **getHistoricIdentityLinks**
-> \Swagger\Client\Model\HistoricIdentityLinkLogDto[] getHistoricIdentityLinks($type, $user_id, $group_id, $date_before, $date_after, $task_id, $process_definition_id, $process_definition_key, $operation_type, $assigner_id, $tenant_id_in, $without_tenant_id, $sort_by, $sort_order, $first_result, $max_results)
+> \Camunda\Client\Model\HistoricIdentityLinkLogDto[] getHistoricIdentityLinks($type, $user_id, $group_id, $date_before, $date_after, $task_id, $process_definition_id, $process_definition_key, $operation_type, $assigner_id, $tenant_id_in, $without_tenant_id, $sort_by, $sort_order, $first_result, $max_results)
 
 Get Identity Link Logs
 
@@ -19,12 +19,12 @@ Queries for historic identity link logs that fulfill given parameters. The size 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricIdentityLinkLogApi(
+$apiInstance = new Camunda\Client\Api\HistoricIdentityLinkLogApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -79,7 +79,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\HistoricIdentityLinkLogDto[]**](../Model/HistoricIdentityLinkLogDto.md)
+[**\Camunda\Client\Model\HistoricIdentityLinkLogDto[]**](../Model/HistoricIdentityLinkLogDto.md)
 
 ### Authorization
 
@@ -93,7 +93,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getHistoricIdentityLinksCount**
-> \Swagger\Client\Model\CountResultDto getHistoricIdentityLinksCount($type, $user_id, $group_id, $date_before, $date_after, $task_id, $process_definition_id, $process_definition_key, $operation_type, $assigner_id, $tenant_id_in, $without_tenant_id)
+> \Camunda\Client\Model\CountResultDto getHistoricIdentityLinksCount($type, $user_id, $group_id, $date_before, $date_after, $task_id, $process_definition_id, $process_definition_key, $operation_type, $assigner_id, $tenant_id_in, $without_tenant_id)
 
 Get Identity Link Log Count
 
@@ -104,12 +104,12 @@ Queries for the number of historic identity link logs that fulfill the given par
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricIdentityLinkLogApi(
+$apiInstance = new Camunda\Client\Api\HistoricIdentityLinkLogApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -156,7 +156,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\CountResultDto**](../Model/CountResultDto.md)
+[**\Camunda\Client\Model\CountResultDto**](../Model/CountResultDto.md)
 
 ### Authorization
 

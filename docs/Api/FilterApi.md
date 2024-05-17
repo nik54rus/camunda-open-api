@@ -1,4 +1,4 @@
-# Swagger\Client\FilterApi
+# Camunda\Client\FilterApi
 
 All URIs are relative to *http://{host}:{port}/{contextPath}*
 
@@ -20,7 +20,7 @@ Method | HTTP request | Description
 [**updateFilter**](FilterApi.md#updatefilter) | **PUT** /filter/{id} | Update Filter
 
 # **createFilter**
-> \Swagger\Client\Model\FilterDto createFilter($body)
+> \Camunda\Client\Model\FilterDto createFilter($body)
 
 Create Filter
 
@@ -31,18 +31,18 @@ Creates a new filter.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\FilterApi(
+$apiInstance = new Camunda\Client\Api\FilterApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\CreateFilterDto(); // \Swagger\Client\Model\CreateFilterDto | 
+$body = new \Camunda\Client\Model\CreateFilterDto(); // \Camunda\Client\Model\CreateFilterDto | 
 
 try {
     $result = $apiInstance->createFilter($body);
@@ -57,11 +57,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\CreateFilterDto**](../Model/CreateFilterDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\CreateFilterDto**](../Model/CreateFilterDto.md)|  | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\FilterDto**](../Model/FilterDto.md)
+[**\Camunda\Client\Model\FilterDto**](../Model/FilterDto.md)
 
 ### Authorization
 
@@ -86,12 +86,12 @@ Deletes a filter by id.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\FilterApi(
+$apiInstance = new Camunda\Client\Api\FilterApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -129,7 +129,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **executeFilterCount**
-> \Swagger\Client\Model\CountResultDto executeFilterCount($id)
+> \Camunda\Client\Model\CountResultDto executeFilterCount($id)
 
 Execute Filter Count
 
@@ -140,12 +140,12 @@ Executes the saved query of the filter by id and returns the count.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\FilterApi(
+$apiInstance = new Camunda\Client\Api\FilterApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -170,7 +170,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\CountResultDto**](../Model/CountResultDto.md)
+[**\Camunda\Client\Model\CountResultDto**](../Model/CountResultDto.md)
 
 ### Authorization
 
@@ -195,12 +195,12 @@ Executes the saved query of the filter by id and returns the result list.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\FilterApi(
+$apiInstance = new Camunda\Client\Api\FilterApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -254,12 +254,12 @@ Executes the saved query of the filter by id and returns the single result.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\FilterApi(
+$apiInstance = new Camunda\Client\Api\FilterApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -298,7 +298,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **filterResourceOptions**
-> \Swagger\Client\Model\ResourceOptionsDto filterResourceOptions()
+> \Camunda\Client\Model\ResourceOptionsDto filterResourceOptions()
 
 Filter Resource Options
 
@@ -309,12 +309,12 @@ The OPTIONS request allows you to check for the set of available operations  tha
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\FilterApi(
+$apiInstance = new Camunda\Client\Api\FilterApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -335,7 +335,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\ResourceOptionsDto**](../Model/ResourceOptionsDto.md)
+[**\Camunda\Client\Model\ResourceOptionsDto**](../Model/ResourceOptionsDto.md)
 
 ### Authorization
 
@@ -349,7 +349,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **filterResourceOptionsSingle**
-> \Swagger\Client\Model\ResourceOptionsDto filterResourceOptionsSingle($id)
+> \Camunda\Client\Model\ResourceOptionsDto filterResourceOptionsSingle($id)
 
 Filter Resource Options
 
@@ -360,12 +360,12 @@ The OPTIONS request allows you to check for the set of available operations  tha
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\FilterApi(
+$apiInstance = new Camunda\Client\Api\FilterApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -390,7 +390,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ResourceOptionsDto**](../Model/ResourceOptionsDto.md)
+[**\Camunda\Client\Model\ResourceOptionsDto**](../Model/ResourceOptionsDto.md)
 
 ### Authorization
 
@@ -404,7 +404,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getFilterCount**
-> \Swagger\Client\Model\CountResultDto getFilterCount($filter_id, $resource_type, $name, $name_like, $owner)
+> \Camunda\Client\Model\CountResultDto getFilterCount($filter_id, $resource_type, $name, $name_like, $owner)
 
 Get Filter Count
 
@@ -415,12 +415,12 @@ Retrieves the number of filters that fulfill a provided query. Corresponds to th
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\FilterApi(
+$apiInstance = new Camunda\Client\Api\FilterApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -453,7 +453,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\CountResultDto**](../Model/CountResultDto.md)
+[**\Camunda\Client\Model\CountResultDto**](../Model/CountResultDto.md)
 
 ### Authorization
 
@@ -467,7 +467,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getFilterList**
-> \Swagger\Client\Model\FilterDto[] getFilterList($filter_id, $resource_type, $name, $name_like, $owner, $item_count, $sort_by, $sort_order, $first_result, $max_results)
+> \Camunda\Client\Model\FilterDto[] getFilterList($filter_id, $resource_type, $name, $name_like, $owner, $item_count, $sort_by, $sort_order, $first_result, $max_results)
 
 Get Filters
 
@@ -478,12 +478,12 @@ Queries for a list of filters using a list of parameters. The size of the result
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\FilterApi(
+$apiInstance = new Camunda\Client\Api\FilterApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -526,7 +526,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\FilterDto[]**](../Model/FilterDto.md)
+[**\Camunda\Client\Model\FilterDto[]**](../Model/FilterDto.md)
 
 ### Authorization
 
@@ -540,7 +540,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getSingleFilter**
-> \Swagger\Client\Model\FilterDto getSingleFilter($id, $item_count)
+> \Camunda\Client\Model\FilterDto getSingleFilter($id, $item_count)
 
 Get Single Filter
 
@@ -551,12 +551,12 @@ Retrieves a single filter by id, according to the `Filter` interface in the engi
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\FilterApi(
+$apiInstance = new Camunda\Client\Api\FilterApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -583,7 +583,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\FilterDto**](../Model/FilterDto.md)
+[**\Camunda\Client\Model\FilterDto**](../Model/FilterDto.md)
 
 ### Authorization
 
@@ -597,7 +597,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **postExecuteFilterCount**
-> \Swagger\Client\Model\CountResultDto postExecuteFilterCount($id, $body)
+> \Camunda\Client\Model\CountResultDto postExecuteFilterCount($id, $body)
 
 Execute Filter Count (POST)
 
@@ -608,12 +608,12 @@ Executes the saved query of the filter by id and returns the count. This method 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\FilterApi(
+$apiInstance = new Camunda\Client\Api\FilterApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -640,7 +640,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\CountResultDto**](../Model/CountResultDto.md)
+[**\Camunda\Client\Model\CountResultDto**](../Model/CountResultDto.md)
 
 ### Authorization
 
@@ -665,12 +665,12 @@ Executes the saved query of the filter by id and returns the result list. This m
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\FilterApi(
+$apiInstance = new Camunda\Client\Api\FilterApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -726,12 +726,12 @@ Executes the saved query of the filter by id and returns the single result. This
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\FilterApi(
+$apiInstance = new Camunda\Client\Api\FilterApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -783,19 +783,19 @@ Updates an existing filter.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\FilterApi(
+$apiInstance = new Camunda\Client\Api\FilterApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = "id_example"; // string | The id of the filter to be updated.
-$body = new \Swagger\Client\Model\CreateFilterDto(); // \Swagger\Client\Model\CreateFilterDto | 
+$body = new \Camunda\Client\Model\CreateFilterDto(); // \Camunda\Client\Model\CreateFilterDto | 
 
 try {
     $apiInstance->updateFilter($id, $body);
@@ -810,7 +810,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The id of the filter to be updated. |
- **body** | [**\Swagger\Client\Model\CreateFilterDto**](../Model/CreateFilterDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\CreateFilterDto**](../Model/CreateFilterDto.md)|  | [optional]
 
 ### Return type
 

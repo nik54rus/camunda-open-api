@@ -1,4 +1,4 @@
-# Swagger\Client\TenantApi
+# Camunda\Client\TenantApi
 
 All URIs are relative to *http://{host}:{port}/{contextPath}*
 
@@ -20,7 +20,7 @@ Method | HTTP request | Description
 [**updateTenant**](TenantApi.md#updatetenant) | **PUT** /tenant/{id} | Update Tenant
 
 # **availableTenantGroupMembersOperations**
-> \Swagger\Client\Model\ResourceOptionsDto availableTenantGroupMembersOperations($id)
+> \Camunda\Client\Model\ResourceOptionsDto availableTenantGroupMembersOperations($id)
 
 Tenant Group Membership Resource Options
 
@@ -31,12 +31,12 @@ The OPTIONS request allows checking for the set of available operations that the
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\TenantApi(
+$apiInstance = new Camunda\Client\Api\TenantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -61,7 +61,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ResourceOptionsDto**](../Model/ResourceOptionsDto.md)
+[**\Camunda\Client\Model\ResourceOptionsDto**](../Model/ResourceOptionsDto.md)
 
 ### Authorization
 
@@ -75,7 +75,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **availableTenantInstanceOperations**
-> \Swagger\Client\Model\ResourceOptionsDto availableTenantInstanceOperations($id)
+> \Camunda\Client\Model\ResourceOptionsDto availableTenantInstanceOperations($id)
 
 Tenant Resource Options
 
@@ -86,12 +86,12 @@ The `/tenant` resource supports two custom OPTIONS requests, one for the resourc
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\TenantApi(
+$apiInstance = new Camunda\Client\Api\TenantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -116,7 +116,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ResourceOptionsDto**](../Model/ResourceOptionsDto.md)
+[**\Camunda\Client\Model\ResourceOptionsDto**](../Model/ResourceOptionsDto.md)
 
 ### Authorization
 
@@ -130,7 +130,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **availableTenantResourceOperations**
-> \Swagger\Client\Model\ResourceOptionsDto availableTenantResourceOperations()
+> \Camunda\Client\Model\ResourceOptionsDto availableTenantResourceOperations()
 
 Tenant Resource Options
 
@@ -141,12 +141,12 @@ The `/tenant` resource supports two custom OPTIONS requests, this one for the re
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\TenantApi(
+$apiInstance = new Camunda\Client\Api\TenantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -167,7 +167,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\ResourceOptionsDto**](../Model/ResourceOptionsDto.md)
+[**\Camunda\Client\Model\ResourceOptionsDto**](../Model/ResourceOptionsDto.md)
 
 ### Authorization
 
@@ -181,7 +181,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **availableTenantUserMembersOperations**
-> \Swagger\Client\Model\ResourceOptionsDto availableTenantUserMembersOperations($id)
+> \Camunda\Client\Model\ResourceOptionsDto availableTenantUserMembersOperations($id)
 
 Tenant User Membership Resource Options
 
@@ -192,12 +192,12 @@ The OPTIONS request allows checking for the set of available operations that the
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\TenantApi(
+$apiInstance = new Camunda\Client\Api\TenantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -222,7 +222,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ResourceOptionsDto**](../Model/ResourceOptionsDto.md)
+[**\Camunda\Client\Model\ResourceOptionsDto**](../Model/ResourceOptionsDto.md)
 
 ### Authorization
 
@@ -247,12 +247,12 @@ Creates a membership between a tenant and a group.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\TenantApi(
+$apiInstance = new Camunda\Client\Api\TenantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -303,18 +303,18 @@ Create a new tenant.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\TenantApi(
+$apiInstance = new Camunda\Client\Api\TenantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\TenantDto(); // \Swagger\Client\Model\TenantDto | 
+$body = new \Camunda\Client\Model\TenantDto(); // \Camunda\Client\Model\TenantDto | 
 
 try {
     $apiInstance->createTenant($body);
@@ -328,7 +328,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\TenantDto**](../Model/TenantDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\TenantDto**](../Model/TenantDto.md)|  | [optional]
 
 ### Return type
 
@@ -357,12 +357,12 @@ Creates a membership between a tenant and an user.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\TenantApi(
+$apiInstance = new Camunda\Client\Api\TenantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -413,12 +413,12 @@ Creates a membership between a tenant and a group.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\TenantApi(
+$apiInstance = new Camunda\Client\Api\TenantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -469,12 +469,12 @@ Deletes a tenant by id.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\TenantApi(
+$apiInstance = new Camunda\Client\Api\TenantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -523,12 +523,12 @@ Deletes a membership between a tenant and an user.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\TenantApi(
+$apiInstance = new Camunda\Client\Api\TenantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -568,7 +568,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getTenant**
-> \Swagger\Client\Model\TenantDto getTenant($id)
+> \Camunda\Client\Model\TenantDto getTenant($id)
 
 Get Tenant
 
@@ -579,12 +579,12 @@ Retrieves a tenant.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\TenantApi(
+$apiInstance = new Camunda\Client\Api\TenantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -609,7 +609,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\TenantDto**](../Model/TenantDto.md)
+[**\Camunda\Client\Model\TenantDto**](../Model/TenantDto.md)
 
 ### Authorization
 
@@ -623,7 +623,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getTenantCount**
-> \Swagger\Client\Model\CountResultDto getTenantCount($id, $name, $name_like, $user_member, $group_member, $including_groups_of_user)
+> \Camunda\Client\Model\CountResultDto getTenantCount($id, $name, $name_like, $user_member, $group_member, $including_groups_of_user)
 
 Get Tenant Count
 
@@ -634,12 +634,12 @@ Query for tenants using a list of parameters and retrieves the count.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\TenantApi(
+$apiInstance = new Camunda\Client\Api\TenantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -674,7 +674,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\CountResultDto**](../Model/CountResultDto.md)
+[**\Camunda\Client\Model\CountResultDto**](../Model/CountResultDto.md)
 
 ### Authorization
 
@@ -688,7 +688,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **queryTenants**
-> \Swagger\Client\Model\TenantDto[] queryTenants($sort_by, $sort_order, $first_result, $max_results, $id, $name, $name_like, $user_member, $group_member, $including_groups_of_user)
+> \Camunda\Client\Model\TenantDto[] queryTenants($sort_by, $sort_order, $first_result, $max_results, $id, $name, $name_like, $user_member, $group_member, $including_groups_of_user)
 
 Get Tenants
 
@@ -699,12 +699,12 @@ Query for a list of tenants using a list of parameters. The size of the result s
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\TenantApi(
+$apiInstance = new Camunda\Client\Api\TenantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -747,7 +747,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\TenantDto[]**](../Model/TenantDto.md)
+[**\Camunda\Client\Model\TenantDto[]**](../Model/TenantDto.md)
 
 ### Authorization
 
@@ -772,19 +772,19 @@ Updates a given tenant.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\TenantApi(
+$apiInstance = new Camunda\Client\Api\TenantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = "id_example"; // string | The id of the tenant.
-$body = new \Swagger\Client\Model\TenantDto(); // \Swagger\Client\Model\TenantDto | 
+$body = new \Camunda\Client\Model\TenantDto(); // \Camunda\Client\Model\TenantDto | 
 
 try {
     $apiInstance->updateTenant($id, $body);
@@ -799,7 +799,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The id of the tenant. |
- **body** | [**\Swagger\Client\Model\TenantDto**](../Model/TenantDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\TenantDto**](../Model/TenantDto.md)|  | [optional]
 
 ### Return type
 

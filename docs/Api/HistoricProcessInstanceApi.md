@@ -1,4 +1,4 @@
-# Swagger\Client\HistoricProcessInstanceApi
+# Camunda\Client\HistoricProcessInstanceApi
 
 All URIs are relative to *http://{host}:{port}/{contextPath}*
 
@@ -27,12 +27,12 @@ Deletes a process instance from the history by id.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricProcessInstanceApi(
+$apiInstance = new Camunda\Client\Api\HistoricProcessInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -72,7 +72,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteHistoricProcessInstancesAsync**
-> \Swagger\Client\Model\BatchDto deleteHistoricProcessInstancesAsync($body)
+> \Camunda\Client\Model\BatchDto deleteHistoricProcessInstancesAsync($body)
 
 Delete Async (POST)
 
@@ -83,18 +83,18 @@ Delete multiple historic process instances asynchronously (batch). At least `his
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricProcessInstanceApi(
+$apiInstance = new Camunda\Client\Api\HistoricProcessInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\DeleteHistoricProcessInstancesDto(); // \Swagger\Client\Model\DeleteHistoricProcessInstancesDto | 
+$body = new \Camunda\Client\Model\DeleteHistoricProcessInstancesDto(); // \Camunda\Client\Model\DeleteHistoricProcessInstancesDto | 
 
 try {
     $result = $apiInstance->deleteHistoricProcessInstancesAsync($body);
@@ -109,11 +109,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\DeleteHistoricProcessInstancesDto**](../Model/DeleteHistoricProcessInstancesDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\DeleteHistoricProcessInstancesDto**](../Model/DeleteHistoricProcessInstancesDto.md)|  | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\BatchDto**](../Model/BatchDto.md)
+[**\Camunda\Client\Model\BatchDto**](../Model/BatchDto.md)
 
 ### Authorization
 
@@ -138,12 +138,12 @@ Deletes all variables of a process instance from the history by id.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricProcessInstanceApi(
+$apiInstance = new Camunda\Client\Api\HistoricProcessInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -181,7 +181,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getHistoricProcessInstance**
-> \Swagger\Client\Model\HistoricProcessInstanceDto getHistoricProcessInstance($id)
+> \Camunda\Client\Model\HistoricProcessInstanceDto getHistoricProcessInstance($id)
 
 Get
 
@@ -192,12 +192,12 @@ Retrieves a historic process instance by id, according to the `HistoricProcessIn
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricProcessInstanceApi(
+$apiInstance = new Camunda\Client\Api\HistoricProcessInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -222,7 +222,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\HistoricProcessInstanceDto**](../Model/HistoricProcessInstanceDto.md)
+[**\Camunda\Client\Model\HistoricProcessInstanceDto**](../Model/HistoricProcessInstanceDto.md)
 
 ### Authorization
 
@@ -236,7 +236,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getHistoricProcessInstanceDurationReport**
-> \Swagger\Client\Model\DurationReportResultDto[] getHistoricProcessInstanceDurationReport($report_type, $period_unit, $process_definition_id_in, $process_definition_key_in, $started_before, $started_after)
+> \Camunda\Client\Model\DurationReportResultDto[] getHistoricProcessInstanceDurationReport($report_type, $period_unit, $process_definition_id_in, $process_definition_key_in, $started_before, $started_after)
 
 Get Duration Report
 
@@ -247,12 +247,12 @@ Retrieves a report about the duration of completed process instances, grouped by
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricProcessInstanceApi(
+$apiInstance = new Camunda\Client\Api\HistoricProcessInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -287,7 +287,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\DurationReportResultDto[]**](../Model/DurationReportResultDto.md)
+[**\Camunda\Client\Model\DurationReportResultDto[]**](../Model/DurationReportResultDto.md)
 
 ### Authorization
 
@@ -301,7 +301,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getHistoricProcessInstances**
-> \Swagger\Client\Model\HistoricProcessInstanceDto[] getHistoricProcessInstances($sort_by, $sort_order, $first_result, $max_results, $process_instance_id, $process_instance_ids, $process_definition_id, $process_definition_key, $process_definition_key_in, $process_definition_name, $process_definition_name_like, $process_definition_key_not_in, $process_instance_business_key, $process_instance_business_key_in, $process_instance_business_key_like, $root_process_instances, $finished, $unfinished, $with_incidents, $with_root_incidents, $incident_type, $incident_status, $incident_message, $incident_message_like, $started_before, $started_after, $finished_before, $finished_after, $executed_activity_after, $executed_activity_before, $executed_job_after, $executed_job_before, $started_by, $super_process_instance_id, $sub_process_instance_id, $super_case_instance_id, $sub_case_instance_id, $case_instance_id, $tenant_id_in, $without_tenant_id, $executed_activity_id_in, $active_activity_id_in, $active, $suspended, $completed, $externally_terminated, $internally_terminated, $variables, $variable_names_ignore_case, $variable_values_ignore_case)
+> \Camunda\Client\Model\HistoricProcessInstanceDto[] getHistoricProcessInstances($sort_by, $sort_order, $first_result, $max_results, $process_instance_id, $process_instance_ids, $process_definition_id, $process_definition_key, $process_definition_key_in, $process_definition_name, $process_definition_name_like, $process_definition_key_not_in, $process_instance_business_key, $process_instance_business_key_in, $process_instance_business_key_like, $root_process_instances, $finished, $unfinished, $with_incidents, $with_root_incidents, $incident_type, $incident_status, $incident_message, $incident_message_like, $started_before, $started_after, $finished_before, $finished_after, $executed_activity_after, $executed_activity_before, $executed_job_after, $executed_job_before, $started_by, $super_process_instance_id, $sub_process_instance_id, $super_case_instance_id, $sub_case_instance_id, $case_instance_id, $tenant_id_in, $without_tenant_id, $executed_activity_id_in, $active_activity_id_in, $active, $suspended, $completed, $externally_terminated, $internally_terminated, $variables, $variable_names_ignore_case, $variable_values_ignore_case)
 
 Get List
 
@@ -312,12 +312,12 @@ Queries for historic process instances that fulfill the given parameters. The si
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricProcessInstanceApi(
+$apiInstance = new Camunda\Client\Api\HistoricProcessInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -440,7 +440,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\HistoricProcessInstanceDto[]**](../Model/HistoricProcessInstanceDto.md)
+[**\Camunda\Client\Model\HistoricProcessInstanceDto[]**](../Model/HistoricProcessInstanceDto.md)
 
 ### Authorization
 
@@ -454,7 +454,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getHistoricProcessInstancesCount**
-> \Swagger\Client\Model\CountResultDto getHistoricProcessInstancesCount($process_instance_id, $process_instance_ids, $process_definition_id, $process_definition_key, $process_definition_key_in, $process_definition_name, $process_definition_name_like, $process_definition_key_not_in, $process_instance_business_key, $process_instance_business_key_in, $process_instance_business_key_like, $root_process_instances, $finished, $unfinished, $with_incidents, $with_root_incidents, $incident_type, $incident_status, $incident_message, $incident_message_like, $started_before, $started_after, $finished_before, $finished_after, $executed_activity_after, $executed_activity_before, $executed_job_after, $executed_job_before, $started_by, $super_process_instance_id, $sub_process_instance_id, $super_case_instance_id, $sub_case_instance_id, $case_instance_id, $tenant_id_in, $without_tenant_id, $executed_activity_id_in, $active_activity_id_in, $active, $suspended, $completed, $externally_terminated, $internally_terminated, $variables, $variable_names_ignore_case, $variable_values_ignore_case)
+> \Camunda\Client\Model\CountResultDto getHistoricProcessInstancesCount($process_instance_id, $process_instance_ids, $process_definition_id, $process_definition_key, $process_definition_key_in, $process_definition_name, $process_definition_name_like, $process_definition_key_not_in, $process_instance_business_key, $process_instance_business_key_in, $process_instance_business_key_like, $root_process_instances, $finished, $unfinished, $with_incidents, $with_root_incidents, $incident_type, $incident_status, $incident_message, $incident_message_like, $started_before, $started_after, $finished_before, $finished_after, $executed_activity_after, $executed_activity_before, $executed_job_after, $executed_job_before, $started_by, $super_process_instance_id, $sub_process_instance_id, $super_case_instance_id, $sub_case_instance_id, $case_instance_id, $tenant_id_in, $without_tenant_id, $executed_activity_id_in, $active_activity_id_in, $active, $suspended, $completed, $externally_terminated, $internally_terminated, $variables, $variable_names_ignore_case, $variable_values_ignore_case)
 
 Get List Count
 
@@ -465,12 +465,12 @@ Queries for the number of historic process instances that fulfill the given para
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricProcessInstanceApi(
+$apiInstance = new Camunda\Client\Api\HistoricProcessInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -585,7 +585,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\CountResultDto**](../Model/CountResultDto.md)
+[**\Camunda\Client\Model\CountResultDto**](../Model/CountResultDto.md)
 
 ### Authorization
 
@@ -599,7 +599,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **queryHistoricProcessInstances**
-> \Swagger\Client\Model\HistoricProcessInstanceDto[] queryHistoricProcessInstances($body, $first_result, $max_results)
+> \Camunda\Client\Model\HistoricProcessInstanceDto[] queryHistoricProcessInstances($body, $first_result, $max_results)
 
 Get List (POST)
 
@@ -610,18 +610,18 @@ Queries for historic process instances that fulfill the given parameters. This m
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricProcessInstanceApi(
+$apiInstance = new Camunda\Client\Api\HistoricProcessInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\HistoricProcessInstanceQueryDto(); // \Swagger\Client\Model\HistoricProcessInstanceQueryDto | 
+$body = new \Camunda\Client\Model\HistoricProcessInstanceQueryDto(); // \Camunda\Client\Model\HistoricProcessInstanceQueryDto | 
 $first_result = 56; // int | Pagination of results. Specifies the index of the first result to return.
 $max_results = 56; // int | Pagination of results. Specifies the maximum number of results to return. Will return less results if there are no more results left.
 
@@ -638,13 +638,13 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\HistoricProcessInstanceQueryDto**](../Model/HistoricProcessInstanceQueryDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\HistoricProcessInstanceQueryDto**](../Model/HistoricProcessInstanceQueryDto.md)|  | [optional]
  **first_result** | **int**| Pagination of results. Specifies the index of the first result to return. | [optional]
  **max_results** | **int**| Pagination of results. Specifies the maximum number of results to return. Will return less results if there are no more results left. | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\HistoricProcessInstanceDto[]**](../Model/HistoricProcessInstanceDto.md)
+[**\Camunda\Client\Model\HistoricProcessInstanceDto[]**](../Model/HistoricProcessInstanceDto.md)
 
 ### Authorization
 
@@ -658,7 +658,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **queryHistoricProcessInstancesCount**
-> \Swagger\Client\Model\CountResultDto queryHistoricProcessInstancesCount($body)
+> \Camunda\Client\Model\CountResultDto queryHistoricProcessInstancesCount($body)
 
 Get List Count (POST)
 
@@ -669,18 +669,18 @@ Queries for the number of historic process instances that fulfill the given para
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricProcessInstanceApi(
+$apiInstance = new Camunda\Client\Api\HistoricProcessInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\HistoricProcessInstanceQueryDto(); // \Swagger\Client\Model\HistoricProcessInstanceQueryDto | 
+$body = new \Camunda\Client\Model\HistoricProcessInstanceQueryDto(); // \Camunda\Client\Model\HistoricProcessInstanceQueryDto | 
 
 try {
     $result = $apiInstance->queryHistoricProcessInstancesCount($body);
@@ -695,11 +695,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\HistoricProcessInstanceQueryDto**](../Model/HistoricProcessInstanceQueryDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\HistoricProcessInstanceQueryDto**](../Model/HistoricProcessInstanceQueryDto.md)|  | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\CountResultDto**](../Model/CountResultDto.md)
+[**\Camunda\Client\Model\CountResultDto**](../Model/CountResultDto.md)
 
 ### Authorization
 
@@ -713,7 +713,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **setRemovalTimeAsync**
-> \Swagger\Client\Model\BatchDto setRemovalTimeAsync($body)
+> \Camunda\Client\Model\BatchDto setRemovalTimeAsync($body)
 
 Set Removal Time Async (POST)
 
@@ -724,18 +724,18 @@ Sets the removal time to multiple historic process instances asynchronously (bat
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricProcessInstanceApi(
+$apiInstance = new Camunda\Client\Api\HistoricProcessInstanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\SetRemovalTimeToHistoricProcessInstancesDto(); // \Swagger\Client\Model\SetRemovalTimeToHistoricProcessInstancesDto | 
+$body = new \Camunda\Client\Model\SetRemovalTimeToHistoricProcessInstancesDto(); // \Camunda\Client\Model\SetRemovalTimeToHistoricProcessInstancesDto | 
 
 try {
     $result = $apiInstance->setRemovalTimeAsync($body);
@@ -750,11 +750,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\SetRemovalTimeToHistoricProcessInstancesDto**](../Model/SetRemovalTimeToHistoricProcessInstancesDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\SetRemovalTimeToHistoricProcessInstancesDto**](../Model/SetRemovalTimeToHistoricProcessInstancesDto.md)|  | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\BatchDto**](../Model/BatchDto.md)
+[**\Camunda\Client\Model\BatchDto**](../Model/BatchDto.md)
 
 ### Authorization
 

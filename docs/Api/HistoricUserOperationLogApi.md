@@ -1,4 +1,4 @@
-# Swagger\Client\HistoricUserOperationLogApi
+# Camunda\Client\HistoricUserOperationLogApi
 
 All URIs are relative to *http://{host}:{port}/{contextPath}*
 
@@ -21,12 +21,12 @@ Clear the annotation which was previously set for auditing reasons.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricUserOperationLogApi(
+$apiInstance = new Camunda\Client\Api\HistoricUserOperationLogApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -64,7 +64,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **queryUserOperationCount**
-> \Swagger\Client\Model\CountResultDto queryUserOperationCount($deployment_id, $process_definition_id, $process_definition_key, $process_instance_id, $execution_id, $case_definition_id, $case_instance_id, $case_execution_id, $task_id, $external_task_id, $batch_id, $job_id, $job_definition_id, $user_id, $operation_id, $operation_type, $entity_type, $entity_type_in, $category, $category_in, $property, $after_timestamp, $before_timestamp)
+> \Camunda\Client\Model\CountResultDto queryUserOperationCount($deployment_id, $process_definition_id, $process_definition_key, $process_instance_id, $execution_id, $case_definition_id, $case_instance_id, $case_execution_id, $task_id, $external_task_id, $batch_id, $job_id, $job_definition_id, $user_id, $operation_id, $operation_type, $entity_type, $entity_type_in, $category, $category_in, $property, $after_timestamp, $before_timestamp)
 
 Get User Operation Log Count
 
@@ -75,12 +75,12 @@ Queries for the number of user operation log entries that fulfill the given para
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricUserOperationLogApi(
+$apiInstance = new Camunda\Client\Api\HistoricUserOperationLogApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -149,7 +149,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\CountResultDto**](../Model/CountResultDto.md)
+[**\Camunda\Client\Model\CountResultDto**](../Model/CountResultDto.md)
 
 ### Authorization
 
@@ -163,7 +163,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **queryUserOperationEntries**
-> \Swagger\Client\Model\UserOperationLogEntryDto[] queryUserOperationEntries($deployment_id, $process_definition_id, $process_definition_key, $process_instance_id, $execution_id, $case_definition_id, $case_instance_id, $case_execution_id, $task_id, $external_task_id, $batch_id, $job_id, $job_definition_id, $user_id, $operation_id, $operation_type, $entity_type, $entity_type_in, $category, $category_in, $property, $after_timestamp, $before_timestamp, $sort_by, $sort_order, $first_result, $max_results)
+> \Camunda\Client\Model\UserOperationLogEntryDto[] queryUserOperationEntries($deployment_id, $process_definition_id, $process_definition_key, $process_instance_id, $execution_id, $case_definition_id, $case_instance_id, $case_execution_id, $task_id, $external_task_id, $batch_id, $job_id, $job_definition_id, $user_id, $operation_id, $operation_type, $entity_type, $entity_type_in, $category, $category_in, $property, $after_timestamp, $before_timestamp, $sort_by, $sort_order, $first_result, $max_results)
 
 Get User Operation Log (Historic)
 
@@ -174,12 +174,12 @@ Queries for user operation log entries that fulfill the given parameters. The si
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricUserOperationLogApi(
+$apiInstance = new Camunda\Client\Api\HistoricUserOperationLogApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -256,7 +256,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\UserOperationLogEntryDto[]**](../Model/UserOperationLogEntryDto.md)
+[**\Camunda\Client\Model\UserOperationLogEntryDto[]**](../Model/UserOperationLogEntryDto.md)
 
 ### Authorization
 
@@ -281,19 +281,19 @@ Set an annotation for auditing reasons.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure HTTP basic authorization: basicAuth
-$config = Swagger\Client\Configuration::getDefaultConfiguration()
+$config = Camunda\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Swagger\Client\Api\HistoricUserOperationLogApi(
+$apiInstance = new Camunda\Client\Api\HistoricUserOperationLogApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $operation_id = "operation_id_example"; // string | The operation id of the operation log to be updated.
-$body = new \Swagger\Client\Model\AnnotationDto(); // \Swagger\Client\Model\AnnotationDto | 
+$body = new \Camunda\Client\Model\AnnotationDto(); // \Camunda\Client\Model\AnnotationDto | 
 
 try {
     $apiInstance->setAnnotationUserOperationLog($operation_id, $body);
@@ -308,7 +308,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **operation_id** | **string**| The operation id of the operation log to be updated. |
- **body** | [**\Swagger\Client\Model\AnnotationDto**](../Model/AnnotationDto.md)|  | [optional]
+ **body** | [**\Camunda\Client\Model\AnnotationDto**](../Model/AnnotationDto.md)|  | [optional]
 
 ### Return type
 

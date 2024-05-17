@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 **process_definition_id** | **string** | The id of the process definition. | [optional] 
 **execution_id** | **string** | The execution id. | [optional] 
 **incident_ids** | **string[]** | A list of incident ids. | [optional] 
-**incidents** | [**\Swagger\Client\Model\ActivityInstanceIncidentDto[]**](ActivityInstanceIncidentDto.md) | A list of JSON objects containing incident specific properties: * &#x60;id&#x60;: the id of the incident * &#x60;activityId&#x60;: the activity id in which the incident occurred | [optional] 
+**incidents** | [**\Camunda\Client\Model\ActivityInstanceIncidentDto[]**](ActivityInstanceIncidentDto.md) | A list of JSON objects containing incident specific properties: * &#x60;id&#x60;: the id of the incident * &#x60;activityId&#x60;: the activity id in which the incident occurred | [optional] 
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 

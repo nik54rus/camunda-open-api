@@ -23,7 +23,7 @@ Name | Type | Description | Notes
 **tenant_id_in** | **string[]** | Only include historic variable instances which belong to one of the passed and comma- separated tenant ids. | [optional] 
 **without_tenant_id** | **bool** | Only include historic variable instances that belong to no tenant. Value may only be &#x60;true&#x60;, as &#x60;false&#x60; is the default behavior. | [optional] 
 **variable_name_in** | **string[]** | Only include historic variable instances which belong to one of the passed  variable names. | [optional] 
-**sorting** | [**\Swagger\Client\Model\HistoricVariableInstanceQueryDtoSorting[]**](HistoricVariableInstanceQueryDtoSorting.md) | An array of criteria to sort the result by. Each element of the array is                      an object that specifies one ordering. The position in the array                      identifies the rank of an ordering, i.e., whether it is primary, secondary,                      etc. Sorting has no effect for &#x60;count&#x60; endpoints | [optional] 
+**sorting** | [**\Camunda\Client\Model\HistoricVariableInstanceQueryDtoSorting[]**](HistoricVariableInstanceQueryDtoSorting.md) | An array of criteria to sort the result by. Each element of the array is                      an object that specifies one ordering. The position in the array                      identifies the rank of an ordering, i.e., whether it is primary, secondary,                      etc. Sorting has no effect for &#x60;count&#x60; endpoints | [optional] 
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
