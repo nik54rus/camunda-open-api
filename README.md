@@ -20,11 +20,11 @@ To install the bindings via [Composer](http://getcomposer.org/), add the followi
   "repositories": [
     {
       "type": "git",
-      "url": "https://github.com/git_user_id/git_repo_id.git"
+      "url": "https://github.com/ni54rus/camunda-open-api.git"
     }
   ],
   "require": {
-    "git_user_id/git_repo_id": "*@dev"
+    "ni54rus/camunda-open-api": "*@dev"
   }
 }
 ```
